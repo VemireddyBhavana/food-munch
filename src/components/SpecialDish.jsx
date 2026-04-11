@@ -4,27 +4,42 @@ const SpecialDish = () => {
   return (
     <section className="special-dish text-center" aria-labelledby="dish-label">
       <div className="special-dish-banner">
-        <img src="/assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish" className="img-cover" />
+        <img
+          src="/assets/images/special-dish-banner.jpg"
+          width="940"
+          height="900"
+          loading="lazy"
+          alt="Special dish — Hyderabadi Dum Biryani"
+          className="img-cover"
+        />
       </div>
 
       <div className="special-dish-content bg-black-10">
         <div className="container">
-          <img src="/assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" className="abs-img" />
-          <p className="section-subtitle label-2">Special Dish</p>
-          <h2 className="headline-1 section-title">Lobster Tortellini</h2>
+          <img src="/assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="Chef's special badge" className="abs-img" />
+          <p className="section-subtitle label-2" id="dish-label">Chef's Special</p>
+          <h2 className="headline-1 section-title">Hyderabadi Dum Biryani</h2>
           <p className="section-text">
-            Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-            industrys standard dummy text ever since the when an unknown printer took a galley of type.
+            Our crown jewel — slow-cooked in a sealed handi with aged Basmati rice, tender mutton, and a
+            secret masala passed down through three generations. Every grain tells the story of Hyderabad's
+            Nizami culinary legacy. Served with raita, salan, and a wedge of lemon.
           </p>
 
           <div className="wrapper">
-            <del className="del body-3">$40.00</del>
-            <span className="span body-1">$20.00</span>
+            <del className="del body-3">₹699</del>
+            <span className="span body-1">₹499</span>
           </div>
 
-          <a href="#" className="btn btn-primary">
-            <span className="text text-1">View All Menu</span>
-            <span className="text text-2" aria-hidden="true">View All Menu</span>
+          <a
+            href="#reservation"
+            className="btn btn-primary special-dish-btn"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#reservation')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            <span className="text text-1">Order Now</span>
+            <span className="text text-2" aria-hidden="true">Order Now</span>
           </a>
         </div>
       </div>

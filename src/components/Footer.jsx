@@ -1,21 +1,57 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const target = document.querySelector(targetId);
+    if (target) {
+      const headerHeight = document.querySelector('.header')?.offsetHeight || 80;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    const input = e.target.querySelector('input[type="email"]');
+    if (input && input.value) {
+      alert(`🎉 Thank you! You'll now receive exclusive offers at ${input.value}`);
+      input.value = '';
+    }
+  };
+
   return (
-    <footer className="footer section has-bg-image text-center"
-      style={{ backgroundImage: "url('/assets/images/footer-bg.jpg')" }}>
+    <footer
+      className="footer section has-bg-image text-center"
+      style={{ backgroundImage: "url('/assets/images/footer-bg.jpg')" }}
+      id="footer"
+    >
       <div className="container">
         <div className="footer-top grid-list">
+
+          {/* Brand + Newsletter */}
           <div className="footer-brand has-before has-after">
-            <a href="#" className="logo logo-container" style={{ marginInline: 'auto', justifyContent: 'center' }}>
-              <span className="logo-text">Food Munch</span>
+            <a
+              href="#home"
+              className="logo logo-container"
+              style={{ marginInline: 'auto', justifyContent: 'center' }}
+              onClick={(e) => handleNavClick(e, '#home')}
+            >
+              <img src={logo} width="140" height="45" alt="Food Munch" className="logo-img" />
             </a>
+
             <address className="body-4">
-              Restaurant St, Delicious City, London 9578, UK
+              Road No. 12, Banjara Hills, Hyderabad,<br />
+              Telangana 500034, India
             </address>
-            <a href="mailto:booking@foodmunch.com" className="body-4 contact-link">booking@foodmunch.com</a>
-            <a href="tel:+88123123456" className="body-4 contact-link">Booking Request : +88-123-123456</a>
-            <p className="body-4">Open : 09:00 am - 01:00 pm</p>
+            <a href="mailto:reservations@foodmunch.in" className="body-4 contact-link">
+              reservations@foodmunch.in
+            </a>
+            <a href="tel:+914066778899" className="body-4 contact-link">
+              Reservations: +91 40 6677 8899
+            </a>
+            <p className="body-4">Open Daily: 11:00 am – 11:00 pm</p>
 
             <div className="wrapper">
               <div className="separator"></div>
@@ -23,15 +59,22 @@ const Footer = () => {
               <div className="separator"></div>
             </div>
 
-            <p className="title-1">Get News & Offers</p>
+            <p className="title-1">Stay Updated</p>
             <p className="label-1">
-              Subscribe us & Get <span className="span">25% Off.</span>
+              Subscribe &amp; Get <span className="span">25% Off</span> your first order.
             </p>
 
-            <form action="" className="input-wrapper">
+            <form className="input-wrapper" onSubmit={handleSubscribe}>
               <div className="icon-wrapper">
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                <input type="email" name="email_address" placeholder="Your email" autoComplete="off" className="input-field" />
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email address"
+                  autoComplete="off"
+                  className="input-field"
+                  required
+                />
               </div>
               <button type="submit" className="btn btn-secondary">
                 <span className="text text-1">Subscribe</span>
@@ -40,47 +83,53 @@ const Footer = () => {
             </form>
           </div>
 
+          {/* Nav Links */}
           <ul className="footer-list">
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Home</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Menus</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">About Us</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Our Chefs</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Contact</a>
-            </li>
+            {[
+              { href: '#home', label: 'Home' },
+              { href: '#menu', label: 'Our Menu' },
+              { href: '#about', label: 'About Us' },
+              { href: '#categories', label: 'Categories' },
+              { href: '#reservation', label: 'Book A Table' },
+            ].map(({ href, label }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  className="label-2 footer-link hover-underline"
+                  onClick={(e) => handleNavClick(e, href)}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
 
+          {/* Social Links */}
           <ul className="footer-list">
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Facebook</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Instagram</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Twitter</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Youtube</a>
-            </li>
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">Google Map</a>
-            </li>
+            {[
+              { href: 'https://facebook.com', label: 'Facebook' },
+              { href: 'https://instagram.com', label: 'Instagram' },
+              { href: 'https://twitter.com', label: 'Twitter / X' },
+              { href: 'https://youtube.com', label: 'YouTube' },
+              { href: 'https://maps.google.com/', label: 'Google Maps' },
+            ].map(({ href, label }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="label-2 footer-link hover-underline"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; 2026 Food Munch. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-              target="_blank" className="link">codewithsadee</a>
+            &copy; 2026 Food Munch, Hyderabad. All Rights Reserved &nbsp;|&nbsp; Crafted with ❤️ in Hyderabad
           </p>
         </div>
       </div>

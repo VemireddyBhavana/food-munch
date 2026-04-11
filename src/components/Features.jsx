@@ -4,23 +4,23 @@ const Features = () => {
   const features = [
     {
       img: '/assets/images/features-icon-1.png',
-      title: 'Hygienic Food',
-      text: 'Lorem Ipsum is simply dummy printing and typesetting.'
+      title: 'Hygienic Kitchen',
+      text: 'Our kitchen follows strict FSSAI food safety standards — every dish is prepared in a clean, certified environment.'
     },
     {
       img: '/assets/images/features-icon-2.png',
-      title: 'Fresh Environment',
-      text: 'Lorem Ipsum is simply dummy printing and typesetting.'
+      title: 'Fresh Ingredients',
+      text: 'We source locally grown, farm-fresh produce daily to ensure bold flavours and maximum nutrition in every meal.'
     },
     {
       img: '/assets/images/features-icon-3.png',
-      title: 'Skilled Chefs',
-      text: 'Lorem Ipsum is simply dummy printing and typesetting.'
+      title: 'Expert Chefs',
+      text: 'Our chefs bring 20+ years of experience in Hyderabadi, Mughlai, and modern fusion cuisines to your plate.'
     },
     {
       img: '/assets/images/features-icon-4.png',
-      title: 'Event & Party',
-      text: 'Lorem Ipsum is simply dummy printing and typesetting.'
+      title: 'Events & Catering',
+      text: 'From intimate family dinners to grand corporate banquets — our event team crafts experiences you\'ll remember.'
     }
   ];
 
@@ -28,14 +28,14 @@ const Features = () => {
     <section className="section features text-center" aria-label="features">
       <div className="container">
         <p className="section-subtitle label-2">Why Choose Us</p>
-        <h2 className="headline-1 section-title">Our Strength</h2>
+        <h2 className="headline-1 section-title">Our Strengths</h2>
 
         <ul className="grid-list">
           {features.map((feature, index) => (
-            <li className="feature-item" key={index}>
+            <li className="feature-item scroll-reveal-item" key={index}>
               <div className="feature-card">
                 <div className="card-icon">
-                  <img src={feature.img} width="100" height="80" loading="lazy" alt="icon" />
+                  <img src={feature.img} width="100" height="80" loading="lazy" alt={feature.title} />
                 </div>
                 <h3 className="title-2 card-title">{feature.title}</h3>
                 <p className="label-1 card-text">{feature.text}</p>

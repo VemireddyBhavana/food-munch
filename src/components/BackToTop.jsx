@@ -5,22 +5,26 @@ const BackToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsActive(window.scrollY >= 50);
+      setIsActive(window.scrollY >= 300);
     };
-
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <a 
-      href="#top" 
-      className={`back-top-btn ${isActive ? 'active' : ''}`} 
-      aria-label="back to top" 
-      data-back-top-btn
+    <button
+      className={`back-top-btn ${isActive ? 'active' : ''}`}
+      aria-label="Back to top"
+      onClick={handleClick}
+      title="Back to top"
     >
       <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-    </a>
+    </button>
   );
 };
 

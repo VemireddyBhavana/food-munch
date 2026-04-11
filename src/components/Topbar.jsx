@@ -1,6 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Topbar = () => {
+  const [address, setAddress] = useState('Road No. 12, Banjara Hills, Hyderabad');
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchLocation = async () => {
+      if ('geolocation' in navigator) {
+        setLoading(true);
+        navigator.geolocation.getCurrentPosition(
+          async (position) => {
+            const { latitude, longitude } = position.coords;
+            try {
+              const response = await fetch(
+                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&addressdetails=1`
+              );
+              const data = await response.json();
+              if (data && data.address) {
+                const { road, city, town, village, country } = data.address;
+                const cleanAddress = [road, city || town || village, country]
+                  .filter(Boolean)
+                  .join(', ');
+                setAddress(cleanAddress || data.display_name);
+              }
+            } catch (error) {
+              console.error('Error fetching address:', error);
+            } finally {
+              setLoading(false);
+            }
+          },
+          (error) => {
+            console.error('Geolocation error:', error);
+            setLoading(false);
+          }
+        );
+      }
+    };
+    fetchLocation();
+  }, []);
+
   return (
     <div className="topbar">
       <div className="container">
@@ -9,7 +47,7 @@ const Topbar = () => {
             <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
           </div>
           <span className="span">
-            Restaurant St, Delicious City, London 9578, UK
+            {loading ? 'Detecting location…' : address}
           </span>
         </address>
 
@@ -19,23 +57,23 @@ const Topbar = () => {
           <div className="icon">
             <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
           </div>
-          <span className="span">Daily : 8.00 am to 10.00 pm</span>
+          <span className="span">Daily: 11:00 am – 11:00 pm</span>
         </div>
 
-        <a href="tel:+11234567890" className="topbar-item link">
+        <a href="tel:+914066778899" className="topbar-item link">
           <div className="icon">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
           </div>
-          <span className="span">+1 123 456 7890</span>
+          <span className="span">+91 40 6677 8899</span>
         </a>
 
         <div className="separator"></div>
 
-        <a href="mailto:booking@restaurant.com" className="topbar-item link">
+        <a href="mailto:reservations@foodmunch.in" className="topbar-item link">
           <div className="icon">
             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
           </div>
-          <span className="span">booking@restaurant.com</span>
+          <span className="span">reservations@foodmunch.in</span>
         </a>
       </div>
     </div>

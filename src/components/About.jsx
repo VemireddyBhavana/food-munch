@@ -1,58 +1,88 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const About = () => {
+  const bannerRef = useRef(null);
+  const contentRef = useRef(null);
+
   useEffect(() => {
-    const parallaxItems = document.querySelectorAll("[data-parallax-item]");
-    let x, y;
-
+    // Parallax effect
+    const parallaxItems = document.querySelectorAll('[data-parallax-item]');
     const handleMouseMove = (event) => {
-      x = (event.clientX / window.innerWidth * 10) - 5;
-      y = (event.clientY / window.innerHeight * 10) - 5;
-      x = x - (x * 2);
-      y = y - (y * 2);
-
-      for (let i = 0, len = parallaxItems.length; i < len; i++) {
-        x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
-        y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
-        parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+      let x = (event.clientX / window.innerWidth * 10) - 5;
+      let y = (event.clientY / window.innerHeight * 10) - 5;
+      x = -x;
+      y = -y;
+      for (let i = 0; i < parallaxItems.length; i++) {
+        const speed = Number(parallaxItems[i].dataset.parallaxSpeed);
+        parallaxItems[i].style.transform = `translate3d(${x * speed}px, ${y * speed}px, 0px)`;
       }
     };
+    window.addEventListener('mousemove', handleMouseMove);
 
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    // Scroll-based slide-in animation
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    if (bannerRef.current) observer.observe(bannerRef.current);
+    if (contentRef.current) observer.observe(contentRef.current);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <section className="section about text-center" aria-labelledby="about-label" id="about">
       <div className="container">
-        <div className="about-content">
+        <div className="about-content slide-in-left" ref={contentRef}>
           <p className="label-2 section-subtitle" id="about-label">Our Story</p>
-          <h2 className="headline-1 section-title">Every Flavor Tells a Story</h2>
+          <h2 className="headline-1 section-title">A Legacy Rooted in Hyderabad's Heart</h2>
           <p className="section-text">
-            Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-            industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book It has survived not only five centuries, but also the leap into.
+            Born in the bustling lanes of Banjara Hills, Food Munch was founded in 2008 with a simple belief —
+            that every meal should tell a story. Inspired by Hyderabad's rich Nizami culinary traditions and
+            fused with modern flavours, our kitchen brings together authentic dum biryanis, kebabs, and
+            contemporary global cuisine under one roof. Every dish is crafted with locally sourced ingredients
+            and cooked with generations of passion.
           </p>
 
-          <div className="contact-label">Book Through Call</div>
-          <a href="tel:+804001234567" className="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+          <div className="contact-label">Reserve by Phone</div>
+          <a href="tel:+914066778899" className="body-1 contact-number hover-underline">+91 40 6677 8899</a>
 
-          <a href="#" className="btn btn-primary">
-            <span className="text text-1">Read More</span>
-            <span className="text text-2" aria-hidden="true">Read More</span>
+          <a href="#menu" className="btn btn-primary" onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#menu')?.scrollIntoView({ behavior: 'smooth' });
+          }}>
+            <span className="text text-1">Explore Menu</span>
+            <span className="text text-2" aria-hidden="true">Explore Menu</span>
           </a>
         </div>
 
-        <figure className="about-banner">
-          <img src="/assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
-            className="w-100" data-parallax-item data-parallax-speed="1" />
+        <figure className="about-banner slide-in-right" ref={bannerRef}>
+          <img
+            src="/assets/images/about-banner.jpg"
+            width="570"
+            height="570"
+            loading="lazy"
+            alt="Our restaurant kitchen"
+            className="w-100"
+            data-parallax-item
+            data-parallax-speed="1"
+          />
 
           <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-            <img src="/assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="" className="w-100" />
+            <img src="/assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="Chef preparing food" className="w-100" />
           </div>
 
           <div className="abs-img abs-img-2 has-before">
-            <img src="/assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="" />
+            <img src="/assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="Award badge" />
           </div>
         </figure>
 
