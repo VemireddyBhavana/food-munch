@@ -115,6 +115,49 @@
 
 }
 
+/* ========== LIGHT THEME OVERRIDES ========== */
+.light-theme {
+  --smoky-black-1: hsl(30, 25%, 98%);
+  --smoky-black-2: hsl(30, 20%, 96%);
+  --smoky-black-3: hsl(30, 15%, 94%);
+  --eerie-black-1: hsl(210, 10%, 99%);
+  --eerie-black-2: hsl(210, 5%, 96%);
+  --eerie-black-3: hsl(180, 5%, 92%);
+  --eerie-black-4: hsl(0, 0%, 94%);
+  --white: hsla(210, 4%, 15%, 1);
+  --white-alpha-20: hsla(0, 0%, 0%, 0.12);
+  --white-alpha-10: hsla(0, 0%, 0%, 0.06);
+  --quick-silver: hsla(0, 0%, 45%, 1);
+  --davys-grey: hsla(30, 5%, 50%, 1);
+  
+  /* Buttons and other specific adjustments */
+  --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
+}
+
+/* Global Transition for Theme Switching */
+*, *::before, *::after {
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+body, .header, .navbar, .service-card, .footer, .menu-card, .cart-drawer, .detail-hero-section {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease !important;
+}
+
+/* Ensure images don't get too bright in light mode */
+.light-theme .img-holder img {
+  filter: brightness(0.95) contrast(1.05);
+}
+
+/* Form inputs in light mode */
+.light-theme .input-field {
+  background-color: var(--white-alpha-10);
+  color: var(--white);
+}
+
+.light-theme .input-field::placeholder {
+  color: var(--davys-grey);
+}
+
 
 
 
@@ -636,6 +679,17 @@ body.nav-active { overflow: hidden; }
 }
 
 .cart-btn:hover { color: var(--gold-crayola); }
+
+.theme-btn {
+  color: var(--white);
+  padding: 8px;
+  transition: var(--transition-1);
+}
+
+.theme-btn:hover {
+  color: var(--gold-crayola);
+  transform: rotate(15deg);
+}
 
 .cart-btn .cart-badge {
   position: absolute;
@@ -3292,3 +3346,45 @@ textarea.input-field {
 }
 
 .cart-checkout-btn { width: 100%; text-align: center; }
+
+/*-----------------------------------*\
+  #RESPONSIVENESS REFINEMENTS
+\*-----------------------------------*/
+
+@media (max-width: 575px) {
+  .header .btn { display: none; } /* Hide 'Find Table' on mobile to save space */
+  
+  .header-actions { gap: 5px; }
+  
+  .cart-drawer { max-width: 100%; }
+  
+  .logo-img { width: 120px; }
+  
+  .section-title { font-size: 3rem; }
+}
+
+@media (max-width: 991px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detail-hero-section {
+    padding-block-start: 120px;
+  }
+}
+
+/* Fix for horizontal scroll on some devices */
+.container {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}

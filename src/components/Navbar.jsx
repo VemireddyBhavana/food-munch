@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { ShoppingBag, Heart } from 'lucide-react';
+import { ShoppingBag, Heart, Sun, Moon } from 'lucide-react';
 import { useCart } from '../data/CartContext';
+import { useTheme } from '../data/ThemeContext';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -12,6 +13,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   
   const { cartCount, setIsCartOpen } = useCart();
+  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -148,6 +150,14 @@ const Navbar = () => {
         </nav>
 
         <div className="header-actions">
+          <button 
+            className="theme-btn" 
+            aria-label="Toggle theme" 
+            onClick={toggleTheme}
+          >
+            {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
+          </button>
+
           <button 
             className="cart-btn" 
             aria-label={`open cart, ${cartCount} items`}
