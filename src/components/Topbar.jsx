@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 
 const Topbar = () => {
   const [address, setAddress] = useState('Road No. 12, Banjara Hills, Hyderabad');
@@ -44,7 +45,7 @@ const Topbar = () => {
       <div className="container">
         <address className="topbar-item">
           <div className="icon">
-            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            <MapPin size={16} />
           </div>
           <span className="span">
             {loading ? 'Detecting location…' : address}
@@ -55,14 +56,14 @@ const Topbar = () => {
 
         <div className="topbar-item item-2">
           <div className="icon">
-            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+            <Clock size={16} />
           </div>
           <span className="span">Daily: 11:00 am – 11:00 pm</span>
         </div>
 
         <a href="tel:+914066778899" className="topbar-item link">
           <div className="icon">
-            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            <Phone size={16} />
           </div>
           <span className="span">+91 40 6677 8899</span>
         </a>
@@ -71,7 +72,7 @@ const Topbar = () => {
 
         <a href="mailto:reservations@foodmunch.in" className="topbar-item link">
           <div className="icon">
-            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <Mail size={16} />
           </div>
           <span className="span">reservations@foodmunch.in</span>
         </a>
@@ -81,3 +82,4 @@ const Topbar = () => {
 };
 
 export default Topbar;
+

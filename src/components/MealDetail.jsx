@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ShoppingCart } from 'lucide-react';
-import { useCart } from '../data/CartContext';
+import { Heart, Star } from 'lucide-react';
 import { menuData } from '../data/menuData';
 
 const MealDetail = () => {
@@ -10,9 +9,6 @@ const MealDetail = () => {
   const currentCategory = category?.toLowerCase();
   const meal = menuData[currentCategory]?.find(item => item.id === id);
 
-  const { addToCart } = useCart();
-  const [currentRating, setCurrentRating] = useState(0);
-  const [hoverRating, setHoverRating] = useState(0);
   const [isLiked, setIsLiked] = useState(() => {
     const favorites = JSON.parse(localStorage.getItem('foodmunch_favorites') || '[]');
     return favorites.includes(id);
@@ -20,10 +16,7 @@ const MealDetail = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (meal) {
-      setCurrentRating(meal.rating);
-    }
-  }, [id, meal]);
+  }, [id]);
 
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem('foodmunch_favorites') || '[]');
@@ -45,9 +38,9 @@ const MealDetail = () => {
       <section className="section bg-black-10 text-center" style={{ minHeight: '100vh', display: 'grid', placeContent: 'center' }}>
         <div className="container">
           <h2 className="headline-1 section-title">Meal not found</h2>
-          <Link to={`/menu/${category}`} className="btn btn-primary">
-            <span className="text text-1">Back to Menu</span>
-            <span className="text text-2" aria-hidden="true">Back to Menu</span>
+          <Link to="/" className="btn btn-primary">
+            <span className="text text-1">Back to Home</span>
+            <span className="text text-2" aria-hidden="true">Back to Home</span>
           </Link>
         </div>
       </section>
@@ -61,98 +54,86 @@ const MealDetail = () => {
         <meta name="description" content={meal.description} />
       </Helmet>
 
-      <section className="section meal-detail bg-black-10" aria-label="meal-detail">
+      <section className="section meal-detail-premium" aria-label="meal-detail">
         <div className="container">
-          {/* Header with Title and Rating */}
+          
+          {/* 1. Header Section (Centered Title & Rating) */}
           <div className="detail-header text-center">
-            <h2 className="headline-1 section-title">{meal.name}</h2>
-            <div className="rating-wrapper">
-              {[...Array(5)].map((_, i) => {
-                const starValue = i + 1;
-                return (
-                  <span 
-                    key={i} 
-                    className={`star interactive-star ${starValue <= (hoverRating || currentRating) ? 'filled' : ''}`}
-                    onMouseEnter={() => setHoverRating(starValue)}
-                    onMouseLeave={() => setHoverRating(0)}
-                    onClick={() => setCurrentRating(starValue)}
-                    role="button"
-                    aria-label={`Rate ${starValue} stars`}
-                  >
-                    ★
-                  </span>
-                );
-              })}
-              <span className="rating-num label-2">{(hoverRating || currentRating).toFixed(1)}</span>
+            <h1 className="headline-1 dish-detail-title">{meal.name}</h1>
+            <div className="detail-rating">
+              {[...Array(5)].map((_, i) => (
+                <Star 
+                  key={i} 
+                  size={20} 
+                  fill={i < Math.floor(meal.rating) ? "#1a2b47" : "none"} 
+                  color="#1a2b47" 
+                  strokeWidth={2.5}
+                />
+              ))}
             </div>
-            <p className="detail-tags label-2">{category.toUpperCase()} • AUTHENTIC</p>
+            <p className="dish-detail-tags">{meal.tags || `${category} • Special`}</p>
             
-            {/* Gold Decorative Divider */}
-            <div className="gold-divider">
-              <div className="line"></div>
-              <div className="symbol">✨</div>
-              <div className="line heart-line"></div>
+            {/* Ornament Divider (Leaf Design) */}
+            <div className="ornament-divider">
+              <svg width="150" height="30" viewBox="0 0 150 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 15H60M90 15H140" stroke="#c2a265" strokeWidth="1" strokeLinecap="round"/>
+                <path d="M75 5C75 5 73 13 67 15C73 17 75 25 75 25C75 25 77 17 83 15C77 13 75 5 75 5Z" fill="#c2a265"/>
+                <path d="M75 5C75 5 78 10 85 10C80 12 75 15 75 15" stroke="#c2a265" strokeWidth="0.5"/>
+                <path d="M75 5C75 5 72 10 65 10C70 12 75 15 75 15" stroke="#c2a265" strokeWidth="0.5"/>
+              </svg>
             </div>
           </div>
 
-          {/* Hero Section: Side-by-Side Image and Ingredients */}
-          <div className="detail-hero-section">
-            <div className="detail-image-wrapper">
-              <figure className="detail-img-holder">
-                <img src={meal.image} alt={meal.name} className="img-cover circle-img" />
+          {/* 2. Hero Section (Circular Image & Ingredients Card) */}
+          <div className="detail-hero-grid">
+            <div className="dish-image-col">
+              <div className="dish-circle-container">
+                <img src={meal.image} alt={meal.name} className="img-cover circle-dish-img" />
                 <button 
-                  className={`heart-btn ${isLiked ? 'active' : ''}`} 
-                  aria-label={isLiked ? "remove from favorites" : "add to favorites"}
+                  className={`heart-float-btn ${isLiked ? 'active' : ''}`}
                   onClick={() => setIsLiked(!isLiked)}
                 >
-                  <ion-icon name={isLiked ? "heart" : "heart-outline"} aria-hidden="true"></ion-icon>
+                  <Heart size={20} fill={isLiked ? "#ff4d4d" : "none"} color={isLiked ? "#ff4d4d" : "#333"} />
                 </button>
-              </figure>
+              </div>
             </div>
 
-            <div className="detail-content-side">
-              <div className="detail-card ingredients-card">
-                <h3 className="title-3 card-title text-center">Ingredients</h3>
-                <div className="ingredients-grid">
-                  {meal.ingredients.map((ing, index) => (
-                    <div key={index} className="ing-item">
-                      <span className="ing-name label-1">{ing}</span>
-                      <span className="ing-spacer"></span>
-                      <span className="ing-qty label-2">to taste</span>
-                    </div>
-                  ))}
+            <div className="ingredients-col">
+              <div className="detail-premium-card ingredients-card">
+                <h2 className="card-inner-title text-center">Ingredients</h2>
+                <div className="ingredients-multi-table">
+                  {meal.ingredients && meal.ingredients.length > 0 ? (
+                    meal.ingredients.map((ing, idx) => (
+                      <div className="ingredient-row" key={idx}>
+                        <span className="ing-qty">{ing.qty}</span>
+                        <span className="ing-name">{ing.name}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-center label-2">Secret family recipe ingredients!</p>
+                  )}
                 </div>
               </div>
-
-              <div className="order-action text-center">
-                <p className="price-label headline-1">{meal.price}</p>
-                <button 
-                  className="btn btn-secondary" 
-                  onClick={() => addToCart(meal)}
-                  style={{ width: '100%', maxWidth: 'none' }}
-                >
-                  <ShoppingCart size={18} style={{ display: 'inline', marginRight: '10px' }} />
-                  <span className="text text-1">Add to Cart</span>
-                  <span className="text text-2" aria-hidden="true">Add to Cart</span>
-                </button>
-              </div>
             </div>
           </div>
 
-          {/* Instructions Block */}
-          <div className="detail-card instructions-card">
-            <h3 className="title-3 card-title text-center">Instructions</h3>
-            <div className="instructions-box">
-              <p className="section-text label-1">{meal.instructions}</p>
+          {/* 3. Instructions Section (Full-Width Card) */}
+          <div className="instructions-full-section">
+            <div className="detail-premium-card instructions-full-card">
+              <h2 className="card-inner-title text-center">Instructions</h2>
+              <p className="instruction-text">
+                {meal.instructions || meal.description}
+              </p>
             </div>
           </div>
 
-          {/* Back Button */}
-          <div className="detail-footer text-center">
-            <Link to={`/menu/${category}`} className="btn-text hover-underline label-2">
-              ← Back to {category.charAt(0).toUpperCase() + category.slice(1)} List
+          {/* Back Nav */}
+          <div className="detail-nav-footer text-center">
+            <Link to={`/menu/${category.toLowerCase()}`} className="btn-text hover-underline label-1">
+              ← Back to {category} list
             </Link>
           </div>
+
         </div>
       </section>
     </>

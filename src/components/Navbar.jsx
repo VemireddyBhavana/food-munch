@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { ShoppingBag, Heart, Sun, Moon } from 'lucide-react';
+import { ShoppingBag, Heart, Sun, Moon, X } from 'lucide-react';
 import { useCart } from '../data/CartContext';
 import { useTheme } from '../data/ThemeContext';
 import logo from '../assets/logo.png';
@@ -61,9 +61,11 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
       const isScrollDown = lastScrollPos < currentScrollY;
 
-      if (currentScrollY >= 50) {
+      const isSubPage = location.pathname !== '/';
+
+      if (currentScrollY >= 50 || isSubPage) {
         setIsHeaderActive(true);
-        setIsHeaderHide(isScrollDown && currentScrollY > 300);
+        setIsHeaderHide(isScrollDown && currentScrollY > 300 && !isSubPage);
       } else {
         setIsHeaderActive(false);
         setIsHeaderHide(false);
@@ -99,7 +101,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className={`header ${isHeaderActive ? 'active' : ''} ${isHeaderHide ? 'hide' : ''}`} data-header>
+    <header className={`header ${isHeaderActive ? 'active' : ''} ${isHeaderHide ? 'hide' : ''} ${location.pathname !== '/' ? 'header-subpage' : ''}`} data-header>
       <div className="container">
         <Link to="/" className="logo" onClick={(e) => handleNavClick(e, '#home')}>
           <img src={logo} width="160" height="40" alt="Food Munch Home" className="logo-img" />
@@ -107,7 +109,7 @@ const Navbar = () => {
 
         <nav className={`navbar ${isActive ? 'active' : ''}`} data-navbar>
           <button className="close-btn" aria-label="close menu" onClick={closeNavbar}>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            <X size={24} />
           </button>
 
           <Link to="/" className="logo" onClick={(e) => handleNavClick(e, '#home')}>
@@ -186,3 +188,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

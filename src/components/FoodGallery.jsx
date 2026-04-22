@@ -1,4 +1,5 @@
 import React from 'react';
+import { Camera } from 'lucide-react';
 
 const FoodGallery = () => {
   const galleryImages = [
@@ -27,7 +28,7 @@ const FoodGallery = () => {
                 />
               </figure>
               <div className="gallery-content">
-                <ion-icon name="instagram-outline" aria-hidden="true"></ion-icon>
+                <Camera size={24} color="white" />
               </div>
             </div>
           </li>
@@ -37,4 +38,6 @@ const FoodGallery = () => {
   );
 };
 
+
 export default FoodGallery;
+

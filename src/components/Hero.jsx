@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
@@ -68,11 +69,11 @@ const Hero = () => {
       </ul>
 
       <button className="slider-btn prev" aria-label="slide to previous" onClick={slidePrev}>
-        <ion-icon name="chevron-back"></ion-icon>
+        <ChevronLeft size={30} />
       </button>
 
       <button className="slider-btn next" aria-label="slide to next" onClick={slideNext}>
-        <ion-icon name="chevron-forward"></ion-icon>
+        <ChevronRight size={30} />
       </button>
 
       {/* Slide dots */}
@@ -99,3 +100,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

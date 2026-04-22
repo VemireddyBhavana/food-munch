@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ChevronUp } from 'lucide-react';
 
 const BackToTop = () => {
   const [isActive, setIsActive] = useState(false);
@@ -23,9 +24,10 @@ const BackToTop = () => {
       onClick={handleClick}
       title="Back to top"
     >
-      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+      <ChevronUp size={24} aria-hidden="true" />
     </button>
   );
 };
 
 export default BackToTop;
+

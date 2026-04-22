@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { User, Calendar, Clock, ChevronDown } from 'lucide-react';
 
 const Reservation = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -48,23 +49,23 @@ const Reservation = () => {
 
             <div className="input-wrapper">
               <div className="icon-wrapper">
-                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                <User size={14} className="icon" />
                 <select name="person" className="input-field">
                   {[1,2,3,4,5,6,7,8].map(n => (
                     <option key={n} value={`${n}-person`}>{n} {n === 1 ? 'Person' : 'Persons'}</option>
                   ))}
                 </select>
-                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                <ChevronDown size={14} className="icon" />
               </div>
 
               <div className="icon-wrapper">
-                <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                <Calendar size={14} className="icon" />
                 <input type="date" name="reservation-date" className="input-field" required />
-                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                <ChevronDown size={14} className="icon" />
               </div>
 
               <div className="icon-wrapper">
-                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <Clock size={14} className="icon" />
                 <select name="time" className="input-field">
                   {['11:00 am','12:00 pm','01:00 pm','02:00 pm','03:00 pm',
                     '04:00 pm','05:00 pm','06:00 pm','07:00 pm','08:00 pm',
@@ -72,7 +73,7 @@ const Reservation = () => {
                     <option key={t} value={t}>{t}</option>
                   ))}
                 </select>
-                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                <ChevronDown size={14} className="icon" />
               </div>
             </div>
 
@@ -130,3 +131,4 @@ const Reservation = () => {
 };
 
 export default Reservation;
+

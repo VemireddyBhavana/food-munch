@@ -5,6 +5,8 @@ import Home from './components/Home';
 import MenuPage from './components/MenuPage';
 import MealDetail from './components/MealDetail';
 import FavoritesPage from './components/FavoritesPage';
+import Checkout from './components/Checkout';
+import OrderTracking from './components/OrderTracking';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/menu/:category" element={<MenuPage />} />
         <Route path="/menu/:category/:id" element={<MealDetail />} />
         <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order-tracking/:orderId" element={<OrderTracking />} />
       </Route>
     </Routes>
   );

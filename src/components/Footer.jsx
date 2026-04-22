@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mail } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -66,7 +67,7 @@ const Footer = () => {
 
             <form className="input-wrapper" onSubmit={handleSubscribe}>
               <div className="icon-wrapper">
-                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <Mail size={18} className="icon" />
                 <input
                   type="email"
                   name="email_address"
@@ -138,3 +139,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
