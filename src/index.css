@@ -2317,25 +2317,27 @@ textarea.input-field {
   }
 
   .menu .service-card {
-    min-height: 420px;
+    min-height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
   }
 
-  .menu .service-card .has-before {
-    padding-block: 10px; /* Minimal pattern padding */
-    margin-block-end: 15px;
+  .menu .service-card .card-banner {
+    aspect-ratio: 285 / 336;
+    overflow: hidden;
   }
 
   .menu .service-card .card-content {
+    padding: 30px 20px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 10px;
   }
 
   .menu .service-card .card-title {
