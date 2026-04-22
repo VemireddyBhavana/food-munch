@@ -19,11 +19,7 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = window.document.documentElement;
-    if (theme === 'light') {
-      root.classList.add('light-theme');
-    } else {
-      root.classList.remove('light-theme');
-    }
+    root.setAttribute('data-theme', theme);
     localStorage.setItem('foodmunch_theme', theme);
   }, [theme]);
 
