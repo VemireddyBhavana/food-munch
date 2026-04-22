@@ -12,6 +12,26 @@ const categoryBreakfastItems = [
   { name: 'Fruits Bowl', price: '₹179', img: 'https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&q=80&w=400', desc: 'A vibrant mix of seasonal fresh fruits with honey and mint.' }
 ];
 
+const categoryVeganItems = [
+  { name: 'Vegan Burger', price: '₹249', img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400', desc: 'Plant-based patty with vegan mayo, fresh avocado, and sprouts.' },
+  { name: 'Quinoa Salad', price: '₹199', img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400', desc: 'Protein-packed quinoa with roasted veggies and lemon tahini dressing.' },
+  { name: 'Tofu Buddha Bowl', price: '₹229', img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400', desc: 'Crispy tofu with brown rice, kale, and peanut sauce.' },
+  { name: 'Vegan Sushi', price: '₹299', img: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=400', desc: 'Cucumber and avocado rolls with pickled ginger and wasabi.' }
+];
+
+const categoryVegetarianItems = [
+  { name: 'Paneer Tikka', price: '₹279', img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=400', desc: 'Grilled cottage cheese marinated in spiced yogurt and herbs.' },
+  { name: 'Veggie Pizza', price: '₹349', img: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=400', desc: 'Hand-tossed crust with bell peppers, mushrooms, and olives.' },
+  { name: 'Greek Salad', price: '₹219', img: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=400', desc: 'Fresh cucumber, tomatoes, olives, and feta cheese with oregano.' },
+  { name: 'Mushroom Risotto', price: '₹289', img: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=400', desc: 'Creamy arborio rice with wild mushrooms and parmesan.' }
+];
+
+const categoryMealsData = {
+  'Breakfast': categoryBreakfastItems,
+  'Vegan': categoryVeganItems,
+  'Vegetarian': categoryVegetarianItems
+};
+
 const allMenuItems = [
   // ===== BREAKFAST (Breakfast Category) =====
   { img: '/assets/images/menu-1.png', title: 'Idly (2 Pcs)', price: '₹79', badge: null, category: 'Breakfast', text: 'Fluffy steamed rice cakes served with coconut chutney and sambar.' },
@@ -83,7 +103,7 @@ const categoryData = [
 
 const Menu = ({ selectedCategory, onCategoryChange }) => {
   const [animKey, setAnimKey] = useState(0);
-  const [showBreakfastMeals, setShowBreakfastMeals] = useState(false);
+  const [expandedCategory, setExpandedCategory] = useState(null);
   const menuGridRef = useRef(null);
 
   useEffect(() => {
@@ -108,13 +128,14 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
         {/* Categories Grid (Overhaul Design) */}
         <div className="category-grid">
           {categoryData.map((item, index) => {
-            const isBreakfast = item.id === 'Breakfast';
+            const isExpandable = ['Breakfast', 'Vegan', 'Vegetarian'].includes(item.id);
+            const isExpanded = expandedCategory === item.id;
             
-            return isBreakfast ? (
+            return isExpandable ? (
               <div 
-                className={`category-card ${showBreakfastMeals ? 'active' : ''}`}
+                className={`category-card ${isExpanded ? 'active' : ''}`}
                 key={index}
-                onClick={() => setShowBreakfastMeals(!showBreakfastMeals)}
+                onClick={() => setExpandedCategory(isExpanded ? null : item.id)}
                 style={{ cursor: 'pointer' }}
               >
                 <figure className="card-banner img-holder">
@@ -134,7 +155,7 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
                 </div>
 
                 <div className="btn-meals">
-                  {showBreakfastMeals ? 'Close Meals' : 'View Meals'}
+                  {isExpanded ? 'Close Meals' : 'View Meals'}
                 </div>
               </div>
             ) : (
@@ -167,19 +188,22 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
           })}
         </div>
 
-        <AnimatePresence>
-          {showBreakfastMeals && (
+        <AnimatePresence mode="wait">
+          {expandedCategory && (
             <motion.div
+              key={expandedCategory}
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.5, ease: 'easeInOut' }}
-              className="breakfast-meals-container"
+              className="dedicated-meals-container"
               style={{ overflow: 'hidden', marginBlockStart: '40px' }}
             >
-              <h3 className="headline-2 text-center" style={{ marginBlockEnd: '30px' }}>Dedicated Breakfast Selection</h3>
+              <h3 className="headline-2 text-center" style={{ marginBlockEnd: '30px' }}>
+                Dedicated {expandedCategory} Selection
+              </h3>
               <div className="grid-list" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-                {categoryBreakfastItems.map((meal, i) => (
+                {(categoryMealsData[expandedCategory] || []).map((meal, i) => (
                   <motion.div
                     key={i}
                     initial={{ y: 20, opacity: 0 }}
