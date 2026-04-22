@@ -20,7 +20,7 @@ A high-end, fully responsive restaurant web application built with **React**, **
 
 - **Frontend**: React 18, Vite
 - **Styling**: Vanilla CSS (Premium Tokens & Dark Theme)
-- **Icons**: Lucide React
+- **Icons**: Lucide React + Custom SVG Brand Icons
 - **Animations**: Framer Motion & CSS Intersection Observer
 - **Routing**: React Router DOM v6
 - **Data Management**: Dynamic JSON-based Menu Data System
@@ -54,20 +54,23 @@ A high-end, fully responsive restaurant web application built with **React**, **
 
 ---
 
-## 🍱 Menu Architecture
+## 🛠️ Development Journey
 
-The project features a unique **Menu Expansion System** where:
-- **Breakfast & Vegetarian**: Prioritized categories for local preferences.
-- **Appetizers & Drinks**: Curated international starters and mocktails.
-- **Global Selection**: Dedicated sections for Seafood, Beef, Chicken, and Vegan diets.
+This project was built through a systematic evolution from a basic landing page to a premium e-commerce food platform:
+
+1.  **Phase 1: Foundation**: Established the "Royal Hyderabad" theme with high-contrast dark mode and premium typography.
+2.  **Phase 2: Menu Expansion**: Scaled from 3 basic categories to 15+ international sections, integrating over 150 unique recipes.
+3.  **Phase 3: Logic Unification**: Consolidated navigation and filtering into a seamless, same-page expansion system to improve UX.
+4.  **Phase 4: Standardization**: Enforced strict grid layouts and height consistency (480px min) across all product cards for a balanced visual rhythm.
+5.  **Phase 5: Production Readiness**: Resolved critical build errors by implementing custom SVG social icons and optimizing the Vite production bundle.
 
 ---
 
-## 📸 Project Evolution
+## 📸 Project Evolution & Fixes
 
-This project underwent a significant **Premium Standardization** phase:
+- **Social Asset Restoration**: Replaced deprecated brand icons with custom high-performance SVGs to ensure deployment stability.
 - **UI Unification**: Synchronized all section layouts (Service, Menu, Features, Events) for visual rhythm.
-- **Asset Optimization**: Integrated 40+ high-resolution food assets and brand shapes.
+- **Asset Optimization**: Integrated 150+ high-resolution food assets and brand shapes.
 - **Animation Polish**: Implemented global scroll-reveal and hover-lift interactions.
 
 ---
