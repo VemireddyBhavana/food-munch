@@ -36,42 +36,36 @@ const FavoritesPage = () => {
           {favoriteMeals.length > 0 ? (
             <div className="menu-grid">
               {favoriteMeals.map((item) => (
-                <div key={item.id} className="menu-card">
-                  <Link to={`/recipe/${item.id}`} className="card-link">
-                    <figure className="card-banner img-holder" style={{ '--width': 400, '--height': 400 }}>
+                <Link key={item.id} to={`/recipe/${item.id}`} className="menu-card-link">
+                  <div className="menu-card">
+                    <figure className="card-banner">
                       <img
                         src={item.image}
                         width="400"
                         height="400"
                         loading="lazy"
                         alt={item.name}
-                        className="img-cover"
                       />
                     </figure>
-                  </Link>
-                  
-                  <div className="card-content text-center">
-                    <div className="flex justify-between items-start">
-                      <h3 className="card-title label-1">{item.name}</h3>
-                      <button 
-                        onClick={() => removeFavorite(item.id)}
-                        className="text-red-500 hover:text-red-600 transition-colors"
-                      >
-                        <Heart size={20} fill="currentColor" />
-                      </button>
-                    </div>
-                    <p className="card-price label-2">{item.price}</p>
                     
-                    <button 
-                      className="btn btn-secondary add-to-cart-btn"
-                      onClick={() => addToCart(item)}
-                    >
-                      <ShoppingCart size={16} className="cart-icon" />
-                      <span className="text text-1">Add to Cart</span>
-                      <span className="text text-2">Add to Cart</span>
-                    </button>
+                    <div className="card-content">
+                      <div className="card-title-wrapper" style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
+                        <h3 className="card-title">{item.name}</h3>
+                        <button 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            removeFavorite(item.id);
+                          }}
+                          className="remove-fav-btn"
+                          style={{ color: '#ef4444', zIndex: 5 }}
+                        >
+                          <Heart size={18} fill="#ef4444" />
+                        </button>
+                      </div>
+                      <p className="card-price">{item.price}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           ) : (

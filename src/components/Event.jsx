@@ -3,22 +3,16 @@ import React from 'react';
 const events = [
   {
     img: '/assets/images/event-1.jpg',
-    date: '2026-06-15',
-    displayDate: '15 Jun 2026',
     subtitle: 'Food & Lifestyle',
     title: 'Hyderabad Food Festival 2026'
   },
   {
     img: '/assets/images/event-2.jpg',
-    date: '2026-07-08',
-    displayDate: '08 Jul 2026',
     subtitle: 'Live Cooking',
-    title: 'Chef\'s Table — Live Biryani Night'
+    title: "Chef's Table — Live Biryani Night"
   },
   {
     img: '/assets/images/event-3.jpg',
-    date: '2026-07-20',
-    displayDate: '20 Jul 2026',
     subtitle: 'Family Special',
     title: 'Sunday Brunch Fiesta with Live Music'
   }
@@ -44,7 +38,6 @@ const Event = () => {
                     alt={event.title}
                     className="img-cover event-img"
                   />
-                  <time className="publish-date label-2" dateTime={event.date}>{event.displayDate}</time>
                 </div>
                 <div className="card-content">
                   <p className="card-subtitle label-2 text-center">{event.subtitle}</p>
@@ -57,10 +50,12 @@ const Event = () => {
           ))}
         </ul>
 
-        <a href="#" className="btn btn-primary">
-          <span className="text text-1">View All Events</span>
-          <span className="text text-2" aria-hidden="true">View All Events</span>
-        </a>
+        <div className="text-center" style={{ marginBlockStart: '40px' }}>
+          <a href="#" className="btn btn-primary">
+            <span className="text text-1">View All Events</span>
+            <span className="text text-2" aria-hidden="true">View All Events</span>
+          </a>
+        </div>
       </div>
     </section>
   );

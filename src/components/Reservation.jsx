@@ -125,6 +125,9 @@ const Reservation = () => {
             </a>
           </div>
         </div>
+
+        <img src="/assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape" className="shape shape-1 move-anim" />
+        <img src="/assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape" className="shape shape-2 move-anim" />
       </div>
     </section>
   );

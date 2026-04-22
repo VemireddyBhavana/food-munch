@@ -1,10 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const SpecialDish = () => {
   return (
-    <section className="special-dish text-center" aria-labelledby="dish-label">
+    <section className="special-dish text-center bg-black-10" aria-labelledby="dish-label">
       <div className="special-dish-banner">
-        <img
+        <motion.img
+          initial={{ scale: 1.1, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           src="/assets/images/special-dish-banner.jpg"
           width="940"
           height="900"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Facebook, Instagram, Twitter, Youtube, MapPin } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -105,23 +105,25 @@ const Footer = () => {
             ))}
           </ul>
 
-          {/* Social Links */}
+          {/* Social Icons */}
           <ul className="footer-list">
             {[
-              { href: 'https://facebook.com', label: 'Facebook' },
-              { href: 'https://instagram.com', label: 'Instagram' },
-              { href: 'https://twitter.com', label: 'Twitter / X' },
-              { href: 'https://youtube.com', label: 'YouTube' },
-              { href: 'https://maps.google.com/', label: 'Google Maps' },
-            ].map(({ href, label }) => (
+              { href: 'https://facebook.com', icon: <Facebook size={20} />, label: 'Facebook' },
+              { href: 'https://instagram.com', icon: <Instagram size={20} />, label: 'Instagram' },
+              { href: 'https://twitter.com', icon: <Twitter size={20} />, label: 'Twitter' },
+              { href: 'https://youtube.com', icon: <Youtube size={20} />, label: 'Youtube' },
+              { href: 'https://maps.google.com/', icon: <MapPin size={20} />, label: 'Maps' },
+            ].map(({ href, icon, label }) => (
               <li key={label}>
                 <a
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="label-2 footer-link hover-underline"
+                  className="footer-link-icon"
+                  aria-label={label}
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
                 >
-                  {label}
+                  {icon} <span className="label-2">{label}</span>
                 </a>
               </li>
             ))}

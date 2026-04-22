@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 import { menuData } from '../data/menuData';
 
 const MenuPage = () => {
@@ -71,6 +72,19 @@ const MenuPage = () => {
 
   const categoryTitle = `${currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)} Meals`;
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
     <>
       <Helmet>
@@ -78,48 +92,59 @@ const MenuPage = () => {
         <meta name="description" content={`Explore our delicious ${currentCategory} selection at FoodMunch.`} />
       </Helmet>
 
-      <section className="section meal-page bg-black-10" aria-label="meal-page">
+      <motion.section 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="section meal-page bg-black-10 text-center" 
+        aria-label="meal-page"
+      >
         <div className="container">
-          {/* Header Section */}
+          
           <div className="meal-page-header text-center">
+            <p className="section-subtitle label-2">Our Selection</p>
             <h2 className="headline-1 meal-section-title">{categoryTitle}</h2>
           </div>
 
-          {/* Meal Slider Container */}
           <div className="meal-slider-container">
-            <div 
+            <motion.div 
               className="meal-slider" 
               ref={sliderRef}
               onScroll={handleScroll}
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
             >
-              {items.map((item, index) => (
-                <div 
+              {items.map((item) => (
+                <motion.div 
                   key={item.id} 
                   className="meal-slider-item"
+                  variants={itemVariants}
                 >
-                  <div className="meal-card">
-                    <Link to={`/recipe/${item.id}`} className="card-link">
-                      <figure className="card-banner img-holder">
-                        <img
+                  <Link to={`/recipe/${item.id}`} className="menu-card-link">
+                    <div className="menu-card">
+                      <figure className="card-banner">
+                        <motion.img
+                          whileHover={{ scale: 1.05 }}
+                          transition={{ duration: 0.3 }}
                           src={item.image}
                           width="400"
                           height="400"
                           loading="lazy"
                           alt={item.name}
-                          className="img-cover"
                         />
                       </figure>
                       <div className="card-content">
-                        <h3 className="meal-card-title">{item.name}</h3>
+                        <h3 className="card-title">{item.name}</h3>
+                        <p className="card-price">{item.price}</p>
                       </div>
-                    </Link>
-                  </div>
-                </div>
+                    </div>
+                  </Link>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
-          {/* Pager Dots */}
           {totalDots > 1 && (
             <div className="pager-dots">
               {[...Array(totalDots)].map((_, i) => (
@@ -133,13 +158,13 @@ const MenuPage = () => {
             </div>
           )}
           
-          <div className="back-home-link text-center">
+          <div className="back-home-link text-center" style={{ marginBlockStart: '60px' }}>
             <Link to="/" className="btn-text hover-underline label-2">
               ← Back to Home
             </Link>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
