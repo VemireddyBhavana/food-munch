@@ -98,8 +98,6 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
           {categoryData.map((item, index) => (
             <Link 
               to={`/menu/${item.id.toLowerCase()}`}
-              target="_blank"
-              rel="noopener noreferrer"
               className="category-card" 
               key={index}
             >
