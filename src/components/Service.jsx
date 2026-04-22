@@ -12,12 +12,12 @@ const Service = () => {
     {
       img: '/assets/images/service-2.jpg',
       title: 'Appetizers',
-      category: 'starter',
+      category: 'appetizers',
       desc: 'From crispy kebabs to tangy chaats — our starters set the perfect tone for an indulgent meal.'
     },
     {
       img: '/assets/images/service-3.jpg',
-      title: 'Signature Drinks',
+      title: 'Drinks',
       category: 'drinks',
       desc: 'Sip on freshly blended mocktails, lassis, and premium beverages curated to refresh you.'
     }
@@ -37,7 +37,7 @@ const Service = () => {
           {services.map((service, index) => (
             <li key={index}>
               <div className="service-card">
-                <Link to={`/menu/${service.category}`} className="has-before hover:shine">
+                <Link to={`/categories/${encodeURIComponent(service.category)}`} className="has-before hover:shine">
                   <figure className="card-banner img-holder" style={{ '--width': 285, '--height': 336 }}>
                     <img
                       src={service.img}
@@ -51,11 +51,11 @@ const Service = () => {
                 </Link>
                 <div className="card-content">
                   <h3 className="title-4 card-title">
-                    <Link to={`/menu/${service.category}`}>{service.title}</Link>
+                    <Link to={`/categories/${encodeURIComponent(service.category)}`}>{service.title}</Link>
                   </h3>
                   <p className="service-card-desc">{service.desc}</p>
                   <Link
-                    to={`/menu/${service.category}`}
+                    to={`/categories/${encodeURIComponent(service.category)}`}
                     className="btn-text hover-underline label-2"
                   >
                     ☰ View Menu

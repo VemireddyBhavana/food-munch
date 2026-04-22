@@ -37,7 +37,7 @@ const FavoritesPage = () => {
             <div className="menu-grid">
               {favoriteMeals.map((item) => (
                 <div key={item.id} className="menu-card">
-                  <Link to={`/menu/breakfast/${item.id}`} className="card-link">
+                  <Link to={`/recipe/${item.id}`} className="card-link">
                     <figure className="card-banner img-holder" style={{ '--width': 400, '--height': 400 }}>
                       <img
                         src={item.image}

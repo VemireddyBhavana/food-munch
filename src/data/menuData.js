@@ -1,357 +1,746 @@
 export const menuData = {
   breakfast: [
     {
-      id: 'bread-omelette-street-style',
-      name: 'Bread omelette',
-      description: 'A beloved Indian street food and breakfast staple: a fluffy, masala-spiced omelette cooked directly with bread slices until the bread is toasted and the egg is perfectly set.',
+      id: 'masala-bread-omelette',
+      name: 'Masala Bread Omelette',
+      description: 'A beloved Indian street food staple: fluffy, masala-spiced omelette cooked directly with buttery bread slices.',
       price: '₹149',
-      image: 'https://images.unsplash.com/photo-1550607505-df25319fac4e?auto=format&fit=crop&q=80&w=800',
+      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800',
       rating: 4.8,
       tags: 'Breakfast • Indian',
       ingredients: [
         { qty: '2 slices', name: 'Fresh White Bread' },
         { qty: '2', name: 'Fresh Eggs' },
-        { qty: '1/2 tsp', name: 'Salt' },
-        { qty: '1/4 tsp', name: 'Turmeric' },
-        { qty: '1 tbsp', name: 'Butter' },
-        { qty: '1', name: 'Green Chili finely chopped' },
-        { qty: '1/4', name: 'Onion chopped' }
+        { qty: '1/4', name: 'Onion chopped' },
+        { qty: '1', name: 'Green Chili' },
+        { qty: '1 tbsp', name: 'Butter' }
       ],
-      instructions: 'Step 1: In a bowl, whisk eggs with finely chopped onions, green chilies, turmeric, and salt until frothy. Step 2: Heat butter in a flat-bottomed pan over medium heat. Step 3: Pour the egg mixture into the pan. Immediately place two slices of bread side-by-side on top of the liquid egg. Step 4: Once the egg base is set, flip the entire bread-egg "sandwich" over. Step 5: Cook the bread side until golden and crispy. Fold the overlapping egg edges inwards, then fold the bread in half and serve hot with mint chutney.'
+      instructions: 'Step 1: Whisk eggs with onions, chilies, and spices. Step 2: Pour onto a hot buttered pan. Step 3: Place bread slices on top. Step 4: Flip and toast until golden. Step 5: Serve hot.'
     },
     {
-      id: 'dutch-poffertjes-mini-pancakes',
-      name: 'Dutch poffertjes',
-      description: 'Dainty and light mini pancakes from the Netherlands, traditionally served warm with a large knob of rich butter and a mountain of powdered sugar.',
-      price: '₹229',
-      image: 'https://images.unsplash.com/photo-1494597564530-801f358e0140?auto=format&fit=crop&q=80&w=800',
+      id: 'brioche-french-toast',
+      name: 'Brioche French Toast',
+      description: 'Thick slices of buttery brioche soaked in a rich vanilla-cinnamon custard and griddled to golden perfection.',
+      price: '₹349',
+      image: 'https://images.unsplash.com/photo-1484723046838-4a1801c18118?auto=format&fit=crop&q=80&w=800',
       rating: 4.9,
-      tags: 'Breakfast • Dutch',
+      tags: 'Breakfast • French',
       ingredients: [
-        { qty: '250g', name: 'Buckwheat Flour' },
-        { qty: '1 tsp', name: 'Instant Yeast' },
-        { qty: '350ml', name: 'Warm Milk' },
-        { qty: '1', name: 'Egg' },
-        { qty: '1 tbsp', name: 'Butter' },
-        { qty: 'Pinch', name: 'Salt' }
+        { qty: '2 thick slices', name: 'Brioche Bread' },
+        { qty: '2', name: 'Large Eggs' },
+        { qty: '1/2 cup', name: 'Whole Milk' },
+        { qty: '1 tsp', name: 'Vanilla Extract' }
       ],
-      instructions: 'Step 1: Dissolve yeast in warm milk. Mix flour and salt in a bowl, then whisk in the milk and egg to form a smooth, thin batter. Step 2: Cover and let the batter rise in a warm place for about 30 minutes. Step 3: Heat a poffertjes pan (or a shallow skillet) and brush with melted butter. Step 4: Squeeze or spoon small amounts of batter into the indentations. Flip as soon as the bottom is brown. Step 5: Serve a stack of 10-12 mini pancakes topped with a generous slice of butter and heavy dusting of powdered sugar.'
+      instructions: 'Step 1: Whisk eggs, milk, vanilla, and cinnamon. Step 2: Soak brioche slices. Step 3: Cook on a buttered griddle until golden brown. Step 4: Serve with maple syrup.'
     },
     {
-      id: 'fruit-cream-cheese-breakfast-pastries',
-      name: 'Fruit and Cream Cheese Breakfast Pastries',
-      description: 'Elegant, flaky puff pastries filled with a sweet, lemony cream cheese center and topped with vibrant seasonal fruit. A perfect morning treat.',
-      price: '₹289',
-      image: 'https://images.unsplash.com/photo-1549438102-193c76282be3?auto=format&fit=crop&q=80&w=800',
-      rating: 4.7,
-      tags: 'Breakfast • Pastry',
-      ingredients: [
-        { qty: '1 sheet', name: 'Puff Pastry' },
-        { qty: '100g', name: 'Cream Cheese' },
-        { qty: '3 tbsp', name: 'Powdered Sugar' },
-        { qty: '1/2 tsp', name: 'Lemon Zest' },
-        { qty: '1/2 cup', name: 'Fresh Berries' },
-        { qty: '1', name: 'Egg (for egg wash)' }
-      ],
-      instructions: 'Step 1: Preheat oven to 200°C. Beat cream cheese with sugar, vanilla, and lemon zest until smooth. Step 2: Cut the puff pastry sheet into 4 large squares. Fold the edges to create a small border. Step 3: Spread a generous dollop of cream cheese mixture into the center of each square. Arrange fresh berries on top. Step 4: Brush the pastry borders with beaten egg wash. Step 5: Bake for 15-20 minutes until the pastry is puffed and deep golden brown. Cool slightly before serving.'
-    },
-    {
-      id: 'homemade-mandazi-east-african',
-      name: 'Home-made Mandazi',
-      description: 'Authentic East African fried bread (also known as "Swahili Buns") infused with aromatic cardamom and coconut milk. Soft on the inside with a subtle sweetness.',
-      price: '₹189',
-      image: 'https://images.unsplash.com/photo-1589113193493-9dd982def87a?auto=format&fit=crop&q=80&w=800',
+      id: 'mediterranean-shakshuka',
+      name: 'Mediterranean Shakshuka',
+      description: 'Poached eggs in a vibrant, spiced tomato and bell pepper sauce, topped with fresh parsley and crumbled feta.',
+      price: '₹399',
+      image: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&q=80&w=800',
       rating: 4.8,
-      tags: 'Breakfast • African',
+      tags: 'Breakfast • Middle Eastern',
       ingredients: [
-        { qty: '3 cups', name: 'All-purpose Flour' },
-        { qty: '1/2 cup', name: 'Coconut Milk' },
-        { qty: '1/3 cup', name: 'Warm Water' },
-        { qty: '1/3 cup', name: 'Sugar' },
-        { qty: '1 tsp', name: 'Yeast' },
-        { qty: '1 tsp', name: 'Cardamom Powder' }
+        { qty: '3', name: 'Large Eggs' },
+        { qty: '1 can', name: 'Crushed Tomatoes' },
+        { qty: '1', name: 'Red Bell Pepper' }
       ],
-      instructions: 'Step 1: Combine flour, sugar, yeast, and cardamom. Mix in warm water and coconut milk gradually to form a dough. Step 2: Knead for 5-10 minutes until smooth and elastic. Let the dough rise in a warm spot for 1 hour. Step 3: Divide the dough and roll into circles about 1cm thick. Cut each circle into 4 triangles. Step 4: Heat oil in a deep fryer or heavy pot. Fry the mandazi triangles until both sides are a rich golden brown. Step 5: Drain on paper towels and serve warm with a cup of chai or coffee.'
+      instructions: 'Step 1: Sauté peppers and onions. Step 2: Add tomatoes and spices. Step 3: Crack eggs into the sauce. Step 4: Cover and cook until set. Step 5: Garnish with feta.'
     },
     {
-      id: 'oatmeal-pancakes-healthy',
-      name: 'Oatmeal pancakes',
-      description: 'A wholesome, protein-packed breakfast made with heart-healthy oats and ripe bananas. Fluffy, satisfying, and naturally sweet without refined sugars.',
-      price: '₹249',
-      image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800',
+      id: 'full-english-breakfast',
+      name: 'Full English Breakfast',
+      description: 'A hearty traditional platter featuring eggs, sausages, bacon, baked beans, tomatoes, and mushrooms.',
+      price: '₹549',
+      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Breakfast • British',
+      ingredients: [
+        { qty: '2', name: 'Eggs' },
+        { qty: '2', name: 'Sausages' },
+        { qty: '2 strips', name: 'Bacon' },
+        { qty: '1/2 cup', name: 'Baked Beans' }
+      ],
+      instructions: 'Step 1: Fry sausages and bacon. Step 2: Sauté mushrooms and tomatoes. Step 3: Heat beans. Step 4: Fry eggs. Step 5: Serve with toast.'
+    },
+    {
+      id: 'avocado-sourdough-toast',
+      name: 'Avocado Sourdough Toast',
+      description: 'Creamy Hass avocado on toasted sourdough, topped with a perfectly poached egg and chili flakes.',
+      price: '₹429',
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • Modern',
+      ingredients: [
+        { qty: '1 slice', name: 'Sourdough' },
+        { qty: '1/2', name: 'Avocado' },
+        { qty: '1', name: 'Poached Egg' }
+      ],
+      instructions: 'Step 1: Toast sourdough. Step 2: Smash avocado with lemon and salt. Step 3: Spread on toast. Step 4: Top with egg. Step 5: Season and serve.'
+    },
+    {
+      id: 'belgian-waffles-berries',
+      name: 'Belgian Waffles & Berries',
+      description: 'Crispy, deep-pocketed Belgian waffles served with fresh berries and whipped Chantilly cream.',
+      price: '₹379',
+      image: 'https://images.unsplash.com/photo-1459789034005-ba29c5783491?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • Belgian',
+      ingredients: [
+        { qty: '2', name: 'Large Waffles' },
+        { qty: '1/2 cup', name: 'Fresh Berries' }
+      ],
+      instructions: 'Step 1: Cook waffles until crisp. Step 2: Arrange on plate. Step 3: Top with berries and whipped cream. Step 4: Drizzle with maple syrup.'
+    },
+    {
+      id: 'classic-eggs-benedict',
+      name: 'Classic Eggs Benedict',
+      description: 'Poached eggs and Canadian bacon on toasted English muffins, smothered in silky Hollandaise sauce.',
+      price: '₹499',
+      image: 'https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Breakfast • American',
+      ingredients: [
+        { qty: '2', name: 'Poached Eggs' },
+        { qty: '1', name: 'English Muffin' },
+        { qty: '1/4 cup', name: 'Hollandaise' }
+      ],
+      instructions: 'Step 1: Toast muffins. Step 2: Sauté bacon. Step 3: Poach eggs. Step 4: Assemble. Step 5: Pour Hollandaise and serve.'
+    },
+    {
+      id: 'amazonian-acai-bowl',
+      name: 'Amazonian Acai Bowl',
+      description: 'A refreshing frozen acai blend topped with granola, banana slices, and coconut flakes.',
+      price: '₹389',
+      image: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • Healthy',
+      ingredients: [
+        { qty: '1 pack', name: 'Frozen Acai' },
+        { qty: '1/2 cup', name: 'Granola' },
+        { qty: '1/2', name: 'Banana' }
+      ],
+      instructions: 'Step 1: Blend acai until thick. Step 2: Pour into bowl. Step 3: Arrange toppings. Step 4: Drizzle with honey and serve cold.'
+    },
+    {
+      id: 'mexican-chilaquiles',
+      name: 'Chilaquiles Rojos',
+      description: 'Traditional Mexican breakfast of crispy tortilla chips simmered in red salsa, topped with eggs and avocado.',
+      price: '₹449',
+      image: 'https://images.unsplash.com/photo-1640719028782-63d001a45611?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • Mexican',
+      ingredients: [
+        { qty: '2 cups', name: 'Tortilla Chips' },
+        { qty: '1 cup', name: 'Red Salsa' },
+        { qty: '1', name: 'Fried Egg' }
+      ],
+      instructions: 'Step 1: Heat salsa. Step 2: Toss chips in salsa. Step 3: Top with fried egg and avocado. Step 4: Add cream and cheese. Step 5: Serve.'
+    },
+    {
+      id: 'blueberry-oat-pancakes',
+      name: 'Blueberry Oatmeal Pancakes',
+      description: 'Hearty pancakes made with rolled oats and bursting with fresh blueberries. Served with honey.',
+      price: '₹299',
+      image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&q=80&w=800',
       rating: 4.6,
       tags: 'Breakfast • Healthy',
       ingredients: [
-        { qty: '1.5 cups', name: 'Rolled Oats' },
-        { qty: '1 medium', name: 'Ripe Banana' },
-        { qty: '1 cup', name: 'Almond Milk' },
-        { qty: '1', name: 'Large Egg' },
-        { qty: '1 tsp', name: 'Baking Powder' },
-        { qty: '1/2 tsp', name: 'Cinnamon' }
+        { qty: '1 cup', name: 'Rolled Oats' },
+        { qty: '1/2 cup', name: 'Blueberries' }
       ],
-      instructions: 'Step 1: Blend the rolled oats in a processor until they resemble fine flour. Step 2: Add banana, milk, egg, baking powder, and cinnamon to the blender. Pulse until the batter is smooth and slightly thick. Step 3: Heat a non-stick skillet over medium-low heat and grease lightly. Step 4: Pour small ladles of batter and cook until bubbles form on top, then flip and cook for another minute. Step 5: Serve with fresh strawberries, honey, and a sprinkle of nuts.'
+      instructions: 'Step 1: Blend oats to flour. Step 2: Mix batter. Step 3: Fold in berries. Step 4: Cook until golden. Step 5: Serve with honey.'
     },
     {
-      id: 'breakfast-potatoes-roasted',
-      name: 'Breakfast Potatoes',
-      description: 'Crispy on the outside and fluffy on the inside, these skillet-roasted potato cubes are tossed with fresh herbs, smoked paprika, and sautéed onions.',
-      price: '₹199',
-      image: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=400',
-      rating: 4.5,
-      tags: 'Breakfast • Side',
-      ingredients: [
-        { qty: '3 large', name: 'Red Potatoes cubed' },
-        { qty: '1', name: 'Onion finely chopped' },
-        { qty: '1', name: 'Green Bell Pepper' },
-        { qty: '2 tbsp', name: 'Olive Oil' },
-        { qty: '1 tsp', name: 'Dried Rosemary' },
-        { qty: '1/2 tsp', name: 'Smoked Paprika' }
-      ],
-      instructions: 'Step 1: Par-boil the potato cubes in salted water for 5-7 minutes; drain well. Step 2: Heat olive oil in a large heavy skillet. Add potatoes in a single layer and cook undisturbed for 5 minutes to develop a crust. Step 3: Add chopped onions and bell peppers, then toss with rosemary and paprika. Step 4: Continue to fry, stirring occasionally, until all sides are crispy and the vegetables are tender. Step 5: Season with extra salt and cracked black pepper before serving.'
-    },
-    {
-      id: 'english-breakfast-platter',
-      name: 'English Breakfast',
-      description: 'A classic British morning essential featuring pan-seared sausages, sunny-side-up eggs, grilled vine tomatoes, and buttered toast. Hearty and uncomplicated.',
-      price: '₹349',
-      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=800',
-      rating: 4.8,
-      tags: 'Breakfast • British',
-      ingredients: [
-        { qty: '2', name: 'Pork Sausages' },
-        { qty: '2', name: 'Fresh Eggs' },
-        { qty: '1', name: 'Vine Tomato halved' },
-        { qty: '2 slices', name: 'Sourdough Bread' },
-        { qty: '1 tbsp', name: 'Salted Butter' },
-        { qty: '1 tbsp', name: 'Vegetable Oil' }
-      ],
-      instructions: 'Step 1: Heat a little oil in a large frying pan. Add sausages and cook for 10-15 mins, turning occasionally until browned and cooked through. Step 2: Move sausages to one side and add tomato halves, cut-side down. Grill until softened and charred. Step 3: Toast the sourdough slices and spread generously with butter. Step 4: Finally, fry the eggs to your preference. Step 5: Plate everything together and serve with a hot cup of tea.'
-    },
-    {
-      id: 'full-english-breakfast-classic',
-      name: 'Full English Breakfast',
-      description: 'The ultimate morning feast: sausages, crispy bacon, black pudding, grilled mushrooms, fried eggs, and rich baked beans. A true breakfast of champions.',
-      price: '₹429',
-      image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=400',
-      rating: 4.9,
-      tags: 'Breakfast • British',
-      ingredients: [
-        { qty: '2', name: 'Artisan Sausages' },
-        { qty: '2 strips', name: 'Middle Bacon' },
-        { qty: '1 slice', name: 'Black Pudding' },
-        { qty: '2', name: 'Large Eggs' },
-        { qty: '1/2 cup', name: 'Heinz Baked Beans' },
-        { qty: '1 cup', name: 'Chestnut Mushrooms' },
-        { qty: '1 slice', name: 'Fried Bread' }
-      ],
-      instructions: 'Step 1: Start by frying sausages and bacon until perfectly cooked and crisp. Step 2: Sauté whole mushrooms in a little butter and black pepper. Heat beans in a small pot. Step 3: Fry the black pudding for 2 mins each side. Step 4: Fry a slice of fresh bread in the remaining pan fat until golden brown. Finally, fry the eggs. Step 5: Arrange all elements neatly on a large platter and serve with HP sauce on the side.'
-    },
-    {
-      id: 'jamaican-cornmeal-porridge',
-      name: 'Jamaican Cornmeal Porridge',
-      description: 'Creamy, silky, and warming: a traditional Jamaican comfort food made with fine cornmeal, coconut milk, and nuanced with nutmeg and vanilla.',
+      id: 'dutch-mini-pancakes',
+      name: 'Dutch Poffertjes',
+      description: 'Dainty and light mini pancakes from the Netherlands, served with butter and powdered sugar.',
       price: '₹229',
-      image: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&q=80&w=800',
-      rating: 4.7,
-      tags: 'Breakfast • Jamaican',
+      image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • Dutch',
       ingredients: [
-        { qty: '1/2 cup', name: 'Fine Cornmeal' },
-        { qty: '2 cups', name: 'Water' },
-        { qty: '1 cup', name: 'Coconut Milk' },
-        { qty: '1/4 cup', name: 'Condensed Milk' },
-        { qty: '1/2 tsp', name: 'Grated Nutmeg' },
-        { qty: '1 stick', name: 'Cinnamon' }
+        { qty: '250g', name: 'Flour' },
+        { qty: '1 cup', name: 'Milk' }
       ],
-      instructions: 'Step 1: In a small bowl, whisk cornmeal with 1/2 cup water until smooth to prevent lumps. Step 2: Bring remaining water, coconut milk, and the cinnamon stick to a boil in a heavy pot. Step 3: Slowly pour in the cornmeal mixture while whisking constantly. Step 4: Reduce heat to low and simmer for 15-20 mins, stirring frequently. Step 5: Stir in condensed milk, vanilla, and nutmeg. Serve in a bowl with a sprinkle of extra cinnamon on top.'
+      instructions: 'Step 1: Make yeast batter. Step 2: Cook in special pan. Step 3: Serve with butter and sugar.'
+    },
+    {
+      id: 'african-mandazi-buns',
+      name: 'African Mandazi',
+      description: 'Soft East African fried bread infused with aromatic cardamom and coconut milk.',
+      price: '₹189',
+      image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • African',
+      ingredients: [
+        { qty: '3 cups', name: 'Flour' },
+        { qty: '1 cup', name: 'Coconut Milk' },
+        { qty: '1 tsp', name: 'Cardamom' }
+      ],
+      instructions: 'Step 1: Knead dough with coconut milk and cardamom. Step 2: Let rise for 1 hour. Step 3: Cut into triangles. Step 4: Deep fry until golden brown.'
+    },
+    {
+      id: 'steak-and-eggs-platter',
+      name: 'Steak & Eggs',
+      description: 'Premium grilled sirloin steak served with two farm-fresh eggs and crispy breakfast potatoes.',
+      price: '₹749',
+      image: 'https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • Premium',
+      ingredients: [
+        { qty: '200g', name: 'Sirloin Steak' },
+        { qty: '2', name: 'Eggs' },
+        { qty: '1 cup', name: 'Potatoes' }
+      ],
+      instructions: 'Step 1: Grill steak to desired doneness. Step 2: Fry eggs. Step 3: Roast potatoes. Step 4: Plate and serve together.'
+    },
+    {
+      id: 'smoked-salmon-bagel',
+      name: 'Smoked Salmon Bagel',
+      description: 'Toasted bagel spread with herb cream cheese, topped with premium smoked salmon, capers, and red onion.',
+      price: '₹459',
+      image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • Deli',
+      ingredients: [
+        { qty: '1', name: 'Everything Bagel' },
+        { qty: '50g', name: 'Smoked Salmon' },
+        { qty: '2 tbsp', name: 'Cream Cheese' }
+      ],
+      instructions: 'Step 1: Toast bagel. Step 2: Spread cream cheese. Step 3: Layer salmon, onions, and capers. Step 4: Serve open-faced.'
+    },
+    {
+      id: 'turkish-menemen',
+      name: 'Turkish Menemen',
+      description: 'A traditional Turkish breakfast of scrambled eggs with tomatoes, green peppers, and spices.',
+      price: '₹329',
+      image: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Breakfast • Turkish',
+      ingredients: [
+        { qty: '2', name: 'Eggs' },
+        { qty: '2', name: 'Tomatoes' },
+        { qty: '1', name: 'Green Pepper' }
+      ],
+      instructions: 'Step 1: Sauté peppers and tomatoes. Step 2: Add spices. Step 3: Stir in eggs gently. Step 4: Cook until soft-scrambled.'
+    },
+    {
+      id: 'japanese-breakfast-set',
+      name: 'Japanese Breakfast Set',
+      description: 'A balanced set featuring grilled salmon, miso soup, steamed rice, and pickled vegetables.',
+      price: '₹599',
+      image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17051?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • Japanese',
+      ingredients: [
+        { qty: '1 piece', name: 'Grilled Salmon' },
+        { qty: '1 bowl', name: 'Miso Soup' },
+        { qty: '1 bowl', name: 'Rice' }
+      ],
+      instructions: 'Step 1: Grill salmon. Step 2: Prepare miso soup. Step 3: Steam rice. Step 4: Arrange with pickles and serve.'
+    },
+    {
+      id: 'chia-pudding-mango',
+      name: 'Chia Seed Pudding',
+      description: 'Overnight chia seeds soaked in coconut milk, topped with fresh mango puree and toasted almonds.',
+      price: '₹319',
+      image: 'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&q=80&w=800',
+      rating: 4.6,
+      tags: 'Breakfast • Healthy',
+      ingredients: [
+        { qty: '1/4 cup', name: 'Chia Seeds' },
+        { qty: '1 cup', name: 'Coconut Milk' },
+        { qty: '1/2', name: 'Mango' }
+      ],
+      instructions: 'Step 1: Soak seeds in milk overnight. Step 2: Stir well. Step 3: Top with mango and nuts. Step 4: Serve chilled.'
+    },
+    {
+      id: 'huevos-rancheros',
+      name: 'Huevos Rancheros',
+      description: 'Fried eggs served on corn tortillas with warm salsa, refried beans, and cotija cheese.',
+      price: '₹419',
+      image: 'https://images.unsplash.com/photo-1599307767316-776533da941c?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • Mexican',
+      ingredients: [
+        { qty: '2', name: 'Corn Tortillas' },
+        { qty: '2', name: 'Eggs' },
+        { qty: '1/2 cup', name: 'Salsa' }
+      ],
+      instructions: 'Step 1: Warm tortillas. Step 2: Fry eggs. Step 3: Layer beans and eggs on tortillas. Step 4: Top with salsa and cheese.'
+    },
+    {
+      id: 'swiss-bircher-muesli',
+      name: 'Bircher Muesli',
+      description: 'The original Swiss overnight oats with grated apple, nuts, honey, and fresh seasonal fruit.',
+      price: '₹359',
+      image: 'https://images.unsplash.com/photo-1517093602195-b40af9688b46?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Breakfast • Swiss',
+      ingredients: [
+        { qty: '1 cup', name: 'Oats' },
+        { qty: '1', name: 'Grated Apple' },
+        { qty: '1/2 cup', name: 'Yogurt' }
+      ],
+      instructions: 'Step 1: Soak oats in apple juice and yogurt. Step 2: Add grated apple. Step 3: Let sit overnight. Step 4: Top with nuts and fruit.'
+    },
+    {
+      id: 'chocolate-ganache-waffles',
+      name: 'Chocolate Ganache Waffles',
+      description: 'Decadent chocolate waffles topped with dark chocolate ganache and roasted hazelnuts.',
+      price: '₹399',
+      image: 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • Dessert',
+      ingredients: [
+        { qty: '2', name: 'Chocolate Waffles' },
+        { qty: '2 tbsp', name: 'Chocolate Ganache' }
+      ],
+      instructions: 'Step 1: Bake waffles. Step 2: Prepare ganache. Step 3: Drizzle over waffles. Step 4: Garnish with nuts and serve.'
     },
     {
       id: 'rommegrot-norwegian-porridge',
-      name: 'Rømmegrøt – Norwegian Sour Cream Porridge',
-      description: 'An ancient Norwegian luxury: a decadently rich and velvet-soft porridge made from whole sour cream and flour, topped with pools of melted butter.',
+      name: 'Rømmegrøt',
+      description: 'Traditional Norwegian sour cream porridge served with melted butter and cinnamon.',
       price: '₹269',
       image: 'https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&w=400',
       rating: 4.8,
       tags: 'Breakfast • Norwegian',
       ingredients: [
-        { qty: '500ml', name: 'High-fat Sour Cream' },
-        { qty: '1 cup', name: 'Wheat Flour' },
-        { qty: '500ml', name: 'Full Cream Milk' },
-        { qty: '1/2 tsp', name: 'Salt' },
-        { qty: 'To set', name: 'Melted Butter & Sugar' }
+        { qty: '500ml', name: 'Sour Cream' },
+        { qty: '1 cup', name: 'Flour' }
       ],
-      instructions: 'Step 1: In a heavy pot, bring the sour cream to a boil and let it simmer for 2 mins. Step 2: Sift in half the flour and stir vigorously. As you stir, natural butterfat will separate; skim it off and set aside. Step 3: Stir in the remaining flour and slowly whisk in the milk until the porridge is smooth. Step 4: Simmer over low heat for 10-15 mins, stirring constantly until thick. Step 5: Serve warm, topped with the reserved butterfat, cinnamon-sugar, and perhaps a slice of cured meat on the side.'
+      instructions: 'Step 1: Simmer cream. Step 2: Add flour. Step 3: Skim off fat. Step 4: Add warm milk. Step 5: Serve with butter and sugar.'
+    },
+    {
+      id: 'classic-masala-dosa',
+      name: 'Crispy Masala Dosa',
+      description: 'A thin, golden-brown fermented rice crepe filled with a savory spiced potato mash. Served with coconut chutney and tangy sambar.',
+      price: '₹189',
+      image: 'https://images.unsplash.com/photo-1630409351241-e90e7f5e434d?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • South Indian',
+      ingredients: [
+        { qty: '1 cup', name: 'Dosa Batter' },
+        { qty: '1/2 cup', name: 'Potato Masala' },
+        { qty: '1 tbsp', name: 'Ghee' }
+      ],
+      instructions: 'Step 1: Spread batter thinly on a hot tawa. Step 2: Drizzle ghee and cook until crisp. Step 3: Place potato masala in center. Step 4: Fold and serve hot with chutney and sambar.'
+    },
+    {
+      id: 'soft-steamed-idli',
+      name: 'Steamed Idli & Sambar',
+      description: 'Pillowy-soft steamed rice cakes served with a flavorful lentil-based vegetable stew (Sambar) and fresh coconut chutney.',
+      price: '₹149',
+      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • South Indian',
+      ingredients: [
+        { qty: '3', name: 'Idlis' },
+        { qty: '1 cup', name: 'Sambar' },
+        { qty: '2 tbsp', name: 'Coconut Chutney' }
+      ],
+      instructions: 'Step 1: Steam idli batter in molds for 10 minutes. Step 2: Prepare sambar with lentils and veggies. Step 3: Serve warm idlis with bowls of sambar and chutney.'
+    },
+    {
+      id: 'crispy-medu-vada',
+      name: 'Medu Vada Platter',
+      description: 'Savory, donut-shaped lentil fritters that are crispy on the outside and soft on the inside. A classic South Indian protein-rich breakfast.',
+      price: '₹169',
+      image: 'https://images.unsplash.com/photo-1610192244261-3f11639f59c6?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Breakfast • South Indian',
+      ingredients: [
+        { qty: '2', name: 'Medu Vadas' },
+        { qty: '1/2 cup', name: 'Sambar' },
+        { qty: '1 tbsp', name: 'Ginger-Chili Paste' }
+      ],
+      instructions: 'Step 1: Grind soaked urad dal into a fluffy batter. Step 2: Shape into donuts and deep fry until golden. Step 3: Serve piping hot with sambar.'
+    },
+    {
+      id: 'onion-uttapam-savory',
+      name: 'Onion & Tomato Uttapam',
+      description: 'Thick, savory pancakes made from fermented rice and lentil batter, topped with finely chopped onions, tomatoes, and green chilies.',
+      price: '₹199',
+      image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • South Indian',
+      ingredients: [
+        { qty: '1 cup', name: 'Uttapam Batter' },
+        { qty: '1/4 cup', name: 'Chopped Onions' },
+        { qty: '1/4 cup', name: 'Chopped Tomatoes' }
+      ],
+      instructions: 'Step 1: Pour thick batter on tawa. Step 2: Top with veggies and press lightly. Step 3: Cook both sides with oil until golden. Step 4: Serve with tomato chutney.'
+    },
+    {
+      id: 'kanda-poha-maharashtrian',
+      name: 'Kanda Poha',
+      description: 'A light and healthy Maharashtrian breakfast made with flattened rice, sautéed onions, potatoes, and toasted peanuts.',
+      price: '₹129',
+      image: 'https://images.unsplash.com/photo-1613292443284-8d10ef9383fe?auto=format&fit=crop&q=80&w=800',
+      rating: 4.6,
+      tags: 'Breakfast • Indian',
+      ingredients: [
+        { qty: '2 cups', name: 'Flattened Rice (Poha)' },
+        { qty: '1', name: 'Onion' },
+        { qty: '1/4 cup', name: 'Peanuts' },
+        { qty: '1/2 tsp', name: 'Turmeric' }
+      ],
+      instructions: 'Step 1: Rinse poha and drain. Step 2: Sauté onions, potatoes, and peanuts with spices. Step 3: Mix in poha and steam for 2 minutes. Step 4: Garnish with coriander and lemon.'
+    },
+    {
+      id: 'rava-upma-vegetable',
+      name: 'Vegetable Rava Upma',
+      description: 'A savory semolina porridge cooked with fresh vegetables, curry leaves, and mustard seeds. Comforting and nutritious.',
+      price: '₹139',
+      image: 'https://images.unsplash.com/photo-1601050633647-81a357521511?auto=format&fit=crop&q=80&w=800',
+      rating: 4.5,
+      tags: 'Breakfast • Indian',
+      ingredients: [
+        { qty: '1 cup', name: 'Roasted Semolina' },
+        { qty: '1/2 cup', name: 'Mixed Veggies' },
+        { qty: '1 tsp', name: 'Mustard Seeds' }
+      ],
+      instructions: 'Step 1: Roast semolina until fragrant. Step 2: Sauté veggies and tempering. Step 3: Add water and boil. Step 4: Stir in semolina and cook until thick.'
+    },
+    {
+      id: 'puri-bhaji-north-indian',
+      name: 'Classic Puri Bhaji',
+      description: 'Deep-fried golden wheat breads (Puris) served with a mildly spiced, aromatic potato curry (Bhaji). A weekend favorite across India.',
+      price: '₹219',
+      image: 'https://images.unsplash.com/photo-1626132646129-681466699503?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • Indian',
+      ingredients: [
+        { qty: '3', name: 'Puris' },
+        { qty: '1 bowl', name: 'Potato Bhaji' },
+        { qty: '1', name: 'Pickle' }
+      ],
+      instructions: 'Step 1: Knead wheat dough and fry small circles into puffed puris. Step 2: Cook potatoes with turmeric and cumin. Step 3: Serve together while hot.'
+    },
+    {
+      id: 'kerala-appam-stew',
+      name: 'Appam with Vegetable Stew',
+      description: 'Lacy, fermented rice and coconut milk crepes with a soft center and crispy edges, served with a mild, aromatic coconut milk stew.',
+      price: '₹249',
+      image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Breakfast • Kerala',
+      ingredients: [
+        { qty: '2', name: 'Appams' },
+        { qty: '1 bowl', name: 'Veg Stew' },
+        { qty: '1/2 cup', name: 'Coconut Milk' }
+      ],
+      instructions: 'Step 1: Prepare fermented appam batter. Step 2: Cook in an appam-chatti (pan). Step 3: Simmer veggies in coconut milk and spices for the stew. Step 4: Serve hot.'
+    },
+    {
+      id: 'mysore-masala-dosa-special',
+      name: 'Mysore Masala Dosa',
+      description: 'A spicy variation of the classic dosa, smeared with a signature red garlic-chili chutney before being stuffed with potato masala.',
+      price: '₹209',
+      image: 'https://images.unsplash.com/photo-1630409351241-e90e7f5e434d?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Breakfast • South Indian',
+      ingredients: [
+        { qty: '1 cup', name: 'Dosa Batter' },
+        { qty: '2 tbsp', name: 'Mysore Chutney' },
+        { qty: '1/2 cup', name: 'Potato Masala' }
+      ],
+      instructions: 'Step 1: Spread dosa batter. Step 2: Apply red chutney on the inner surface. Step 3: Add potato filling and butter. Step 4: Fold and serve with extra chutney.'
     }
   ],
-  starter: [
+  appetizers: [
     {
-      id: 'ajo-blanco-spanish',
-      name: 'Ajo blanco',
-      description: 'A traditional chilled Spanish soup from Andalusia, often called "white gazpacho." A creamy, no-cook soup made primarily from almonds, bread, garlic, and olive oil.',
-      price: '₹289',
-      image: 'https://images.unsplash.com/photo-1572656631137-7935297eff55?auto=format&fit=crop&q=80&w=800',
-      rating: 5.0,
-      tags: 'Starter • Spanish',
-      ingredients: [
-        { qty: '150g', name: 'White bread' },
-        { qty: '200g', name: 'Almonds' },
-        { qty: '50 ml', name: 'Extra Virgin Olive Oil' },
-        { qty: '1', name: 'Garlic Clove' },
-        { qty: '1 ½ tbsp', name: 'Red Wine Vinegar' }
-      ],
-      instructions: 'step 1 Tip the bread into a bowl and pour over 350ml water. Leave to soak for 10 mins. step 2 Blend the ingredients together with 350ml water and 1 tsp salt. step 3 Let the soup cool in the fridge for 1 hr or so, then serve with a drizzle of oil and some black pepper.'
-    },
-    {
-      id: 'clam-chowder-new-england',
-      name: 'Clam chowder',
-      description: 'Classic New England style clam chowder, rich and creamy with tender clams, potatoes, and smoky bacon.',
+      id: 'sicilian-arancini-mozzarella',
+      name: 'Sicilian Arancini',
+      description: 'Crispy, golden risotto balls filled with molten mozzarella and savory ragù. Served with a zesty marinara dipping sauce.',
       price: '₹349',
-      image: 'https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&q=80&w=800',
-      rating: 4.8,
-      tags: 'Starter • American',
-      ingredients: [
-        { qty: '500g', name: 'Fresh Clams' },
-        { qty: '2 cups', name: 'Diced Potatoes' },
-        { qty: '100g', name: 'Salt Pork' },
-        { qty: '1 cup', name: 'Heavy Cream' },
-        { qty: '1', name: 'Onion chopped' }
-      ],
-      instructions: 'Step 1: Cook salt pork in a large pot until crisp. Add onion and celery, and sauté until tender. Step 2: Stir in potatoes, clam juice, and seasonings. Bring to a boil, then simmer until potatoes are tender. Step 3: Add clams and cream; heat through. Step 4: Garnish with fresh parsley and serve with oyster crackers.'
-    },
-    {
-      id: 'creamy-tomato-soup-classic',
-      name: 'Creamy Tomato Soup',
-      description: 'A smooth and velvety tomato soup made with vine-ripened tomatoes, fresh basil, and a touch of cream.',
-      price: '₹199',
-      image: 'https://images.unsplash.com/photo-1547592115-397a61229a1b?auto=format&fit=crop&q=80&w=800',
-      rating: 4.9,
-      tags: 'Starter • International',
-      ingredients: [
-        { qty: '1 kg', name: 'Vine Tomatoes' },
-        { qty: '1/2 cup', name: 'Heavy Cream' },
-        { qty: '2 cloves', name: 'Garlic' },
-        { qty: 'Handful', name: 'Fresh Basil' },
-        { qty: '2 cups', name: 'Vegetable Stock' }
-      ],
-      instructions: 'Step 1: Roast tomatoes and garlic with olive oil until soft. Step 2: Blend roasted vegetables with vegetable stock until smooth. Step 3: Simmer in a pot, stirring in cream and fresh basil. Step 4: Serve hot with a swirl of cream and extra basil leaves.'
-    },
-    {
-      id: 'broccoli-stilton-soup-uk',
-      name: 'Broccoli & Stilton soup',
-      description: 'A rich and soulful British classic, blending tender broccoli with the sharp, creamy notes of Stilton cheese.',
-      price: '₹269',
-      image: 'https://images.unsplash.com/photo-1603105742738-198101726c03?auto=format&fit=crop&q=80&w=800',
-      rating: 4.7,
-      tags: 'Starter • British',
-      ingredients: [
-        { qty: '500g', name: 'Broccoli' },
-        { qty: '100g', name: 'Stilton Cheese' },
-        { qty: '1', name: 'Large Potato' },
-        { qty: '1', name: 'Onion' },
-        { qty: '750ml', name: 'Vegetable Stock' }
-      ],
-      instructions: 'Step 1: Sauté onion and diced potato in butter until soft. Step 2: Add vegetable stock and bring to a boil. Add broccoli florets and simmer until tender. Step 3: Blend until smooth, then stir in crumbled Stilton until melted. Step 4: Season to taste and serve with a crusty roll.'
-    },
-    {
-      id: 'cream-cheese-tart-savory',
-      name: 'Cream Cheese Tart',
-      description: 'A sophisticated savory tart with a buttery pastry crust, filled with smooth cream cheese, herbs, and topped with vibrant heirloom tomatoes.',
-      price: '₹289',
-      image: 'https://images.unsplash.com/photo-1534080564506-69f88c5efba1?auto=format&fit=crop&q=80&w=800',
-      rating: 4.8,
-      tags: 'Starter • International',
-      ingredients: [
-        { qty: '250g', name: 'Cream Cheese' },
-        { qty: '1 sheet', name: 'Shortcrust Pastry' },
-        { qty: '2', name: 'Large Eggs' },
-        { qty: '12', name: 'Cherry Tomatoes' },
-        { qty: '2 tbsp', name: 'Fresh Herbs' }
-      ],
-      instructions: 'Step 1: Line a tart tin with pastry and blind bake until golden. Step 2: Beat cream cheese with eggs and herbs until smooth. Step 3: Pour filling into the pastry shell and arrange halved tomatoes on top. Step 4: Bake at 180°C for 25-30 minutes until set. Serve warm or cold.'
-    },
-    {
-      id: 'quick-gazpacho-spanish',
-      name: 'Quick gazpacho',
-      description: 'The ultimate refreshing Spanish cold soup, made with ripe tomatoes, cucumber, peppers, and high-quality olive oil for a zesty kick.',
-      price: '₹229',
-      image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800',
-      rating: 4.9,
-      tags: 'Starter • Spanish',
-      ingredients: [
-        { qty: '1 kg', name: 'Ripe Tomatoes' },
-        { qty: '1', name: 'Cucumber' },
-        { qty: '1', name: 'Green Pepper' },
-        { qty: '2 tbsp', name: 'Sherry Vinegar' },
-        { qty: '1/2 cup', name: 'Olive Oil' }
-      ],
-      instructions: 'Step 1: Chop all vegetables and place in a blender. Step 2: Add vinegar, olive oil, and a splash of water. Blend until extremely smooth. Step 3: Pass through a sieve if a finer texture is desired. Step 4: Chill for at least 2 hours. Serve in chilled bowls with finely diced vegetable garnish.'
-    },
-    {
-      id: 'french-onion-soup-classic',
-      name: 'French Onion Soup',
-      description: 'Deeply caramelized onions in a rich beef broth, topped with a toasted baguette slice and melted Gruyère cheese.',
-      price: '₹329',
-      image: 'https://images.unsplash.com/photo-1589113193493-9dd982def87a?auto=format&fit=crop&q=80&w=800',
-      rating: 5.0,
-      tags: 'Starter • French',
-      ingredients: [
-        { qty: '1 kg', name: 'Yellow Onions' },
-        { qty: '1 liter', name: 'Beef Stock' },
-        { qty: '4 slices', name: 'Baguette' },
-        { qty: '1 cup', name: 'Grated Gruyère' },
-        { qty: '2 tbsp', name: 'Butter' }
-      ],
-      instructions: 'Step 1: Slice onions thinly and sauté in butter over low heat for 45 mins until deep brown. Step 2: Add beef stock and simmer for 15 mins. Step 3: Ladle soup into oven-proof bowls. Float a toasted baguette slice on each. Step 4: Cover with Gruyère and broil until cheese is bubbly and golden. Serve immediately.'
-    },
-    {
-      id: 'classic-bruschetta-tomato-basil',
-      name: 'Classic Bruschetta',
-      description: 'Toasted artisan sourdough rubbed with garlic and topped with a vibrant mix of heirloom tomatoes, fresh basil, and balsamic glaze.',
-      price: '₹249',
-      image: 'https://images.unsplash.com/photo-1572656631137-7935297eff55?auto=format&fit=crop&q=80&w=800',
-      rating: 4.8,
-      tags: 'Starter • Italian',
-      ingredients: [
-        { qty: '1', name: 'Artisan Sourdough' },
-        { qty: '4', name: 'Heirloom Tomatoes' },
-        { qty: 'Handful', name: 'Fresh Basil' },
-        { qty: '2 cloves', name: 'Garlic' },
-        { qty: '2 tbsp', name: 'Balsamic Glaze' }
-      ],
-      instructions: 'Step 1: Slice sourdough and grill until crisp. Rub each slice with a halved garlic clove. Step 2: Toss diced tomatoes with basil, minced garlic, olive oil, and sea salt. Step 3: Heap the tomato mixture onto the warm bread. Step 4: Drizzle with balsamic glaze and serve immediately.'
-    },
-    {
-      id: 'arancini-sicilian-balls',
-      name: 'Arancini',
-      description: 'Crispy fried Sicilian risotto balls filled with molten mozzarella and ragu, served with a zesty marinara dip.',
-      price: '₹299',
       image: 'https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=800',
       rating: 4.9,
-      tags: 'Starter • Italian',
+      tags: 'Appetizer • Italian',
       ingredients: [
-        { qty: '2 cups', name: 'Cooked Risotto' },
-        { qty: '100g', name: 'Mozzarella' },
-        { qty: '1 cup', name: 'Breadcrumbs' },
-        { qty: '2', name: 'Eggs' },
-        { qty: '1/2 cup', name: 'Marinara Sauce' }
+        { qty: '2 cups', name: 'Arborio Rice' },
+        { qty: '1/2 cup', name: 'Mozzarella cubes' },
+        { qty: '1 cup', name: 'Breadcrumbs' }
       ],
-      instructions: 'Step 1: Take a handful of cold risotto and place a cube of mozzarella in the center. Step 2: Roll into a ball. Dip in beaten eggs, then roll in breadcrumbs. Step 3: Deep fry in hot oil until golden brown and crispy. Step 4: Serve hot with warm marinara sauce for dipping.'
+      instructions: 'Step 1: Form cooled risotto into balls. Step 2: Stuff with a mozzarella cube. Step 3: Coat in flour, egg, and breadcrumbs. Step 4: Deep fry until golden brown.'
     },
     {
-      id: 'crispy-calamari-rings-lemon',
-      name: 'Crispy Calamari',
-      description: 'Tender squid rings lightly dusted in seasoned flour and flash-fried, served with fresh lemon slices and a spicy garlic aioli.',
-      price: '₹389',
-      image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=800',
+      id: 'classic-bruschetta-pomodoro',
+      name: 'Tomato Basil Bruschetta',
+      description: 'Toasted artisan bread rubbed with garlic and topped with marinated heirloom tomatoes, fresh basil, and balsamic glaze.',
+      price: '₹289',
+      image: 'https://images.unsplash.com/photo-1572656631137-7935297eff55?auto=format&fit=crop&q=80&w=800',
       rating: 4.8,
-      tags: 'Starter • Mediterranean',
+      tags: 'Appetizer • Italian',
       ingredients: [
-        { qty: '300g', name: 'Squid Rings' },
-        { qty: '1 cup', name: 'Seasoned Flour' },
-        { qty: '2', name: 'Lemons' },
-        { qty: '1/2 cup', name: 'Garlic Aioli' },
-        { qty: '1 tsp', name: 'Paprika' }
+        { qty: '4 slices', name: 'Sourdough' },
+        { qty: '2', name: 'Roma Tomatoes' },
+        { qty: '1 tbsp', name: 'Balsamic Glaze' }
       ],
-      instructions: 'Step 1: Toss clean squid rings in seasoned flour and paprika. Step 2: Fry in hot oil for exactly 2 minutes until golden. Step 3: Drain on paper towels and season with sea salt. Step 4: Serve immediately with fresh lemon wedges and a side of garlic aioli.'
+      instructions: 'Step 1: Grill bread slices. Step 2: Rub with garlic. Step 3: Mix tomatoes and basil with olive oil. Step 4: Top bread and drizzle with glaze.'
+    },
+    {
+      id: 'gambas-al-ajillo-shrimp',
+      name: 'Gambas al Ajillo',
+      description: 'Classic Spanish garlic shrimp sizzled in extra virgin olive oil with chili flakes and fresh parsley. Served with crusty bread.',
+      price: '₹499',
+      image: 'https://images.unsplash.com/photo-1559739511-e93c97034c44?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Appetizer • Spanish',
+      ingredients: [
+        { qty: '200g', name: 'Tiger Prawns' },
+        { qty: '4 cloves', name: 'Garlic' },
+        { qty: '2 tbsp', name: 'Olive Oil' }
+      ],
+      instructions: 'Step 1: Heat oil in a skillet. Step 2: Sauté garlic and chili. Step 3: Add shrimp and cook for 3 minutes. Step 4: Garnish with parsley and serve.'
+    },
+    {
+      id: 'crispy-calamari-aioli',
+      name: 'Crispy Calamari',
+      description: 'Tender squid rings lightly battered and fried to perfection. Served with a zesty lemon aioli and charred lemon wedges.',
+      price: '₹429',
+      image: 'https://images.unsplash.com/photo-1599481238505-b8b0537a3f77?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Appetizer • Seafood',
+      ingredients: [
+        { qty: '250g', name: 'Squid Rings' },
+        { qty: '1/2 cup', name: 'Cornstarch' },
+        { qty: '1/4 cup', name: 'Aioli' }
+      ],
+      instructions: 'Step 1: Coat squid in seasoned flour. Step 2: Flash fry for 2 minutes. Step 3: Serve immediately with aioli and lemon.'
+    },
+    {
+      id: 'stuffed-mushrooms-goat-cheese',
+      name: 'Goat Cheese Stuffed Mushrooms',
+      description: 'Cremini mushroom caps filled with a creamy herb and goat cheese mixture, topped with buttery Panko breadcrumbs.',
+      price: '₹379',
+      image: 'https://images.unsplash.com/photo-1608039783021-6116a558f0c5?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Vegetarian',
+      ingredients: [
+        { qty: '12', name: 'Cremini Mushrooms' },
+        { qty: '100g', name: 'Goat Cheese' },
+        { qty: '2 tbsp', name: 'Panko' }
+      ],
+      instructions: 'Step 1: Remove stems. Step 2: Fill caps with cheese and herbs. Step 3: Sprinkle crumbs on top. Step 4: Bake at 200°C for 15 minutes.'
+    },
+    {
+      id: 'chicken-satay-peanut-sauce',
+      name: 'Chicken Satay',
+      description: 'Grilled chicken skewers marinated in coconut milk and spices, served with a rich, velvety peanut dipping sauce.',
+      price: '₹399',
+      image: 'https://images.unsplash.com/photo-1529692236671-f1f6e994a52c?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Southeast Asian',
+      ingredients: [
+        { qty: '250g', name: 'Chicken Breast' },
+        { qty: '1/2 cup', name: 'Peanut Butter' },
+        { qty: '2 tbsp', name: 'Soy Sauce' }
+      ],
+      instructions: 'Step 1: Marinate chicken skewers. Step 2: Grill until charred. Step 3: Prepare peanut sauce with lime and chili. Step 4: Serve hot.'
+    },
+    {
+      id: 'vegetable-spring-rolls-crispy',
+      name: 'Vegetable Spring Rolls',
+      description: 'Hand-rolled crispy pastry filled with shredded cabbage, carrots, and glass noodles. Served with sweet chili sauce.',
+      price: '₹249',
+      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800',
+      rating: 4.6,
+      tags: 'Appetizer • Asian',
+      ingredients: [
+        { qty: '4', name: 'Spring Roll Wrappers' },
+        { qty: '1 cup', name: 'Shredded Veggies' }
+      ],
+      instructions: 'Step 1: Sauté veggies. Step 2: Roll in wrappers. Step 3: Deep fry until golden. Step 4: Serve with sweet chili dip.'
+    },
+    {
+      id: 'caprese-skewers-balsamic',
+      name: 'Caprese Skewers',
+      description: 'Elegant skewers of cherry tomatoes, fresh bocconcini mozzarella, and basil leaves, drizzled with aged balsamic glaze.',
+      price: '₹319',
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Appetizer • Vegetarian',
+      ingredients: [
+        { qty: '10', name: 'Cherry Tomatoes' },
+        { qty: '10', name: 'Mozzarella Balls' },
+        { qty: '10', name: 'Basil Leaves' }
+      ],
+      instructions: 'Step 1: Thread tomato, basil, and cheese on a skewer. Step 2: Repeat. Step 3: Season with salt. Step 4: Drizzle with balsamic glaze.'
+    },
+    {
+      id: 'dynamite-shrimp-spicy',
+      name: 'Dynamite Shrimp',
+      description: 'Tempura-battered crispy shrimp tossed in a signature spicy, creamy dynamite sauce. Topped with spring onions.',
+      price: '₹549',
+      image: 'https://images.unsplash.com/photo-1559739511-e93c97034c44?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Appetizer • Fusion',
+      ingredients: [
+        { qty: '12', name: 'Jumbo Shrimp' },
+        { qty: '1/4 cup', name: 'Sriracha Mayo' }
+      ],
+      instructions: 'Step 1: Batter and fry shrimp. Step 2: Toss in spicy mayo. Step 3: Garnish with scallions. Step 4: Serve in a martini glass.'
+    },
+    {
+      id: 'truffle-parmesan-fries',
+      name: 'Truffle Parmesan Fries',
+      description: 'Double-fried shoestring fries tossed in aromatic truffle oil, fresh parsley, and a generous grating of aged Parmesan.',
+      price: '₹299',
+      image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Modern',
+      ingredients: [
+        { qty: '2 cups', name: 'Potatoes' },
+        { qty: '1 tbsp', name: 'Truffle Oil' },
+        { qty: '2 tbsp', name: 'Parmesan' }
+      ],
+      instructions: 'Step 1: Fry potatoes twice for crispness. Step 2: Toss with oil while hot. Step 3: Sprinkle cheese and salt. Step 4: Garnish with parsley.'
+    },
+    {
+      id: 'greek-spanakopita-triangles',
+      name: 'Spanakopita Triangles',
+      description: 'Flaky phyllo pastry triangles filled with a savory blend of spinach, feta cheese, and Mediterranean herbs.',
+      price: '₹349',
+      image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Appetizer • Greek',
+      ingredients: [
+        { qty: '4 sheets', name: 'Phyllo Pastry' },
+        { qty: '1 cup', name: 'Spinach & Feta' }
+      ],
+      instructions: 'Step 1: Mix spinach and feta. Step 2: Cut phyllo into strips. Step 3: Fold filling into triangles. Step 4: Bake until golden and flaky.'
+    },
+    {
+      id: 'pork-gyoza-dumplings',
+      name: 'Japanese Gyoza',
+      description: 'Pan-seared pork and cabbage dumplings with a crispy base and tender top. Served with a soy-ginger dipping sauce.',
+      price: '₹389',
+      image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17051?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Japanese',
+      ingredients: [
+        { qty: '6', name: 'Gyoza Wrappers' },
+        { qty: '100g', name: 'Minced Pork' }
+      ],
+      instructions: 'Step 1: Fill and pleat dumplings. Step 2: Pan fry base until crisp. Step 3: Steam with a splash of water. Step 4: Serve with soy dip.'
+    },
+    {
+      id: 'buffalo-chicken-wings-classic',
+      name: 'Buffalo Chicken Wings',
+      description: 'Classic New York style wings tossed in a spicy, buttery Buffalo sauce. Served with celery sticks and blue cheese dip.',
+      price: '₹449',
+      image: 'https://images.unsplash.com/photo-1567622732494-7d65019bb7e5?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Appetizer • American',
+      ingredients: [
+        { qty: '6', name: 'Chicken Wings' },
+        { qty: '1/4 cup', name: 'Buffalo Sauce' }
+      ],
+      instructions: 'Step 1: Fry or bake wings until crisp. Step 2: Toss in hot sauce. Step 3: Arrange with celery. Step 4: Serve with dip.'
+    },
+    {
+      id: 'hummus-pita-platter',
+      name: 'Hummus & Warm Pita',
+      description: 'Silky smooth chickpea hummus topped with olive oil and za’atar, served with warm, pillowy pita bread triangles.',
+      price: '₹279',
+      image: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Middle Eastern',
+      ingredients: [
+        { qty: '1 cup', name: 'Hummus' },
+        { qty: '2', name: 'Pita Breads' },
+        { qty: '1 tbsp', name: 'Olive Oil' }
+      ],
+      instructions: 'Step 1: Swirl hummus in a bowl. Step 2: Add oil and spices. Step 3: Toast pita bread. Step 4: Slice and serve warm.'
+    },
+    {
+      id: 'beef-carpaccio-truffle',
+      name: 'Beef Carpaccio',
+      description: 'Thinly sliced raw prime beef tenderloin topped with arugula, capers, parmesan shavings, and truffle oil.',
+      price: '₹649',
+      image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Appetizer • French',
+      ingredients: [
+        { qty: '100g', name: 'Beef Tenderloin' },
+        { qty: '1/2 cup', name: 'Arugula' }
+      ],
+      instructions: 'Step 1: Slice beef paper-thin. Step 2: Arrange on a cold plate. Step 3: Season with oil and lemon. Step 4: Garnish with parmesan.'
+    },
+    {
+      id: 'prosciutto-wrapped-asparagus',
+      name: 'Prosciutto Asparagus',
+      description: 'Tender asparagus spears wrapped in salty Prosciutto di Parma and roasted until crispy. Drizzled with lemon oil.',
+      price: '₹419',
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Italian',
+      ingredients: [
+        { qty: '8', name: 'Asparagus Spears' },
+        { qty: '4 slices', name: 'Prosciutto' }
+      ],
+      instructions: 'Step 1: Wrap each spear in ham. Step 2: Roast at 200°C for 10 minutes. Step 3: Season with black pepper. Step 4: Serve hot.'
+    },
+    {
+      id: 'baked-brie-honey-walnuts',
+      name: 'Baked Brie with Honey',
+      description: 'Warm, gooey French Brie cheese topped with toasted walnuts and honey. Served with crostini and apple slices.',
+      price: '₹529',
+      image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Appetizer • French',
+      ingredients: [
+        { qty: '1 wheel', name: 'Brie' },
+        { qty: '2 tbsp', name: 'Honey' },
+        { qty: '1/4 cup', name: 'Walnuts' }
+      ],
+      instructions: 'Step 1: Place brie in a small dish. Step 2: Top with honey and nuts. Step 3: Bake for 12 minutes. Step 4: Serve with bread.'
+    },
+    {
+      id: 'ceviche-lime-cilantro',
+      name: 'Sea Bass Ceviche',
+      description: 'Fresh sea bass cured in citrus juices with red onion, chili, and cilantro. Served with crispy plantain chips.',
+      price: '₹589',
+      image: 'https://images.unsplash.com/photo-1534080564506-69f88c5efba1?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Appetizer • Peruvian',
+      ingredients: [
+        { qty: '150g', name: 'Sea Bass' },
+        { qty: '3 tbsp', name: 'Lime Juice' }
+      ],
+      instructions: 'Step 1: Cube fish. Step 2: Marinate in juice for 15 minutes. Step 3: Toss with onions and chili. Step 4: Serve chilled.'
+    },
+    {
+      id: 'mini-crab-cakes-tartar',
+      name: 'Mini Crab Cakes',
+      description: 'Pan-seared lump crab cakes served with a house-made caper tartar sauce and fresh slaw.',
+      price: '₹479',
+      image: 'https://images.unsplash.com/photo-1599481238505-b8b0537a3f77?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Appetizer • Seafood',
+      ingredients: [
+        { qty: '100g', name: 'Lump Crab' },
+        { qty: '1 tbsp', name: 'Tartar Sauce' }
+      ],
+      instructions: 'Step 1: Mix crab with binder. Step 2: Form small patties. Step 3: Pan fry until golden. Step 4: Serve with tartar dip.'
+    },
+    {
+      id: 'classic-falafel-tahini',
+      name: 'Handcrafted Falafel',
+      description: 'Crispy fried chickpea fritters seasoned with cumin and coriander. Served with a smooth tahini dip.',
+      price: '₹229',
+      image: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Appetizer • Middle Eastern',
+      ingredients: [
+        { qty: '4', name: 'Falafel Balls' },
+        { qty: '2 tbsp', name: 'Tahini' }
+      ],
+      instructions: 'Step 1: Grind chickpeas with spices. Step 2: Shape into balls. Step 3: Deep fry until brown. Step 4: Serve with tahini.'
     }
   ],
   drinks: [
@@ -424,95 +813,236 @@ export const menuData = {
       name: 'Gourmet Strawberry Milkshake',
       description: 'Thick and indulgent milkshake made with hand-picked strawberries and premium dairy, finished with whipped cream and a cherry.',
       price: '₹219',
-      image: 'https://images.unsplash.com/photo-1579954115545-a95591f28be0?auto=format&fit=crop&w=800',
+      image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=800',
       rating: 4.8,
-      tags: 'Drinks • Desserts',
+      tags: 'Drinks • Dessert',
       ingredients: [
         { qty: '1 cup', name: 'Fresh Strawberries' },
         { qty: '2 scoops', name: 'Strawberry Ice Cream' },
-        { qty: '1/2 cup', name: 'Whole Milk' },
-        { qty: 'Top', name: 'Whipped Cream' }
+        { qty: '1/2 cup', name: 'Whole Milk' }
       ],
-      instructions: 'Step 1: Blend fresh strawberries, ice cream, and milk until thick. Step 2: Pour into a tall chilled glass. Step 3: Top with a generous amount of whipped cream. Step 4: Garnish with a whole strawberry or a maraschino cherry.'
+      instructions: 'Step 1: Blend strawberries, ice cream, and milk until smooth. Step 2: Drizzle strawberry syrup in the glass. Step 3: Pour the shake and top with whipped cream. Step 4: Garnish with a fresh strawberry.'
     },
     {
-      id: 'authentic-masala-chai',
-      name: 'Authentic Masala Chai',
-      description: 'Traditional Indian tea slow-brewed with whole milk and a secret blend of cardamom, ginger, cloves, and black pepper.',
-      price: '₹89',
-      image: 'https://images.unsplash.com/photo-1563914856754-0eb7501a4f00?auto=format&fit=crop&w=800',
-      rating: 4.9,
-      tags: 'Drinks • Indian Classics',
-      ingredients: [
-        { qty: '1 cup', name: 'Milk' },
-        { qty: '2 tsp', name: 'Loose Black Tea' },
-        { qty: '1 tsp', name: 'Chai Masala' },
-        { qty: '1 inch', name: 'Fresh Ginger' }
-      ],
-      instructions: 'Step 1: Boil water with crushed ginger and chai masala. Step 2: Add tea leaves and simmer for 2 minutes. Step 3: Pour in the milk and bring to a rolling boil. Step 4: Strain into a clay pot (kulhad) or a cup and serve piping hot with biscuits.'
-    },
-    {
-      id: 'lemon-iced-tea',
-      name: 'Refreshing Lemon Iced Tea',
-      description: 'House-brewed black tea chilled and infused with fresh lemon segments and a hint of honey for a perfectly balanced zing.',
-      price: '₹129',
-      image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800',
-      rating: 4.6,
-      tags: 'Drinks • Cold Brew',
-      ingredients: [
-        { qty: '2', name: 'Black Tea Bags' },
-        { qty: '1', name: 'Lemon' },
-        { qty: '2 tbsp', name: 'Honey' },
-        { qty: '8', name: 'Ice Cubes' }
-      ],
-      instructions: 'Step 1: Steep tea bags in hot water then discard. Step 2: Stir in honey and fresh lemon juice while still warm. Step 3: Let it cool completely, then pour into a glass filled with ice. Step 4: Garnish with lemon slices and mint leaves.'
-    },
-    {
-      id: 'classic-hot-chocolate',
-      name: 'Hot Chocolate with Marshmallows',
-      description: 'A hug in a mug: rich Belgian dark chocolate melted into warm milk, topped with a mountain of toasted mini marshmallows.',
-      price: '₹199',
-      image: 'https://images.unsplash.com/photo-1544787210-282aa7ad202c?auto=format&fit=crop&w=800',
-      rating: 4.9,
-      tags: 'Drinks • Winter Specials',
-      ingredients: [
-        { qty: '200ml', name: 'Full Fat Milk' },
-        { qty: '50g', name: 'Dark Chocolate' },
-        { qty: '1/4 cup', name: 'Mini Marshmallows' },
-        { qty: '1 pinch', name: 'Cinnamon' }
-      ],
-      instructions: 'Step 1: Gently heat milk in a saucepan. Step 2: Add chopped dark chocolate and whisk until completely melted and frothy. Step 3: Pour into a large mug and top with marshmallows. Step 4: Use a torch to lightly toast the marshmallows or let them melt naturally.'
-    },
-    {
-      id: 'blue-lagoon-mocktail',
-      name: 'Blue Lagoon Mocktail',
-      description: 'A visually stunning mix of blue curacao syrup, zesty lime, and sprite, served over crushed ice for a tropical vibe.',
+      id: 'strawberry-basil-lemonade-fresh',
+      name: 'Strawberry Basil Lemonade',
+      description: 'A sophisticated twist on lemonade, featuring muddled strawberries and aromatic basil for a perfect balance of sweet and savory.',
       price: '₹179',
-      image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800',
+      image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Drinks • Refreshing',
+      ingredients: [
+        { qty: '1/2 cup', name: 'Strawberries' },
+        { qty: '3', name: 'Basil Leaves' },
+        { qty: '1 cup', name: 'Fresh Lemonade' }
+      ],
+      instructions: 'Step 1: Muddle strawberries and basil. Step 2: Pour in lemonade. Step 3: Shake with ice. Step 4: Garnish with a whole strawberry.'
+    },
+    {
+      id: 'blue-lagoon-mocktail-chilled',
+      name: 'Blue Lagoon Mocktail',
+      description: 'A vibrant blue tropical drink with citrus notes and sparkling soda, perfect for a sunny afternoon.',
+      price: '₹199',
+      image: 'https://images.unsplash.com/photo-1536935338213-d2c1238b91c0?auto=format&fit=crop&q=80&w=800',
       rating: 4.7,
-      tags: 'Drinks • Mocktails',
+      tags: 'Drinks • Mocktail',
       ingredients: [
         { qty: '30ml', name: 'Blue Curacao Syrup' },
-        { qty: '150ml', name: 'Lemon-Lime Soda' },
-        { qty: '1 tbsp', name: 'Lime Juice' },
-        { qty: '1 cup', name: 'Crushed Ice' }
+        { qty: '1 cup', name: 'Sprite/Soda' },
+        { qty: '1 tbsp', name: 'Lemon Juice' }
       ],
-      instructions: 'Step 1: Fill a tall glass with crushed ice. Step 2: Pour in the blue curacao syrup and lime juice. Step 3: Top up with lemon-lime soda. Step 4: Garnish with a slice of lemon and a maraschino cherry. Stir gently before sipping.'
+      instructions: 'Step 1: Pour syrup into glass. Step 2: Add lemon juice and ice. Step 3: Top with sparkling soda. Step 4: Stir gently.'
     },
     {
-      id: 'fresh-pressed-pineapple-juice',
-      name: 'Fresh Pressed Pineapple Juice',
-      description: '100% natural, cold-pressed pineapple juice with zero added sugar — pure tropical sunshine in every sip.',
-      price: '₹139',
-      image: 'https://images.unsplash.com/photo-1561043433-92f5f7028522?auto=format&fit=crop&w=800',
-      rating: 4.8,
-      tags: 'Drinks • Healthy Juices',
+      id: 'matcha-latte-iced-premium',
+      name: 'Iced Matcha Latte',
+      description: 'Premium ceremonial grade matcha whisked with creamy milk and a touch of agave, served over ice.',
+      price: '₹289',
+      image: 'https://images.unsplash.com/photo-1515823662273-0b78824ac78a?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Drinks • Healthy',
       ingredients: [
-        { qty: '1', name: 'Ripe Pineapple' },
-        { qty: '1 tsp', name: 'Black Salt' },
-        { qty: '1 cup', name: 'Chilled Water' }
+        { qty: '1 tsp', name: 'Matcha Powder' },
+        { qty: '1 cup', name: 'Almond Milk' },
+        { qty: '1 tsp', name: 'Agave Syrup' }
       ],
-      instructions: 'Step 1: Peel and core the pineapple, then dice into chunks. Step 2: Juice the chunks using a cold-press juicer. Step 3: Add a pinch of black salt for flavor. Step 4: Serve chilled in a tall glass with a pineapple wedge.'
+      instructions: 'Step 1: Whisk matcha with warm water. Step 2: Add agave. Step 3: Pour over ice and milk. Step 4: Stir until green.'
+    },
+    {
+      id: 'peach-iced-tea-classic',
+      name: 'Classic Peach Iced Tea',
+      description: 'Freshly brewed black tea infused with the sweet essence of sun-ripened peaches.',
+      price: '₹159',
+      image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Drinks • Tea',
+      ingredients: [
+        { qty: '1', name: 'Tea Bag' },
+        { qty: '2 tbsp', name: 'Peach Puree' },
+        { qty: '1 slice', name: 'Lemon' }
+      ],
+      instructions: 'Step 1: Brew tea and let it cool. Step 2: Mix with peach puree. Step 3: Pour into a glass filled with ice. Step 4: Garnish with lemon.'
+    },
+    {
+      id: 'masala-chai-authentic-indian',
+      name: 'Authentic Masala Chai',
+      description: 'Spiced Indian tea brewed with ginger, cardamom, cinnamon, and loose-leaf black tea.',
+      price: '₹99',
+      image: 'https://images.unsplash.com/photo-1594631252845-29fc4586b517?auto=format&fit=crop&q=80&w=800',
+      rating: 5.0,
+      tags: 'Drinks • Indian',
+      ingredients: [
+        { qty: '1 tbsp', name: 'Tea Leaves' },
+        { qty: '1 cup', name: 'Milk & Water' },
+        { qty: '1 tsp', name: 'Spices' }
+      ],
+      instructions: 'Step 1: Boil water with crushed spices and ginger. Step 2: Add tea leaves and simmer. Step 3: Add milk and bring to boil. Step 4: Strain and serve.'
+    },
+    {
+      id: 'hot-chocolate-marshmallow-rich',
+      name: 'Rich Hot Chocolate',
+      description: 'Velvety dark chocolate melted into whole milk, topped with toasted marshmallows and cocoa powder.',
+      price: '₹249',
+      image: 'https://images.unsplash.com/photo-1544787210-28209312e795?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Drinks • Comfort',
+      ingredients: [
+        { qty: '50g', name: 'Dark Chocolate' },
+        { qty: '1 cup', name: 'Whole Milk' },
+        { qty: 'Handful', name: 'Marshmallows' }
+      ],
+      instructions: 'Step 1: Heat milk in a pot. Step 2: Whisk in chocolate until melted. Step 3: Pour into a mug. Step 4: Top with marshmallows and torch lightly.'
+    },
+    {
+      id: 'tender-coconut-water-fresh',
+      name: 'Fresh Coconut Water',
+      description: 'Nature’s own electrolyte drink, served chilled directly from a tender coconut.',
+      price: '₹119',
+      image: 'https://images.unsplash.com/photo-1525423235703-6c888d40f9f4?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Drinks • Healthy',
+      ingredients: [
+        { qty: '1', name: 'Tender Coconut' }
+      ],
+      instructions: 'Step 1: Open the coconut. Step 2: Pour water into a glass or serve in shell. Step 3: Chill with ice if desired.'
+    },
+    {
+      id: 'apple-ginger-detox-juice',
+      name: 'Apple & Ginger Detox',
+      description: 'A zingy blend of fresh green apples, spicy ginger, and a splash of lemon for a morning boost.',
+      price: '₹169',
+      image: 'https://images.unsplash.com/photo-1613478223719-2ab3026245a4?auto=format&fit=crop&q=80&w=800',
+      rating: 4.7,
+      tags: 'Drinks • Healthy',
+      ingredients: [
+        { qty: '2', name: 'Green Apples' },
+        { qty: '1 inch', name: 'Ginger' },
+        { qty: '1/2', name: 'Lemon' }
+      ],
+      instructions: 'Step 1: Juice apples and ginger. Step 2: Squeeze lemon. Step 3: Stir and serve chilled.'
+    },
+    {
+      id: 'lavender-blueberry-spritzer',
+      name: 'Lavender Blueberry Spritzer',
+      description: 'A floral and fruity sparkling drink made with dried lavender buds and fresh blueberry reduction.',
+      price: '₹219',
+      image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Drinks • Sparkling',
+      ingredients: [
+        { qty: '2 tbsp', name: 'Blueberry Syrup' },
+        { qty: '1/4 tsp', name: 'Lavender Essence' },
+        { qty: '1 cup', name: 'Soda' }
+      ],
+      instructions: 'Step 1: Mix syrup and essence. Step 2: Add ice. Step 3: Top with soda. Step 4: Garnish with lavender sprig.'
+    },
+    {
+      id: 'rose-milk-falooda-premium',
+      name: 'Royal Rose Milk',
+      description: 'Sweet pink milk infused with rose syrup and soaked basil seeds, a traditional cooling beverage.',
+      price: '₹149',
+      image: 'https://images.unsplash.com/photo-1594911774882-a1b71499a3c3?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Drinks • Indian',
+      ingredients: [
+        { qty: '1 cup', name: 'Milk' },
+        { qty: '2 tbsp', name: 'Rose Syrup' },
+        { qty: '1 tsp', name: 'Sabja Seeds' }
+      ],
+      instructions: 'Step 1: Soak seeds for 15 mins. Step 2: Mix milk and syrup. Step 3: Add seeds and ice. Step 4: Stir and serve.'
+    },
+    {
+      id: 'cucumber-lime-detox-water',
+      name: 'Cucumber Lime Detox',
+      description: 'Infused water with fresh cucumber slices and lime, perfect for hydration during meals.',
+      price: '₹89',
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.5,
+      tags: 'Drinks • Healthy',
+      ingredients: [
+        { qty: '1/2', name: 'Cucumber' },
+        { qty: '1', name: 'Lime' },
+        { qty: '1 liter', name: 'Water' }
+      ],
+      instructions: 'Step 1: Slice cucumber and lime. Step 2: Add to water. Step 3: Let infuse for 1 hour. Step 4: Serve chilled.'
+    },
+    {
+      id: 'passion-fruit-sparkler-tropical',
+      name: 'Passion Fruit Sparkler',
+      description: 'Tangy passion fruit pulp mixed with mint and sparkling water for a tropical refreshing experience.',
+      price: '₹239',
+      image: 'https://images.unsplash.com/photo-1536935338213-d2c1238b91c0?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Drinks • Tropical',
+      ingredients: [
+        { qty: '1', name: 'Passion Fruit' },
+        { qty: '1 cup', name: 'Sparkling Water' }
+      ],
+      instructions: 'Step 1: Scoop fruit pulp. Step 2: Mix with ice and mint. Step 3: Top with sparkling water. Step 4: Serve immediately.'
+    },
+    {
+      id: 'fresh-orange-pomegranate-blend',
+      name: 'Orange Pomegranate Juice',
+      description: 'A vibrant, vitamin-C packed juice blend of fresh Nagpur oranges and sweet pomegranate seeds.',
+      price: '₹189',
+      image: 'https://images.unsplash.com/photo-1613478223719-2ab3026245a4?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Drinks • Healthy',
+      ingredients: [
+        { qty: '2', name: 'Oranges' },
+        { qty: '1/2 cup', name: 'Pomegranate Seeds' }
+      ],
+      instructions: 'Step 1: Juice oranges and seeds separately. Step 2: Mix together. Step 3: Pour over ice. Step 4: Serve fresh.'
+    },
+    {
+      id: 'iced-caramel-macchiato-coffee',
+      name: 'Iced Caramel Macchiato',
+      description: 'Layers of rich espresso, chilled milk, and sweet caramel syrup, topped with foam.',
+      price: '₹269',
+      image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=800',
+      rating: 4.9,
+      tags: 'Drinks • Coffee',
+      ingredients: [
+        { qty: '2 shots', name: 'Espresso' },
+        { qty: '1 cup', name: 'Milk' },
+        { qty: '2 tbsp', name: 'Caramel Syrup' }
+      ],
+      instructions: 'Step 1: Pour syrup and milk into glass. Step 2: Add ice. Step 3: Layer espresso on top. Step 4: Drizzle with extra caramel.'
+    },
+    {
+      id: 'mint-lime-mojito-classic',
+      name: 'Classic Virgin Mojito',
+      description: 'A non-alcoholic classic: muddled mint leaves, lime juice, and sugar topped with sparkling soda.',
+      price: '₹169',
+      image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800',
+      rating: 4.8,
+      tags: 'Drinks • Mocktail',
+      ingredients: [
+        { qty: 'Handful', name: 'Mint' },
+        { qty: '2', name: 'Limes' },
+        { qty: '1 cup', name: 'Soda' }
+      ],
+      instructions: 'Step 1: Muddle mint, lime, and sugar. Step 2: Fill glass with ice. Step 3: Top with soda. Step 4: Stir and garnish.'
     }
   ],
   beef: [

@@ -5,9 +5,19 @@ import { Heart, Star } from 'lucide-react';
 import { menuData } from '../data/menuData';
 
 const MealDetail = () => {
-  const { category, id } = useParams();
-  const currentCategory = category?.toLowerCase();
-  const meal = menuData[currentCategory]?.find(item => item.id === id);
+  const { id } = useParams();
+  
+  // Find the meal across all categories
+  let foundCategory = '';
+  const meal = Object.entries(menuData).reduce((found, [catName, items]) => {
+    if (found) return found;
+    const item = items.find(i => i.id === id);
+    if (item) {
+      foundCategory = catName;
+      return item;
+    }
+    return null;
+  }, null);
 
   const [isLiked, setIsLiked] = useState(() => {
     const favorites = JSON.parse(localStorage.getItem('foodmunch_favorites') || '[]');
@@ -71,7 +81,7 @@ const MealDetail = () => {
                 />
               ))}
             </div>
-            <p className="dish-detail-tags">{meal.tags || `${category} • Special`}</p>
+            <p className="dish-detail-tags">{meal.tags || `${foundCategory} • Special`}</p>
             
             {/* Ornament Divider (Leaf Design) */}
             <div className="ornament-divider">
@@ -129,8 +139,8 @@ const MealDetail = () => {
 
           {/* Back Nav */}
           <div className="detail-nav-footer text-center">
-            <Link to={`/menu/${category.toLowerCase()}`} className="btn-text hover-underline label-1">
-              ← Back to {category} list
+            <Link to={`/categories/${encodeURIComponent(foundCategory)}`} className="btn-text hover-underline label-1">
+              ← Back to {foundCategory} list
             </Link>
           </div>
 

@@ -13,7 +13,7 @@ const categoryData = [
   { title: 'Pasta', id: 'pasta', desc: 'Authentic Italian pasta.', img: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=400' },
   { title: 'Pork', id: 'pork', desc: 'Succulent pork selections.', img: 'https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&w=400' },
   { title: 'Seafood', id: 'seafood', desc: 'Fresh from the ocean.', img: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&q=80&w=800' },
-  { title: 'Starter', id: 'starter', desc: 'Delicious starters.', img: 'https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=400' },
+  { title: 'Appetizers', id: 'appetizers', desc: 'Delicious starters.', img: 'https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=400' },
   { title: 'Drinks', id: 'drinks', desc: 'Refreshing beverages.', img: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=400' },
   { title: 'Side', id: 'side', desc: 'Perfect accompaniments.', img: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&q=80&w=800' },
   { title: 'Vegan', id: 'vegan', desc: 'Wholesome plant-based.', img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400' },
@@ -34,13 +34,12 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
         <div className="category-grid">
           {categoryData.map((item, index) => {
             const catId = item.id.toLowerCase();
-            const isExpanded = expandedCategory === catId;
             
             return (
-              <div 
-                className={`category-card ${isExpanded ? 'active' : ''}`}
+              <Link 
+                to={`/categories/${encodeURIComponent(catId)}`}
+                className="category-card"
                 key={index}
-                onClick={() => setExpandedCategory(isExpanded ? null : catId)}
                 style={{ cursor: 'pointer' }}
               >
                 <figure className="card-banner img-holder">
@@ -60,62 +59,12 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
                 </div>
 
                 <div className="btn-meals">
-                  {isExpanded ? 'Close Meals' : 'View Meals'}
+                  View Meals
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
-
-        <AnimatePresence mode="wait">
-          {expandedCategory && (
-            <motion.div
-              key={expandedCategory}
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5, ease: 'easeInOut' }}
-              className="dedicated-meals-container"
-              style={{ overflow: 'hidden', marginBlockStart: '40px' }}
-            >
-              <h3 className="headline-2 text-center" style={{ marginBlockEnd: '30px', textTransform: 'capitalize' }}>
-                Dedicated {expandedCategory} Selection
-              </h3>
-              <div className="grid-list" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-                {(menuData[expandedCategory] || []).map((meal, i) => (
-                  <motion.div
-                    key={meal.id}
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: i * 0.1 }}
-                    className="meal-card"
-                    style={{ 
-                      background: 'var(--eerie-black-2)', 
-                      padding: '20px', 
-                      borderRadius: '16px',
-                      border: '1px solid var(--white-alpha-10)'
-                    }}
-                  >
-                    <figure className="card-banner img-holder" style={{ aspectRatio: '16/9', borderRadius: '12px', marginBlockEnd: '15px' }}>
-                      <img src={meal.image} alt={meal.name} className="img-cover" />
-                    </figure>
-                    <div className="card-content">
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBlockEnd: '10px' }}>
-                        <h4 className="title-4">{meal.name}</h4>
-                        {meal.price && <span className="body-3" style={{ color: 'var(--gold-crayola)' }}>{meal.price}</span>}
-                      </div>
-                      <p className="body-4" style={{ color: 'var(--quick-silver)', fontSize: '1.4rem' }}>{meal.description || 'Delicious meal prepared with fresh ingredients.'}</p>
-                      
-                      <Link to={`/menu/${expandedCategory}/${meal.id}`} className="btn-text hover-underline" style={{ marginBlockStart: '15px', display: 'inline-block' }}>
-                        View Details →
-                      </Link>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
 
         <a
           href="#reservation"
