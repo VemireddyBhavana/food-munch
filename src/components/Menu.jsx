@@ -1,5 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const categoryBreakfastItems = [
+  { name: 'Pancakes', price: '₹199', img: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=400', desc: 'Fluffy buttermilk pancakes served with maple syrup and fresh berries.' },
+  { name: 'Masala Omelette', price: '₹149', img: 'https://images.unsplash.com/photo-1550607505-df25319fac4e?auto=format&fit=crop&q=80&w=400', desc: 'Spiced omelette with onions, green chillies, and fresh coriander.' },
+  { name: 'Avocado Toast', price: '₹249', img: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=400', desc: 'Artisan sourdough topped with smashed avocado and poached eggs.' },
+  { name: 'Club Sandwich', price: '₹229', img: 'https://images.unsplash.com/photo-1528733918455-5a59687cedf0?auto=format&fit=crop&q=80&w=400', desc: 'Classic triple-decker sandwich with chicken, bacon, and crisp veggies.' },
+  { name: 'Belgian Waffles', price: '₹219', img: 'https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&q=80&w=400', desc: 'Crispy waffles topped with whipped cream and chocolate drizzle.' },
+  { name: 'Coffee Combo', price: '₹189', img: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=400', desc: 'Premium Arabica coffee served with a fresh butter croissant.' },
+  { name: 'Fruits Bowl', price: '₹179', img: 'https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&q=80&w=400', desc: 'A vibrant mix of seasonal fresh fruits with honey and mint.' }
+];
 
 const allMenuItems = [
   // ===== BREAKFAST (Breakfast Category) =====
@@ -72,6 +83,7 @@ const categoryData = [
 
 const Menu = ({ selectedCategory, onCategoryChange }) => {
   const [animKey, setAnimKey] = useState(0);
+  const [showBreakfastMeals, setShowBreakfastMeals] = useState(false);
   const menuGridRef = useRef(null);
 
   useEffect(() => {
@@ -95,34 +107,108 @@ const Menu = ({ selectedCategory, onCategoryChange }) => {
 
         {/* Categories Grid (Overhaul Design) */}
         <div className="category-grid">
-          {categoryData.map((item, index) => (
-            <Link 
-              to={`/menu/${item.id.toLowerCase()}`}
-              className="category-card" 
-              key={index}
-            >
-              <figure className="card-banner img-holder">
-                <img
-                  src={item.img}
-                  width="80"
-                  height="80"
-                  loading="lazy"
-                  alt={item.title}
-                  className="img-cover"
-                />
-              </figure>
-              
-              <div className="card-content">
-                <h3 className="card-title">{item.title}</h3>
-                <p className="card-text">{item.desc}</p>
-              </div>
+          {categoryData.map((item, index) => {
+            const isBreakfast = item.id === 'Breakfast';
+            
+            return isBreakfast ? (
+              <div 
+                className={`category-card ${showBreakfastMeals ? 'active' : ''}`}
+                key={index}
+                onClick={() => setShowBreakfastMeals(!showBreakfastMeals)}
+                style={{ cursor: 'pointer' }}
+              >
+                <figure className="card-banner img-holder">
+                  <img
+                    src={item.img}
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                    alt={item.title}
+                    className="img-cover"
+                  />
+                </figure>
+                
+                <div className="card-content">
+                  <h3 className="card-title">{item.title}</h3>
+                  <p className="card-text">{item.desc}</p>
+                </div>
 
-              <div className="btn-meals">
-                View Meals
+                <div className="btn-meals">
+                  {showBreakfastMeals ? 'Close Meals' : 'View Meals'}
+                </div>
               </div>
-            </Link>
-          ))}
+            ) : (
+              <Link 
+                to={`/menu/${item.id.toLowerCase()}`}
+                className="category-card" 
+                key={index}
+              >
+                <figure className="card-banner img-holder">
+                  <img
+                    src={item.img}
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                    alt={item.title}
+                    className="img-cover"
+                  />
+                </figure>
+                
+                <div className="card-content">
+                  <h3 className="card-title">{item.title}</h3>
+                  <p className="card-text">{item.desc}</p>
+                </div>
+
+                <div className="btn-meals">
+                  View Meals
+                </div>
+              </Link>
+            );
+          })}
         </div>
+
+        <AnimatePresence>
+          {showBreakfastMeals && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}
+              className="breakfast-meals-container"
+              style={{ overflow: 'hidden', marginBlockStart: '40px' }}
+            >
+              <h3 className="headline-2 text-center" style={{ marginBlockEnd: '30px' }}>Dedicated Breakfast Selection</h3>
+              <div className="grid-list" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+                {categoryBreakfastItems.map((meal, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: i * 0.1 }}
+                    className="meal-card"
+                    style={{ 
+                      background: 'var(--eerie-black-2)', 
+                      padding: '20px', 
+                      borderRadius: '16px',
+                      border: '1px solid var(--white-alpha-10)'
+                    }}
+                  >
+                    <figure className="card-banner img-holder" style={{ aspectRatio: '16/9', borderRadius: '12px', marginBlockEnd: '15px' }}>
+                      <img src={meal.img} alt={meal.name} className="img-cover" />
+                    </figure>
+                    <div className="card-content">
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBlockEnd: '10px' }}>
+                        <h4 className="title-4">{meal.name}</h4>
+                        <span className="body-3" style={{ color: 'var(--gold-crayola)' }}>{meal.price}</span>
+                      </div>
+                      <p className="body-4" style={{ color: 'var(--quick-silver)', fontSize: '1.4rem' }}>{meal.desc}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         <a
           href="#reservation"
