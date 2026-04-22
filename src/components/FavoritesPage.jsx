@@ -36,7 +36,7 @@ const FavoritesPage = () => {
           {favoriteMeals.length > 0 ? (
             <div className="menu-grid">
               {favoriteMeals.map((item) => (
-                <Link key={item.id} to={`/recipe/${item.id}`} className="menu-card-link">
+                <Link key={item.id} to={`/recipe/${item.id}`} className="menu-card-link" style={{ textDecoration: 'none' }}>
                   <div className="menu-card">
                     <figure className="card-banner">
                       <img
@@ -45,36 +45,37 @@ const FavoritesPage = () => {
                         height="400"
                         loading="lazy"
                         alt={item.name}
+                        className="img-cover"
                       />
                     </figure>
                     
-                    <div className="card-content">
-                      <div className="card-title-wrapper" style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
-                        <h3 className="card-title">{item.name}</h3>
+                    <div className="card-content" style={{ padding: '20px' }}>
+                      <div className="card-title-wrapper" style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginBlockEnd: '15px' }}>
+                        <h3 className="title-3">{item.name}</h3>
                         <button 
                           onClick={(e) => {
                             e.preventDefault();
                             removeFavorite(item.id);
                           }}
                           className="remove-fav-btn"
-                          style={{ color: '#ef4444', zIndex: 5 }}
+                          style={{ color: '#ef4444', zIndex: 5, background: 'none', border: 'none', cursor: 'pointer' }}
                         >
-                          <Heart size={18} fill="#ef4444" />
+                          <Heart size={22} fill="#ef4444" />
                         </button>
                       </div>
-                      <p className="card-price">{item.price}</p>
+                      <p className="body-3" style={{ color: 'var(--gold-crayola)', fontWeight: 'bold' }}>{item.price}</p>
                     </div>
                   </div>
                 </Link>
               ))}
             </div>
           ) : (
-            <div className="text-center space-y-6">
-              <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mx-auto">
-                <Heart size={48} className="text-white/20" />
+            <div className="text-center" style={{ paddingBlock: '100px' }}>
+              <div style={{ width: '120px', height: '120px', backgroundColor: 'var(--white-alpha-10)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginInline: 'auto', marginBlockEnd: '30px' }}>
+                <Heart size={64} style={{ opacity: 0.2 }} />
               </div>
-              <p className="body-3 text-white/40">You haven't saved any favorites yet.</p>
-              <Link to="/" className="btn btn-primary mx-auto">
+              <p className="body-3" style={{ color: 'var(--quick-silver)', marginBlockEnd: '40px' }}>Your collection is currently empty.</p>
+              <Link to="/" className="btn btn-primary" style={{ marginInline: 'auto' }}>
                 <span className="text text-1">Explore Menu</span>
                 <span className="text text-2">Explore Menu</span>
               </Link>

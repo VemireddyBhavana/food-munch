@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../data/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, CreditCard, Home, MapPin, Wallet, ArrowRight, Loader2 } from 'lucide-react';
+import { CheckCircle2, CreditCard, MapPin, Wallet } from 'lucide-react';
 
 const Checkout = () => {
   const { cartItems, cartTotal, clearCart } = useCart();
@@ -38,7 +38,6 @@ const Checkout = () => {
         createdAt: new Date().toISOString(),
       };
 
-      // Save to history
       const savedOrders = JSON.parse(localStorage.getItem('foodmunch_orders') || '[]');
       localStorage.setItem('foodmunch_orders', JSON.stringify([...savedOrders, newOrder]));
 
@@ -50,29 +49,32 @@ const Checkout = () => {
 
   if (cartItems.length === 0 && step === 1) {
     return (
-      <div className="section container text-center" style={{ marginTop: '100px' }}>
-        <h2 className="headline-2">Your cart is empty.</h2>
-        <button onClick={() => navigate('/')} className="btn btn-primary mt-4">Go Back Home</button>
+      <div className="section container text-center" style={{ paddingBlock: '150px' }}>
+        <h2 className="headline-2" style={{ marginBlockEnd: '30px' }}>Your cart is empty.</h2>
+        <button onClick={() => navigate('/')} className="btn btn-primary" style={{ marginInline: 'auto' }}>
+          <span className="text text-1">Go Back Home</span>
+          <span className="text text-2">Go Back Home</span>
+        </button>
       </div>
     );
   }
 
   return (
-    <div className="section container" style={{ marginTop: '100px', maxWidth: '800px' }}>
-      <div className="checkout-steps mb-5">
-        <div className={`step-item ${step >= 1 ? 'active' : ''}`}>
-          <div className="step-icon"><MapPin size={20} /></div>
-          <span>Address</span>
+    <div className="section container" style={{ paddingBlock: '120px', maxWidth: '800px' }}>
+      <div className="checkout-steps" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', marginBlockEnd: '50px' }}>
+        <div className={`step-item ${step >= 1 ? 'active' : ''}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div className="step-icon" style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: step >= 1 ? 'var(--gold-crayola)' : 'var(--white-alpha-10)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: step >= 1 ? 'black' : 'white' }}><MapPin size={18} /></div>
+          <span className="label-2">Address</span>
         </div>
-        <div className="step-line" />
-        <div className={`step-item ${step >= 2 ? 'active' : ''}`}>
-          <div className="step-icon"><CreditCard size={20} /></div>
-          <span>Payment</span>
+        <div style={{ width: '60px', height: '2px', backgroundColor: step >= 2 ? 'var(--gold-crayola)' : 'var(--white-alpha-10)' }} />
+        <div className={`step-item ${step >= 2 ? 'active' : ''}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div className="step-icon" style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: step >= 2 ? 'var(--gold-crayola)' : 'var(--white-alpha-10)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: step >= 2 ? 'black' : 'white' }}><CreditCard size={18} /></div>
+          <span className="label-2">Payment</span>
         </div>
-        <div className="step-line" />
-        <div className={`step-item ${step >= 3 ? 'active' : ''}`}>
-          <div className="step-icon"><CheckCircle2 size={20} /></div>
-          <span>Review</span>
+        <div style={{ width: '60px', height: '2px', backgroundColor: step >= 3 ? 'var(--gold-crayola)' : 'var(--white-alpha-10)' }} />
+        <div className={`step-item ${step >= 3 ? 'active' : ''}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+          <div className="step-icon" style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: step >= 3 ? 'var(--gold-crayola)' : 'var(--white-alpha-10)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: step >= 3 ? 'black' : 'white' }}><CheckCircle2 size={18} /></div>
+          <span className="label-2">Review</span>
         </div>
       </div>
 
@@ -83,11 +85,12 @@ const Checkout = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
-            className="card p-4 shadow-sm"
+            className="card-dark"
+            style={{ padding: '40px', backgroundColor: 'var(--smoky-black-1)', borderRadius: '8px' }}
           >
-            <h2 className="headline-3 mb-4">Delivery Address</h2>
+            <h2 className="headline-2" style={{ marginBlockEnd: '30px', textAlign: 'center' }}>Delivery Address</h2>
             <form onSubmit={handleNextStep}>
-              <div className="mb-3">
+              <div style={{ marginBlockEnd: '20px' }}>
                 <input
                   type="text"
                   placeholder="Full Name"
@@ -97,7 +100,7 @@ const Checkout = () => {
                   onChange={(e) => setAddress({ ...address, name: e.target.value })}
                 />
               </div>
-              <div className="mb-3">
+              <div style={{ marginBlockEnd: '20px' }}>
                 <input
                   type="text"
                   placeholder="Street"
@@ -107,7 +110,7 @@ const Checkout = () => {
                   onChange={(e) => setAddress({ ...address, street: e.target.value })}
                 />
               </div>
-              <div className="mb-3">
+              <div style={{ marginBlockEnd: '20px' }}>
                 <input
                   type="text"
                   placeholder="City"
@@ -117,7 +120,7 @@ const Checkout = () => {
                   onChange={(e) => setAddress({ ...address, city: e.target.value })}
                 />
               </div>
-              <div className="mb-4">
+              <div style={{ marginBlockEnd: '40px' }}>
                 <input
                   type="tel"
                   placeholder="Phone Number"
@@ -127,8 +130,9 @@ const Checkout = () => {
                   onChange={(e) => setAddress({ ...address, phone: e.target.value })}
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100">
-                Continue to Payment <ArrowRight size={18} />
+              <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+                <span className="text text-1">Continue to Payment</span>
+                <span className="text text-2">Continue to Payment</span>
               </button>
             </form>
           </motion.div>
@@ -140,39 +144,38 @@ const Checkout = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
-            className="card p-4 shadow-sm"
+            className="card-dark"
+            style={{ padding: '40px', backgroundColor: 'var(--smoky-black-1)', borderRadius: '8px' }}
           >
-            <h2 className="headline-3 mb-4">Select Payment Method (Simulation)</h2>
-            <div className="payment-options mb-4">
+            <h2 className="headline-2" style={{ marginBlockEnd: '30px', textAlign: 'center' }}>Payment Method</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBlockEnd: '30px' }}>
               <div 
-                className={`payment-card ${paymentMethod === 'card' ? 'active' : ''}`}
+                className={`payment-option ${paymentMethod === 'card' ? 'active' : ''}`}
                 onClick={() => setPaymentMethod('card')}
+                style={{ padding: '20px', border: '1px solid var(--white-alpha-10)', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '15px', backgroundColor: paymentMethod === 'card' ? 'var(--white-alpha-10)' : 'transparent', transition: 'var(--transition-1)' }}
               >
-                <CreditCard size={24} />
-                <span>Credit / Debit Card</span>
+                <CreditCard size={24} color={paymentMethod === 'card' ? 'var(--gold-crayola)' : 'white'} />
+                <span className="label-1">Credit / Debit Card</span>
               </div>
               <div 
-                className={`payment-card ${paymentMethod === 'upi' ? 'active' : ''}`}
+                className={`payment-option ${paymentMethod === 'upi' ? 'active' : ''}`}
                 onClick={() => setPaymentMethod('upi')}
+                style={{ padding: '20px', border: '1px solid var(--white-alpha-10)', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '15px', backgroundColor: paymentMethod === 'upi' ? 'var(--white-alpha-10)' : 'transparent', transition: 'var(--transition-1)' }}
               >
-                <Wallet size={24} />
-                <span>UPI / PhonePe</span>
+                <Wallet size={24} color={paymentMethod === 'upi' ? 'var(--gold-crayola)' : 'white'} />
+                <span className="label-1">UPI / Digital Wallet</span>
               </div>
             </div>
             
-            {paymentMethod === 'card' && (
-              <div className="card-simulation bg-dark p-3 rounded mb-4 text-white">
-                <p className="label-3 mb-2 opacity-50">Mock Card Details</p>
-                <div className="d-flex justify-content-between">
-                  <span>**** **** **** 4242</span>
-                  <span>12/28</span>
-                </div>
-              </div>
-            )}
-
-            <div className="d-flex gap-3">
-              <button onClick={() => setStep(1)} className="btn btn-secondary flex-grow-1">Back</button>
-              <button onClick={() => setStep(3)} className="btn btn-primary flex-grow-1">Next</button>
+            <div style={{ display: 'flex', gap: '20px' }}>
+              <button onClick={() => setStep(1)} className="btn btn-secondary" style={{ flex: 1, justifyContent: 'center' }}>
+                <span className="text text-1">Back</span>
+                <span className="text text-2">Back</span>
+              </button>
+              <button onClick={() => setStep(3)} className="btn btn-primary" style={{ flex: 1, justifyContent: 'center' }}>
+                <span className="text text-1">Next</span>
+                <span className="text text-2">Next</span>
+              </button>
             </div>
           </motion.div>
         )}
@@ -182,42 +185,45 @@ const Checkout = () => {
             key="review"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="card p-4 shadow-sm"
+            className="card-dark"
+            style={{ padding: '40px', backgroundColor: 'var(--smoky-black-1)', borderRadius: '8px' }}
           >
-            <h2 className="headline-3 mb-4">Review Your Order</h2>
-            <div className="order-summary-box p-3 rounded mb-4 bg-light">
-              <div className="d-flex justify-content-between mb-2">
-                <span>Items Subtotal</span>
-                <span>₹{cartTotal}</span>
+            <h2 className="headline-2" style={{ marginBlockEnd: '30px', textAlign: 'center' }}>Review Order</h2>
+            <div style={{ backgroundColor: 'var(--eerie-black-3)', padding: '20px', borderRadius: '8px', marginBlockEnd: '30px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBlockEnd: '10px' }}>
+                <span className="label-2">Items Subtotal</span>
+                <span className="label-2">₹{cartTotal}</span>
               </div>
-              <div className="d-flex justify-content-between mb-2">
-                <span>Delivery Fee</span>
-                <span>₹40</span>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBlockEnd: '15px' }}>
+                <span className="label-2">Delivery Fee</span>
+                <span className="label-2">₹40</span>
               </div>
-              <hr />
-              <div className="d-flex justify-content-between font-weight-bold">
-                <span>Grand Total</span>
-                <span className="color-gold">₹{cartTotal + 40}</span>
+              <div style={{ height: '1px', backgroundColor: 'var(--white-alpha-10)', marginBlockEnd: '15px' }}></div>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span className="title-3">Grand Total</span>
+                <span className="title-3" style={{ color: 'var(--gold-crayola)' }}>₹{cartTotal + 40}</span>
               </div>
             </div>
 
-            <div className="address-preview mb-4">
-              <p className="label-3 opacity-50">Delivery to:</p>
+            <div style={{ marginBlockEnd: '40px' }}>
+              <p className="label-2" style={{ color: 'var(--quick-silver)', marginBlockEnd: '5px' }}>Delivery to:</p>
               <p className="label-1">{address.name}</p>
-              <p className="label-2">{address.street}, {address.city}</p>
+              <p className="body-4">{address.street}, {address.city}</p>
             </div>
 
             <button 
               onClick={handlePlaceOrder} 
-              className="btn btn-secondary w-100"
+              className="btn btn-secondary" 
+              style={{ width: '100%', justifyContent: 'center' }}
               disabled={isProcessing}
             >
               {isProcessing ? (
-                <>
-                  <Loader2 className="animate-spin mr-2" /> Processing Your Payment...
-                </>
+                <span className="text text-1">Processing...</span>
               ) : (
-                `Pay ₹${cartTotal + 40} Now`
+                <>
+                  <span className="text text-1">Pay ₹{cartTotal + 40} Now</span>
+                  <span className="text text-2">Pay ₹{cartTotal + 40} Now</span>
+                </>
               )}
             </button>
           </motion.div>
