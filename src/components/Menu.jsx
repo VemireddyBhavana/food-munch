@@ -22,23 +22,8 @@ const categoryData = [
 ];
 
 const Menu = ({ selectedCategory, onCategoryChange }) => {
-  const [animKey, setAnimKey] = useState(0);
   const [expandedCategory, setExpandedCategory] = useState(null);
   const menuGridRef = useRef(null);
-
-  useEffect(() => {
-    setAnimKey(prev => prev + 1);
-  }, [selectedCategory]);
-
-  const handleFilterClick = (catId) => {
-    onCategoryChange(catId);
-    // Smooth scroll to the menu grid if needed
-    document.getElementById('menu-grid-start')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const filtered = selectedCategory === 'All'
-    ? allMenuItems
-    : allMenuItems.filter(item => item.category === selectedCategory);
 
   return (
     <section className="section menu" aria-label="menu-label" id="menu">
