@@ -3,12 +3,12 @@ import { Camera } from 'lucide-react';
 
 const FoodGallery = () => {
   const galleryImages = [
-    { src: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800', alt: 'Healthy Salad' },
-    { src: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800', alt: 'Italian Pizza' },
-    { src: 'https://images.unsplash.com/photo-1484723046838-4a1801c18118?auto=format&fit=crop&q=80&w=800', alt: 'Gourmet Toast' },
-    { src: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80&w=800', alt: 'Fresh Pasta' },
-    { src: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800', alt: 'Buddha Bowl' },
-    { src: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=80&w=800', alt: 'Fresh Veggies' }
+    { src: '/assets/images/menu-1.png', alt: 'Healthy Salad' },
+    { src: '/assets/images/menu-2.png', alt: 'Italian Pizza' },
+    { src: '/assets/images/menu-3.png', alt: 'Gourmet Toast' },
+    { src: '/assets/images/menu-4.png', alt: 'Fresh Pasta' },
+    { src: '/assets/images/menu-5.png', alt: 'Buddha Bowl' },
+    { src: '/assets/images/menu-6.png', alt: 'Fresh Veggies' }
   ];
 
   return (

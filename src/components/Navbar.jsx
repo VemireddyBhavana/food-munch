@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ShoppingBag, Heart, Sun, Moon, X } from 'lucide-react';
 import { useCart } from '../data/CartContext';
 import { useTheme } from '../data/ThemeContext';
-import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -104,7 +103,7 @@ const Navbar = () => {
     <header className={`header ${isHeaderActive ? 'active' : ''} ${isHeaderHide ? 'hide' : ''} ${location.pathname !== '/' ? 'header-subpage' : ''}`} data-header>
       <div className="container">
         <Link to="/" className="logo" onClick={(e) => handleNavClick(e, '#home')}>
-          <img src={logo} width="160" height="40" alt="Food Munch Home" className="logo-img" />
+          <img src="/assets/images/food-munch-logo.png" width="160" height="40" alt="Food Munch Home" className="logo-img" />
         </Link>
 
         <nav className={`navbar ${isActive ? 'active' : ''}`} data-navbar>
@@ -113,7 +112,7 @@ const Navbar = () => {
           </button>
 
           <Link to="/" className="logo" onClick={(e) => handleNavClick(e, '#home')}>
-            <img src={logo} width="160" height="40" alt="Food Munch Home" className="logo-img" />
+            <img src="/assets/images/food-munch-logo.png" width="160" height="40" alt="Food Munch Home" className="logo-img" />
           </Link>
 
           <ul className="navbar-list">
@@ -188,4 +187,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

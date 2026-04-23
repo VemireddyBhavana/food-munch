@@ -29,7 +29,7 @@ const Youtube = ({ size = 20 }) => (
   </svg>
 );
 
-import logo from '../assets/logo.png';
+
 
 const Footer = () => {
   const handleNavClick = (e, targetId) => {
@@ -68,7 +68,7 @@ const Footer = () => {
               style={{ marginInline: 'auto', justifyContent: 'center' }}
               onClick={(e) => handleNavClick(e, '#home')}
             >
-              <img src={logo} width="140" height="45" alt="Food Munch" className="logo-img" />
+              <img src="/assets/images/food-munch-logo.png" width="140" height="45" alt="Food Munch" className="logo-img" />
             </a>
 
             <address className="body-4">

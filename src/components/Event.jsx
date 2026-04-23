@@ -56,6 +56,9 @@ const Event = () => {
             <span className="text text-2" aria-hidden="true">View All Events</span>
           </a>
         </div>
+
+        <img src="/assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" className="shape shape-1" />
+        <img src="/assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" className="shape shape-2" />
       </div>
     </section>
   );
