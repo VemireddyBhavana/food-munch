@@ -5,7 +5,7 @@ export const menuData = {
       name: 'Masala Bread Omelette',
       description: 'A beloved Indian street food staple: fluffy, masala-spiced omelette cooked directly with buttery bread slices.',
       price: '₹149',
-      image: '/assets/images/menu-1.png',
+      image: 'https://ik.imagekit.io/iwcam3r8ka/prod/blog-header/202501/3d2b42a8-ed48-4d9f-a785-243bce19700d.jpg',
       rating: 4.8,
       tags: 'Breakfast • Indian',
       ingredients: [
@@ -22,7 +22,7 @@ export const menuData = {
       name: 'Brioche French Toast',
       description: 'Thick slices of buttery brioche soaked in a rich vanilla-cinnamon custard and griddled to golden perfection.',
       price: '₹349',
-      image: '/assets/images/menu-2.png',
+      image: 'https://www.cubesnjuliennes.com/wp-content/uploads/2020/12/French-Toast-Recipe.jpg',
       rating: 4.9,
       tags: 'Breakfast • French',
       ingredients: [
@@ -38,7 +38,7 @@ export const menuData = {
       name: 'Mediterranean Shakshuka',
       description: 'Poached eggs in a vibrant, spiced tomato and bell pepper sauce, topped with fresh parsley and crumbled feta.',
       price: '₹399',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.31daily.com/wp-content/uploads/2019/02/md-Mediterranean-Shakshuka-Recipe.jpg',
       rating: 4.8,
       tags: 'Breakfast • Middle Eastern',
       ingredients: [
@@ -53,7 +53,7 @@ export const menuData = {
       name: 'Full English Breakfast',
       description: 'A hearty traditional platter featuring eggs, sausages, bacon, baked beans, tomatoes, and mushrooms.',
       price: '₹549',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36W3dlPz61fS0kCUkhOPX1aJ5-LNuyFbwrw&s',
       rating: 4.7,
       tags: 'Breakfast • British',
       ingredients: [
@@ -69,7 +69,7 @@ export const menuData = {
       name: 'Avocado Sourdough Toast',
       description: 'Creamy Hass avocado on toasted sourdough, topped with a perfectly poached egg and chili flakes.',
       price: '₹429',
-      image: '/assets/images/menu-5.png',
+      image: 'https://data.thefeedfeed.com/static/other/15332261975b632cd5d0f6b.jpg',
       rating: 4.9,
       tags: 'Breakfast • Modern',
       ingredients: [
@@ -84,7 +84,7 @@ export const menuData = {
       name: 'Belgian Waffles & Berries',
       description: 'Crispy, deep-pocketed Belgian waffles served with fresh berries and whipped Chantilly cream.',
       price: '₹379',
-      image: '/assets/images/menu-6.png',
+      image: 'https://d3s8tbcesxr4jm.cloudfront.net/recipe-images/v0/belgian-waffles-recipe-with-berries-and-cream_large.jpg',
       rating: 4.8,
       tags: 'Breakfast • Belgian',
       ingredients: [
@@ -98,7 +98,7 @@ export const menuData = {
       name: 'Classic Eggs Benedict',
       description: 'Poached eggs and Canadian bacon on toasted English muffins, smothered in silky Hollandaise sauce.',
       price: '₹499',
-      image: '/assets/images/menu-1.png',
+      image: 'https://www.foodandwine.com/thmb/qK7LtSiDvstPemc6PyPpX_e6WvM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eggs-benny-toast-FT-RECIPE0221-0dc162b246a54df2ab744bfaebc5d11b.jpg',
       rating: 4.7,
       tags: 'Breakfast • American',
       ingredients: [
@@ -113,7 +113,7 @@ export const menuData = {
       name: 'Amazonian Acai Bowl',
       description: 'A refreshing frozen acai blend topped with granola, banana slices, and coconut flakes.',
       price: '₹389',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-yiAQOBXwx04A1kd-Gu1ZvNarDZmmr8k4Q&s',
       rating: 4.9,
       tags: 'Breakfast • Healthy',
       ingredients: [
@@ -128,7 +128,7 @@ export const menuData = {
       name: 'Chilaquiles Rojos',
       description: 'Traditional Mexican breakfast of crispy tortilla chips simmered in red salsa, topped with eggs and avocado.',
       price: '₹449',
-      image: '/assets/images/menu-3.png',
+      image: 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2019-05-How-To-Chilaquiles%2FJoeLingeman_2019-04-22_PHOTO_Kitchn65454_HT_Chilaquiles_d54094_landscape2',
       rating: 4.8,
       tags: 'Breakfast • Mexican',
       ingredients: [
@@ -143,7 +143,7 @@ export const menuData = {
       name: 'Blueberry Oatmeal Pancakes',
       description: 'Hearty pancakes made with rolled oats and bursting with fresh blueberries. Served with honey.',
       price: '₹299',
-      image: '/assets/images/menu-4.png',
+      image: 'https://theclassybaker.com/wp-content/uploads/2024/02/oatmeal-blueberry-pancakes-13.jpg',
       rating: 4.6,
       tags: 'Breakfast • Healthy',
       ingredients: [
@@ -157,7 +157,7 @@ export const menuData = {
       name: 'Dutch Poffertjes',
       description: 'Dainty and light mini pancakes from the Netherlands, served with butter and powdered sugar.',
       price: '₹229',
-      image: '/assets/images/menu-5.png',
+      image: 'https://eightforestlane.com/wp-content/uploads/2023/12/Poffertjes_SQ-1.jpg',
       rating: 4.9,
       tags: 'Breakfast • Dutch',
       ingredients: [
@@ -171,7 +171,7 @@ export const menuData = {
       name: 'African Mandazi',
       description: 'Soft East African fried bread infused with aromatic cardamom and coconut milk.',
       price: '₹189',
-      image: '/assets/images/menu-6.png',
+      image: 'https://content.instructables.com/FPL/38KP/IAY1HAK9/FPL38KPIAY1HAK9.bmp',
       rating: 4.8,
       tags: 'Breakfast • African',
       ingredients: [
@@ -186,7 +186,7 @@ export const menuData = {
       name: 'Steak & Eggs',
       description: 'Premium grilled sirloin steak served with two farm-fresh eggs and crispy breakfast potatoes.',
       price: '₹749',
-      image: '/assets/images/menu-1.png',
+      image: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/10/0/FNK_Steak-And-Eggs_H_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1568394998790.webp',
       rating: 4.9,
       tags: 'Breakfast • Premium',
       ingredients: [
@@ -201,7 +201,7 @@ export const menuData = {
       name: 'Smoked Salmon Bagel',
       description: 'Toasted bagel spread with herb cream cheese, topped with premium smoked salmon, capers, and red onion.',
       price: '₹459',
-      image: '/assets/images/menu-2.png',
+      image: 'https://eightforestlane.com/wp-content/uploads/2024/11/Smoked-Salmon-Bagel_SQ-2.jpg',
       rating: 4.8,
       tags: 'Breakfast • Deli',
       ingredients: [
@@ -216,7 +216,7 @@ export const menuData = {
       name: 'Turkish Menemen',
       description: 'A traditional Turkish breakfast of scrambled eggs with tomatoes, green peppers, and spices.',
       price: '₹329',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.simplyrecipes.com/thmb/PwtQV9JCHsl_OmKB7cAjathAqtw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Menemen-LEAD-03-e977801b09254ed1804d4c6e1b38b385.jpg',
       rating: 4.7,
       tags: 'Breakfast • Turkish',
       ingredients: [
@@ -231,7 +231,7 @@ export const menuData = {
       name: 'Japanese Breakfast Set',
       description: 'A balanced set featuring grilled salmon, miso soup, steamed rice, and pickled vegetables.',
       price: '₹599',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdUNKb22ETC8_mLpVy6KPIeApYhF3Z2M1eg&s',
       rating: 4.8,
       tags: 'Breakfast • Japanese',
       ingredients: [
@@ -246,7 +246,7 @@ export const menuData = {
       name: 'Chia Seed Pudding',
       description: 'Overnight chia seeds soaked in coconut milk, topped with fresh mango puree and toasted almonds.',
       price: '₹319',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.easychickpeasy.com/wp-content/uploads/2024/02/blue-chia-seed-pudding-02.jpg',
       rating: 4.6,
       tags: 'Breakfast • Healthy',
       ingredients: [
@@ -261,7 +261,7 @@ export const menuData = {
       name: 'Huevos Rancheros',
       description: 'Fried eggs served on corn tortillas with warm salsa, refried beans, and cotija cheese.',
       price: '₹419',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2c0FPrHvkMxMef3NHI_gna-R9BZyGR2ixQ&s',
       rating: 4.8,
       tags: 'Breakfast • Mexican',
       ingredients: [
@@ -276,7 +276,7 @@ export const menuData = {
       name: 'Bircher Muesli',
       description: 'The original Swiss overnight oats with grated apple, nuts, honey, and fresh seasonal fruit.',
       price: '₹359',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-XWiErJjOsPtHo1VW_Hmyz7-xpNy3VbDfQ&s',
       rating: 4.7,
       tags: 'Breakfast • Swiss',
       ingredients: [
@@ -291,7 +291,7 @@ export const menuData = {
       name: 'Chocolate Ganache Waffles',
       description: 'Decadent chocolate waffles topped with dark chocolate ganache and roasted hazelnuts.',
       price: '₹399',
-      image: '/assets/images/menu-2.png',
+      image: 'https://cafedelites.com/wp-content/uploads/2016/04/Chocolate-Cake-Waffles-15.jpg',
       rating: 4.9,
       tags: 'Breakfast • Dessert',
       ingredients: [
@@ -305,7 +305,7 @@ export const menuData = {
       name: 'Rømmegrøt',
       description: 'Traditional Norwegian sour cream porridge served with melted butter and cinnamon.',
       price: '₹269',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvBxNOxh7d9VPhDNggFjSxxu3K89YSck2TJw&s',
       rating: 4.8,
       tags: 'Breakfast • Norwegian',
       ingredients: [
@@ -319,7 +319,7 @@ export const menuData = {
       name: 'Crispy Masala Dosa',
       description: 'A thin, golden-brown fermented rice crepe filled with a savory spiced potato mash. Served with coconut chutney and tangy sambar.',
       price: '₹189',
-      image: '/assets/images/menu-4.png',
+      image: 'https://vismaifood.com/storage/app/uploads/public/45a/29b/a17/thumb__700_0_0_0_auto.jpg',
       rating: 4.9,
       tags: 'Breakfast • South Indian',
       ingredients: [
@@ -334,7 +334,7 @@ export const menuData = {
       name: 'Steamed Idli & Sambar',
       description: 'Pillowy-soft steamed rice cakes served with a flavorful lentil-based vegetable stew (Sambar) and fresh coconut chutney.',
       price: '₹149',
-      image: '/assets/images/menu-5.png',
+      image: 'https://vaya.in/recipes/wp-content/uploads/2018/02/Idli-and-Sambar-1.jpg',
       rating: 4.8,
       tags: 'Breakfast • South Indian',
       ingredients: [
@@ -349,7 +349,7 @@ export const menuData = {
       name: 'Medu Vada Platter',
       description: 'Savory, donut-shaped lentil fritters that are crispy on the outside and soft on the inside. A classic South Indian protein-rich breakfast.',
       price: '₹169',
-      image: '/assets/images/menu-6.png',
+      image: 'https://thumbs.dreamstime.com/b/delicious-south-indian-dish-medu-vada-serving-chutney-sambar-traditional-breakfast-photo-plate-crispy-golden-made-405438107.jpg',
       rating: 4.7,
       tags: 'Breakfast • South Indian',
       ingredients: [
@@ -364,7 +364,7 @@ export const menuData = {
       name: 'Onion & Tomato Uttapam',
       description: 'Thick, savory pancakes made from fermented rice and lentil batter, topped with finely chopped onions, tomatoes, and green chilies.',
       price: '₹199',
-      image: '/assets/images/menu-1.png',
+      image: 'https://pipingpotcurry.com/wp-content/uploads/2026/01/Uttapam-Onion-Tomato-PipingPotCurry.jpg',
       rating: 4.8,
       tags: 'Breakfast • South Indian',
       ingredients: [
@@ -379,7 +379,7 @@ export const menuData = {
       name: 'Kanda Poha',
       description: 'A light and healthy Maharashtrian breakfast made with flattened rice, sautéed onions, potatoes, and toasted peanuts.',
       price: '₹129',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjgZWn008IBfTZ4sIo-1le8XH0xNRYajewA&s',
       rating: 4.6,
       tags: 'Breakfast • Indian',
       ingredients: [
@@ -395,7 +395,7 @@ export const menuData = {
       name: 'Vegetable Rava Upma',
       description: 'A savory semolina porridge cooked with fresh vegetables, curry leaves, and mustard seeds. Comforting and nutritious.',
       price: '₹139',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.cookingwithsiddhi.com/wp-content/uploads/2018/06/vegetable-rava-upma-750x422.png',
       rating: 4.5,
       tags: 'Breakfast • Indian',
       ingredients: [
@@ -410,7 +410,7 @@ export const menuData = {
       name: 'Classic Puri Bhaji',
       description: 'Deep-fried golden wheat breads (Puris) served with a mildly spiced, aromatic potato curry (Bhaji). A weekend favorite across India.',
       price: '₹219',
-      image: '/assets/images/menu-4.png',
+      image: 'https://paattiskitchen.com/wp-content/uploads/2023/01/kmc_20230129_200720-1.jpg',
       rating: 4.9,
       tags: 'Breakfast • Indian',
       ingredients: [
@@ -425,7 +425,7 @@ export const menuData = {
       name: 'Appam with Vegetable Stew',
       description: 'Lacy, fermented rice and coconut milk crepes with a soft center and crispy edges, served with a mild, aromatic coconut milk stew.',
       price: '₹249',
-      image: '/assets/images/menu-5.png',
+      image: 'https://images.slurrp.com/prod/recipe_images/cms/uks2ktwu86.webp',
       rating: 4.8,
       tags: 'Breakfast • Kerala',
       ingredients: [
@@ -440,7 +440,7 @@ export const menuData = {
       name: 'Mysore Masala Dosa',
       description: 'A spicy variation of the classic dosa, smeared with a signature red garlic-chili chutney before being stuffed with potato masala.',
       price: '₹209',
-      image: '/assets/images/menu-6.png',
+      image: 'https://vismaifood.com/storage/app/uploads/public/8b4/19e/427/thumb__700_0_0_0_auto.jpg',
       rating: 4.9,
       tags: 'Breakfast • South Indian',
       ingredients: [

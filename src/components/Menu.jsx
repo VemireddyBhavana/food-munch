@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const categoryData = [
-  { title: 'Breakfast', id: 'breakfast', desc: 'Start your mornings right with our wholesome South Indian and continental breakfast spreads.', img: '/assets/images/menu-1.png' },
+  { title: 'Breakfast', id: 'breakfast', desc: 'Start your mornings right with our wholesome South Indian and continental breakfast spreads.', img: 'https://res.cloudinary.com/de8opipom/image/upload/v1776955706/9da44767-94a0-4e31-bbea-4b56ba6d8fec-md_xvl108.jpg' },
   { title: 'Vegetarian', id: 'vegetarian', desc: 'A gourmet celebration of vegetables, featuring rich gravies and garden-fresh textures.', img: '/assets/images/menu-2.png' },
   { title: 'Beef', id: 'beef', desc: 'Savour the rich, succulent flavours of our premium aged beef cuts, slow-cooked to perfection.', img: '/assets/images/menu-3.png' },
   { title: 'Chicken', id: 'chicken', desc: 'Tender, farm-fresh chicken prepared with aromatic spices and global techniques for a delightful bite.', img: '/assets/images/menu-4.png' },
@@ -13,8 +13,8 @@ const categoryData = [
   { title: 'Pasta', id: 'pasta', desc: 'Hand-crafted Italian pasta tossed in rich, home-made sauces with fresh basil and premium cheeses.', img: '/assets/images/menu-3.png' },
   { title: 'Pork', id: 'pork', desc: 'Succulent pork selections, glazed with honey and spice, providing a perfect balance of sweet and savoury.', img: '/assets/images/menu-4.png' },
   { title: 'Seafood', id: 'seafood', desc: 'Freshly caught treasures from the ocean, grilled or pan-seared to preserve their delicate, natural flavours.', img: '/assets/images/menu-5.png' },
-  { title: 'Appetizers', id: 'appetizers', desc: 'From crispy kebabs to tangy chaats — our starters set the perfect tone for an indulgent meal.', img: '/assets/images/menu-6.png' },
-  { title: 'Drinks', id: 'drinks', desc: 'Sip on freshly blended mocktails, lassis, and premium beverages curated to refresh you.', img: '/assets/images/menu-1.png' },
+  { title: 'Appetizers', id: 'appetizers', desc: 'From crispy kebabs to tangy chaats — our starters set the perfect tone for an indulgent meal.', img: 'https://res.cloudinary.com/de8opipom/image/upload/v1776956563/a94f3d20-5189-4dec-8606-a26ca4cdd2f1_xsd3s1.png' },
+  { title: 'Drinks', id: 'drinks', desc: 'Sip on freshly blended mocktails, lassis, and premium beverages curated to refresh you.', img: 'https://res.cloudinary.com/de8opipom/image/upload/v1776956791/4533f494-9f56-4107-961a-22651c9cddd8-md_gt3ems.jpg' },
   { title: 'Side', id: 'side', desc: 'The perfect accompaniments, from truffle fries to garlic naans, designed to elevate your main course.', img: '/assets/images/menu-2.png' },
   { title: 'Vegan', id: 'vegan', desc: 'Vibrant, plant-based creations that never compromise on flavour, using the freshest organic produce.', img: '/assets/images/menu-3.png' }
 ];
