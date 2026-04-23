@@ -447,7 +447,7 @@ body.nav-active { overflow: hidden; }
 
 .section {
   position: relative;
-  padding-block: var(--section-space);
+  padding-block: 60px;
   overflow: hidden;
   z-index: 1;
 }
@@ -1106,18 +1106,20 @@ body.nav-active { overflow: hidden; }
 .about .section-text { margin-block: 15px 30px; }
 
 .about .btn {
-  margin-inline: auto;
+  margin-inline: 0;
   margin-block-start: 26px;
 }
 
 .about .container {
   display: grid;
   gap: 120px;
+  overflow: visible !important;
 }
 
 .about-banner {
   position: relative;
   margin-block-end: 120px;
+  overflow: visible !important;
 }
 
 .about-banner > .w-100 { padding-inline-start: 50px; }
@@ -1133,10 +1135,11 @@ body.nav-active { overflow: hidden; }
   padding-block: 50px;
 }
 
+.about { overflow: visible !important; }
+
 .about .abs-img-2 {
-  top: -65px;
+  top: -20px;
   right: 0;
-  overflow: hidden;
 }
 
 .about .abs-img-1::before {
@@ -1367,7 +1370,7 @@ body.nav-active { overflow: hidden; }
 
 .menu .btn {
   margin-inline: auto;
-  margin-block-start: 26px;
+  margin-block-start: 10px;
 }
 
 .menu .shape {
@@ -1987,7 +1990,7 @@ textarea.input-field {
      * spacing
      */
 
-    --section-space: 100px;
+    --section-space: 80px;
 
   }
 

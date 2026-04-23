@@ -44,7 +44,7 @@ const About = () => {
       <div className="container">
         <div className="about-content slide-in-left" ref={contentRef}>
           <p className="label-2 section-subtitle" id="about-label">Our Story</p>
-          <h2 className="headline-1 section-title">A Legacy Rooted in Hyderabad's Heart</h2>
+          <h2 className="headline-1 section-title">A Legacy Rooted in <br /> Hyderabad's Heart</h2>
           <p className="section-text">
             Born in the bustling lanes of Banjara Hills, Food Munch was founded in 2008 with a simple belief —
             that every meal should tell a story. Inspired by Hyderabad's rich Nizami culinary traditions and
@@ -81,7 +81,7 @@ const About = () => {
             <img src="/assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="Chef preparing food" className="w-100" />
           </div>
 
-          <div className="abs-img abs-img-2 has-before">
+          <div className="abs-img abs-img-2 has-before" data-parallax-item data-parallax-speed="0.5">
             <img src="/assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="Award badge" />
           </div>
         </figure>
