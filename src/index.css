@@ -1389,42 +1389,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #TESTIMONIALS
-\*-----------------------------------*/
-
-.testi {
-  padding-block-end: 340px;
-  position: static;
-}
-
-.testi .quote {
-  font-size: 7rem;
-  font-family: var(--fontFamily-forum);
-  line-height: 0.7em;
-}
-
-.testi .wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 2px;
-  margin-block: 40px 50px;
-}
-
-.testi .separator { animation: rotate360 15s linear infinite; }
-
-.profile .img {
-  margin-inline: auto;
-  border-radius: var(--radius-circle);
-  margin-block-end: 15px;
-}
-
-.testi .profile-name {
-  color: var(--gold-crayola);
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  letter-spacing: var(--letterSpacing-3);
-}
 
 
 
@@ -2111,23 +2075,6 @@ textarea.input-field {
 
 
 
-  /**
-   * TESTIMONIALS
-   */
-
-
-
-
-  /**
-   * TESTIMONIALS
-   */
-
-  .testi-text {
-    max-width: 910px;
-    margin-inline: auto;
-  }
-
-
 
   /**
    * RESERVATION
@@ -2352,15 +2299,6 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-  /**
-   * TESTIMONIALS
-   */
-
-
-
-  /**
-   * TESTIMONIALS
-   */
 
   .form-left,
   .form-right { padding: 75px 60px; }
@@ -2767,15 +2705,6 @@ textarea.input-field {
   animation: fadeInUp 0.4s ease;
 }
 
-
-/* ========== TESTIMONIALS ROLE TEXT ========== */
-
-.testi-role {
-  color: var(--quick-silver);
-  margin-block-start: 4px;
-  letter-spacing: var(--letterSpacing-3);
-  text-transform: uppercase;
-}
 
 
 /* ========== BACK TO TOP BUTTON ========== */

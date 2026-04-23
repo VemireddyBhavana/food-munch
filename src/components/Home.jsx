@@ -5,7 +5,6 @@ import Service from './Service';
 import About from './About';
 import SpecialDish from './SpecialDish';
 import Menu from './Menu';
-import Testimonials from './Testimonials';
 import Reservation from './Reservation';
 import Features from './Features';
 import Event from './Event';
@@ -37,7 +36,6 @@ function Home() {
       <RevealSection>
         <Menu selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
       </RevealSection>
-      <RevealSection><Testimonials /></RevealSection>
       <RevealSection><Reservation /></RevealSection>
       <RevealSection><Features /></RevealSection>
       <RevealSection><Event /></RevealSection>
