@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { about_banner, about_abs_image, badge_2, shape_3 } from '../data/imageAssets';
 
 const About = () => {
   const bannerRef = useRef(null);
@@ -67,7 +68,7 @@ const About = () => {
 
         <figure className="about-banner slide-in-right" ref={bannerRef}>
           <img
-            src="/assets/images/about-banner.jpg"
+            src={about_banner}
             width="570"
             height="570"
             loading="lazy"
@@ -78,15 +79,15 @@ const About = () => {
           />
 
           <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-            <img src="/assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="Chef preparing food" className="w-100" />
+            <img src={about_abs_image} width="285" height="285" loading="lazy" alt="Chef preparing food" className="w-100" />
           </div>
 
           <div className="abs-img abs-img-2 has-before" data-parallax-item data-parallax-speed="0.5">
-            <img src="/assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="Award badge" />
+            <img src={badge_2} width="133" height="134" loading="lazy" alt="Award badge" />
           </div>
         </figure>
 
-        <img src="/assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" className="shape" />
+        <img src={shape_3} width="197" height="194" loading="lazy" alt="" className="shape" />
       </div>
     </section>
   );

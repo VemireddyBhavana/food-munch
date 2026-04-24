@@ -457,7 +457,7 @@ export const menuData = {
       name: 'Sicilian Arancini',
       description: 'Crispy, golden risotto balls filled with molten mozzarella and savory ragù. Served with a zesty marinara dipping sauce.',
       price: '₹349',
-      image: '/assets/images/menu-1.png',
+      image: 'https://coleycooks.com/wp-content/uploads/2025/04/arancini-3-480x270.jpg',
       rating: 4.9,
       tags: 'Appetizer • Italian',
       ingredients: [
@@ -472,7 +472,7 @@ export const menuData = {
       name: 'Tomato Basil Bruschetta',
       description: 'Toasted artisan bread rubbed with garlic and topped with marinated heirloom tomatoes, fresh basil, and balsamic glaze.',
       price: '₹289',
-      image: '/assets/images/menu-2.png',
+      image: 'https://shwetainthekitchen.com/wp-content/uploads/2020/09/Tomato-and-Basil-Bruschetta-Recipe.jpg',
       rating: 4.8,
       tags: 'Appetizer • Italian',
       ingredients: [
@@ -487,7 +487,7 @@ export const menuData = {
       name: 'Gambas al Ajillo',
       description: 'Classic Spanish garlic shrimp sizzled in extra virgin olive oil with chili flakes and fresh parsley. Served with crusty bread.',
       price: '₹499',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.allrecipes.com/thmb/B2u5-9BgtvF7BRvfOOT2oRfNO7E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/266085-spanish-garlic-shrimp-DDMFS-beauty-4x3-e4e199450d704150b787a0eb59640add.jpg',
       rating: 4.9,
       tags: 'Appetizer • Spanish',
       ingredients: [
@@ -502,7 +502,7 @@ export const menuData = {
       name: 'Crispy Calamari',
       description: 'Tender squid rings lightly battered and fried to perfection. Served with a zesty lemon aioli and charred lemon wedges.',
       price: '₹429',
-      image: '/assets/images/menu-4.png',
+      image: 'https://img.freepik.com/free-photo/crispy-fried-calamari-rings-served-with-side-tomato-sauce-garnished-with-fresh-parsley_9975-124480.jpg?semt=ais_hybrid&w=740&q=80',
       rating: 4.7,
       tags: 'Appetizer • Seafood',
       ingredients: [
@@ -517,7 +517,7 @@ export const menuData = {
       name: 'Goat Cheese Stuffed Mushrooms',
       description: 'Cremini mushroom caps filled with a creamy herb and goat cheese mixture, topped with buttery Panko breadcrumbs.',
       price: '₹379',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhiqMCnzXaRtJbgmhuo0zzYLE2CLQSrqre2Q&s',
       rating: 4.8,
       tags: 'Appetizer • Vegetarian',
       ingredients: [
@@ -532,7 +532,7 @@ export const menuData = {
       name: 'Chicken Satay',
       description: 'Grilled chicken skewers marinated in coconut milk and spices, served with a rich, velvety peanut dipping sauce.',
       price: '₹399',
-      image: '/assets/images/menu-6.png',
+      image: 'https://www.eatyourselfskinny.com/wp-content/uploads/2023/08/chicken-skewers-5-scaled.jpg',
       rating: 4.8,
       tags: 'Appetizer • Southeast Asian',
       ingredients: [
@@ -547,7 +547,7 @@ export const menuData = {
       name: 'Vegetable Spring Rolls',
       description: 'Hand-rolled crispy pastry filled with shredded cabbage, carrots, and glass noodles. Served with sweet chili sauce.',
       price: '₹249',
-      image: '/assets/images/menu-1.png',
+      image: 'https://hot-thai-kitchen.com/wp-content/uploads/2021/03/veggie-spring-rolls-blog.jpg',
       rating: 4.6,
       tags: 'Appetizer • Asian',
       ingredients: [
@@ -561,7 +561,7 @@ export const menuData = {
       name: 'Caprese Skewers',
       description: 'Elegant skewers of cherry tomatoes, fresh bocconcini mozzarella, and basil leaves, drizzled with aged balsamic glaze.',
       price: '₹319',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgx_50JQJQgmmjTtDkkTr3rLNXsiq8QvwvQ&s',
       rating: 4.9,
       tags: 'Appetizer • Vegetarian',
       ingredients: [
@@ -576,7 +576,7 @@ export const menuData = {
       name: 'Dynamite Shrimp',
       description: 'Tempura-battered crispy shrimp tossed in a signature spicy, creamy dynamite sauce. Topped with spring onions.',
       price: '₹549',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVKTCzDDoUIBVdQtdFhWGINY-vx_zfeuarA&s',
       rating: 4.9,
       tags: 'Appetizer • Fusion',
       ingredients: [
@@ -590,7 +590,7 @@ export const menuData = {
       name: 'Truffle Parmesan Fries',
       description: 'Double-fried shoestring fries tossed in aromatic truffle oil, fresh parsley, and a generous grating of aged Parmesan.',
       price: '₹299',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.runningtothekitchen.com/wp-content/uploads/2025/07/parmesan-truffle-fries-8.jpg',
       rating: 4.8,
       tags: 'Appetizer • Modern',
       ingredients: [
@@ -605,7 +605,7 @@ export const menuData = {
       name: 'Spanakopita Triangles',
       description: 'Flaky phyllo pastry triangles filled with a savory blend of spinach, feta cheese, and Mediterranean herbs.',
       price: '₹349',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.mygreekdish.com/wp-content/uploads/2014/10/Mini-Spanakopita-Triangles-Recipe-Spanakopitakia-Greek-spinach-triangles-4-scaled.jpg',
       rating: 4.7,
       tags: 'Appetizer • Greek',
       ingredients: [
@@ -619,7 +619,7 @@ export const menuData = {
       name: 'Japanese Gyoza',
       description: 'Pan-seared pork and cabbage dumplings with a crispy base and tender top. Served with a soy-ginger dipping sauce.',
       price: '₹389',
-      image: '/assets/images/menu-6.png',
+      image: 'https://cdn.media.amplience.net/i/japancentre/recipe-1652-vegetarian-tofu-gyoza/Vegetarian-tofu-gyoza?$poi$&w=1200&h=630&sm=c&fmt=auto',
       rating: 4.8,
       tags: 'Appetizer • Japanese',
       ingredients: [
@@ -633,7 +633,7 @@ export const menuData = {
       name: 'Buffalo Chicken Wings',
       description: 'Classic New York style wings tossed in a spicy, buttery Buffalo sauce. Served with celery sticks and blue cheese dip.',
       price: '₹449',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9B2BaLtLnxmK19yBwX7GA8I3Ulit7pGO5_g&s',
       rating: 4.7,
       tags: 'Appetizer • American',
       ingredients: [
@@ -647,7 +647,7 @@ export const menuData = {
       name: 'Hummus & Warm Pita',
       description: 'Silky smooth chickpea hummus topped with olive oil and za’atar, served with warm, pillowy pita bread triangles.',
       price: '₹279',
-      image: '/assets/images/menu-2.png',
+      image: 'https://www.allrecipes.com/thmb/7W5LnKp7zVh-tHZ1CufFzAzxAvw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/232962-super-easy-hummus-ddmfs-3X4-0314-7a98966c532646769f91a51812e50e41.jpg',
       rating: 4.8,
       tags: 'Appetizer • Middle Eastern',
       ingredients: [
@@ -662,7 +662,7 @@ export const menuData = {
       name: 'Beef Carpaccio',
       description: 'Thinly sliced raw prime beef tenderloin topped with arugula, capers, parmesan shavings, and truffle oil.',
       price: '₹649',
-      image: '/assets/images/menu-3.png',
+      image: 'https://images.getrecipekit.com/20250217164244-beef-20carpaccio-20021725.jpg?aspect_ratio=4:3&quality=90&',
       rating: 4.9,
       tags: 'Appetizer • French',
       ingredients: [
@@ -676,7 +676,7 @@ export const menuData = {
       name: 'Prosciutto Asparagus',
       description: 'Tender asparagus spears wrapped in salty Prosciutto di Parma and roasted until crispy. Drizzled with lemon oil.',
       price: '₹419',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.simplyrecipes.com/thmb/qL_xoaM72yoiF2y-ruY6nqlfZb8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2017__04__2017-04-12-Prosciutto-Asparagus-6-e48d29972b7f4c70a99df97482f514ce.jpg',
       rating: 4.8,
       tags: 'Appetizer • Italian',
       ingredients: [
@@ -690,7 +690,7 @@ export const menuData = {
       name: 'Baked Brie with Honey',
       description: 'Warm, gooey French Brie cheese topped with toasted walnuts and honey. Served with crostini and apple slices.',
       price: '₹529',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2a3ZRyqppteEGk0rvCseYxGfekxho103LA&s',
       rating: 4.9,
       tags: 'Appetizer • French',
       ingredients: [
@@ -705,7 +705,7 @@ export const menuData = {
       name: 'Sea Bass Ceviche',
       description: 'Fresh sea bass cured in citrus juices with red onion, chili, and cilantro. Served with crispy plantain chips.',
       price: '₹589',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TmlMsLCdgZs_X-fPB8HnB62w5Gn7brSoeQ&s',
       rating: 4.9,
       tags: 'Appetizer • Peruvian',
       ingredients: [
@@ -719,7 +719,7 @@ export const menuData = {
       name: 'Mini Crab Cakes',
       description: 'Pan-seared lump crab cakes served with a house-made caper tartar sauce and fresh slaw.',
       price: '₹479',
-      image: '/assets/images/menu-1.png',
+      image: 'https://cdn.shopify.com/s/files/1/0652/5429/3748/files/marys-make-ahead-baked-crab-cake-bites-with-homemade-remoulade-sauce-close-up-mary-disomma-recipe_1000x.jpg?v=1706991668',
       rating: 4.8,
       tags: 'Appetizer • Seafood',
       ingredients: [
@@ -733,7 +733,7 @@ export const menuData = {
       name: 'Handcrafted Falafel',
       description: 'Crispy fried chickpea fritters seasoned with cumin and coriander. Served with a smooth tahini dip.',
       price: '₹229',
-      image: '/assets/images/menu-2.png',
+      image: 'https://thumbs.dreamstime.com/b/visual-feast-crispy-falafel-creamy-hummus-striking-black-plate-delicious-middle-eastern-culinary-indulge-your-senses-353105237.jpg',
       rating: 4.7,
       tags: 'Appetizer • Middle Eastern',
       ingredients: [
@@ -749,7 +749,7 @@ export const menuData = {
       name: 'Mango Lassi Premium',
       description: 'Thick and creamy yogurt drink blended with hand-picked Alphonso mango pulp.',
       price: '₹129',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.shutterstock.com/image-photo/fresh-mango-lassi-glasses-on-260nw-2374564461.jpg',
       rating: 4.9,
       tags: 'Drinks • Indian',
       ingredients: [
@@ -765,7 +765,7 @@ export const menuData = {
       name: 'Cold Coffee with Ice Cream',
       description: 'A rich and creamy blend of premium espresso, chilled milk, and a hint of vanilla, topped with a giant scoop of velvety vanilla ice cream.',
       price: '₹189',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-cold-coffee-recipe.jpg',
       rating: 4.8,
       tags: 'Drinks • International',
       ingredients: [
@@ -781,7 +781,7 @@ export const menuData = {
       name: 'Virgin Pina Colada',
       description: 'An exotic tropical escape in a glass: a smooth blend of fresh pineapple juice, creamy coconut milk, and crushed ice.',
       price: '₹229',
-      image: '/assets/images/menu-5.png',
+      image: 'https://noshingwiththenolands.com/wp-content/uploads/2023/02/IMG_4363-Full-Size-scaled.jpg',
       rating: 4.9,
       tags: 'Drinks • Tropical',
       ingredients: [
@@ -797,7 +797,7 @@ export const menuData = {
       name: 'Watermelon Mint Cooler',
       description: 'The ultimate summer refresher: fresh watermelon juice muddled with garden-fresh mint leaves and a splash of lime.',
       price: '₹149',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgKRvFgCD3wLYgHAkjHX4ilqwJlnlCIUrv4w&s',
       rating: 4.7,
       tags: 'Drinks • Seasonal',
       ingredients: [
@@ -813,7 +813,7 @@ export const menuData = {
       name: 'Gourmet Strawberry Milkshake',
       description: 'Thick and indulgent milkshake made with hand-picked strawberries and premium dairy, finished with whipped cream and a cherry.',
       price: '₹219',
-      image: '/assets/images/menu-1.png',
+      image: 'https://thumbs.dreamstime.com/b/delicious-strawberry-milkshake-clear-plastic-takeaway-cup-straw-whipped-cream-quarters-strawberries-as-finish-378017482.jpg',
       rating: 4.8,
       tags: 'Drinks • Dessert',
       ingredients: [
@@ -828,7 +828,7 @@ export const menuData = {
       name: 'Strawberry Basil Lemonade',
       description: 'A sophisticated twist on lemonade, featuring muddled strawberries and aromatic basil for a perfect balance of sweet and savory.',
       price: '₹179',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJAXpz2bNhM--HCdsJSnDtbOecGL_Es3PjQ&s',
       rating: 4.9,
       tags: 'Drinks • Refreshing',
       ingredients: [
@@ -843,7 +843,7 @@ export const menuData = {
       name: 'Blue Lagoon Mocktail',
       description: 'A vibrant blue tropical drink with citrus notes and sparkling soda, perfect for a sunny afternoon.',
       price: '₹199',
-      image: '/assets/images/menu-3.png',
+      image: 'https://ameessavorydish.com/wp-content/uploads/2023/01/Blue-lagoon-mocktail-feature.jpg',
       rating: 4.7,
       tags: 'Drinks • Mocktail',
       ingredients: [
@@ -858,7 +858,7 @@ export const menuData = {
       name: 'Iced Matcha Latte',
       description: 'Premium ceremonial grade matcha whisked with creamy milk and a touch of agave, served over ice.',
       price: '₹289',
-      image: '/assets/images/menu-4.png',
+      image: 'https://cdn.loveandlemons.com/wp-content/uploads/2023/06/iced-matcha-latte.jpg',
       rating: 4.9,
       tags: 'Drinks • Healthy',
       ingredients: [
@@ -873,7 +873,7 @@ export const menuData = {
       name: 'Classic Peach Iced Tea',
       description: 'Freshly brewed black tea infused with the sweet essence of sun-ripened peaches.',
       price: '₹159',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrB_y-C1JIt8owUd_4PBGU1pGSQSTEpoyqQ&s',
       rating: 4.8,
       tags: 'Drinks • Tea',
       ingredients: [
@@ -888,7 +888,7 @@ export const menuData = {
       name: 'Authentic Masala Chai',
       description: 'Spiced Indian tea brewed with ginger, cardamom, cinnamon, and loose-leaf black tea.',
       price: '₹99',
-      image: '/assets/images/menu-6.png',
+      image: 'https://i.pinimg.com/564x/65/e7/ee/65e7ee71e572bcb342d0dc24a9cdcfd1.jpg',
       rating: 5.0,
       tags: 'Drinks • Indian',
       ingredients: [
@@ -903,7 +903,7 @@ export const menuData = {
       name: 'Rich Hot Chocolate',
       description: 'Velvety dark chocolate melted into whole milk, topped with toasted marshmallows and cocoa powder.',
       price: '₹249',
-      image: '/assets/images/menu-1.png',
+      image: 'https://www.foodandwine.com/thmb/V1OEgtLQGUv_w2Fvm40WMLsJ4rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Indulgent-Hot-Chocolate-FT-RECIPE0223-fd36942ef266417ab40440374fc76a15.jpg',
       rating: 4.9,
       tags: 'Drinks • Comfort',
       ingredients: [
@@ -918,7 +918,7 @@ export const menuData = {
       name: 'Fresh Coconut Water',
       description: 'Nature’s own electrolyte drink, served chilled directly from a tender coconut.',
       price: '₹119',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgml2g8kLaz1iJcE-NUWHOP_kEVxYjoPGjDw&s',
       rating: 4.8,
       tags: 'Drinks • Healthy',
       ingredients: [
@@ -931,7 +931,7 @@ export const menuData = {
       name: 'Apple & Ginger Detox',
       description: 'A zingy blend of fresh green apples, spicy ginger, and a splash of lemon for a morning boost.',
       price: '₹169',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3OtOc332imBSlN9fvCgLKxaB8lcV7K5UKQ&s',
       rating: 4.7,
       tags: 'Drinks • Healthy',
       ingredients: [
@@ -946,7 +946,7 @@ export const menuData = {
       name: 'Lavender Blueberry Spritzer',
       description: 'A floral and fruity sparkling drink made with dried lavender buds and fresh blueberry reduction.',
       price: '₹219',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0hpufVdwKpRVUq9aj5cs13HcAoYfbJdI6g&s',
       rating: 4.9,
       tags: 'Drinks • Sparkling',
       ingredients: [
@@ -961,7 +961,7 @@ export const menuData = {
       name: 'Royal Rose Milk',
       description: 'Sweet pink milk infused with rose syrup and soaked basil seeds, a traditional cooling beverage.',
       price: '₹149',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkze_AHazhAsj0xsqT3TOqjSnRtnOqfS9ogQ&s',
       rating: 4.8,
       tags: 'Drinks • Indian',
       ingredients: [
@@ -976,7 +976,7 @@ export const menuData = {
       name: 'Cucumber Lime Detox',
       description: 'Infused water with fresh cucumber slices and lime, perfect for hydration during meals.',
       price: '₹89',
-      image: '/assets/images/menu-6.png',
+      image: 'https://img.siterank.app/topic/cucumber-lemon-water-prep-counter.png',
       rating: 4.5,
       tags: 'Drinks • Healthy',
       ingredients: [
@@ -991,7 +991,7 @@ export const menuData = {
       name: 'Passion Fruit Sparkler',
       description: 'Tangy passion fruit pulp mixed with mint and sparkling water for a tropical refreshing experience.',
       price: '₹239',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYxv0BPM0nxWbjHbJFYcGMsdLzs9xw2XtKA&s',
       rating: 4.9,
       tags: 'Drinks • Tropical',
       ingredients: [
@@ -1005,7 +1005,7 @@ export const menuData = {
       name: 'Orange Pomegranate Juice',
       description: 'A vibrant, vitamin-C packed juice blend of fresh Nagpur oranges and sweet pomegranate seeds.',
       price: '₹189',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-xrG73mgc0Ycj36_usmRgbiNwWMCUQSnRQ&s',
       rating: 4.8,
       tags: 'Drinks • Healthy',
       ingredients: [
@@ -1019,7 +1019,7 @@ export const menuData = {
       name: 'Iced Caramel Macchiato',
       description: 'Layers of rich espresso, chilled milk, and sweet caramel syrup, topped with foam.',
       price: '₹269',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.zulaykitchen.com/cdn/shop/articles/Easy_Iced_Caramel_Macchiato_Two_Delicious_Ways_to_Satisfy_Your_Coffee_Cravings.jpg?v=1743022060&width=5280',
       rating: 4.9,
       tags: 'Drinks • Coffee',
       ingredients: [
@@ -1034,7 +1034,7 @@ export const menuData = {
       name: 'Classic Virgin Mojito',
       description: 'A non-alcoholic classic: muddled mint leaves, lime juice, and sugar topped with sparkling soda.',
       price: '₹169',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.sustainablecooks.com/wp-content/uploads/2018/06/Classic-Virgin-Mojito-Recipe-2.jpg',
       rating: 4.8,
       tags: 'Drinks • Mocktail',
       ingredients: [
@@ -1051,7 +1051,7 @@ export const menuData = {
       name: 'Algerian Kefta (Meatballs)',
       description: 'Lush meatballs simmered in a spiced tomato gravy with fragrant herbs.',
       price: '₹349',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.allrecipes.com/thmb/aNnktINU5VPe8Tpxmu-XZcqehcw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/497967-1bf6644c6bd5491ba0c2d16a17c4bacd.jpg',
       rating: 5.0,
       tags: 'Beef • Algerian',
       ingredients: [
@@ -1071,7 +1071,7 @@ export const menuData = {
       name: 'Arepa pelua',
       description: 'Corn pockets stuffed with shredded beef and melted yellow cheese.',
       price: '₹229',
-      image: '/assets/images/menu-6.png',
+      image: 'https://i0.wp.com/norkaluque.net/wp-content/uploads/2021/09/arepa-pelua.jpg?resize=650%2C366&ssl=1',
       rating: 4.7,
       tags: 'Beef • Venezuelan',
       ingredients: [
@@ -1087,7 +1087,7 @@ export const menuData = {
       name: 'Aussie Burgers',
       description: 'Classic beef burgers topped with egg, beet, and a flavorful patty.',
       price: '₹289',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm6jKMxW8_66pCn6NQwXY_IwrA1cqoCld1JQ&s',
       rating: 4.6,
       tags: 'Beef • Australian',
       ingredients: [
@@ -1104,7 +1104,7 @@ export const menuData = {
       name: 'Beef and Mustard Pie',
       description: 'Savory steak pie with a bold mustard kick and a golden flaky crust.',
       price: '₹319',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOG-YOVu09rHoUkPTtFz7SWKT_nKIJoSZIHQ&s',
       rating: 4.8,
       tags: 'Beef • English',
       ingredients: [
@@ -1120,7 +1120,7 @@ export const menuData = {
       name: 'Beef Asado',
       description: 'Slow-roasted beef ribs marinated in aromatic spices and citrus.',
       price: '₹449',
-      image: '/assets/images/menu-3.png',
+      image: 'https://panlasangpinoy.com/wp-content/uploads/2020/09/beef-asado-500x485.jpg',
       rating: 4.9,
       tags: 'Beef • Filipino',
       ingredients: [
@@ -1136,7 +1136,7 @@ export const menuData = {
       name: 'Arepa Pabellón',
       description: 'Traditional Venezuelan arepa with shredded beef, black beans, and plantains.',
       price: '₹259',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDElHG8QSbQnTaHdCSpfHo4fBw6p_hDyIaLw&s',
       rating: 4.7,
       tags: 'Beef • Venezuelan',
       ingredients: [
@@ -1152,7 +1152,7 @@ export const menuData = {
       name: 'Asado',
       description: 'Authentic South American grilled beef, smoky and tender.',
       price: '₹489',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.allrecipes.com/thmb/12LsWT5MZTH1edcfyKjKGNs0IYI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pollo-Asado-Danielle-K-2000-347755b13f7242cf835c1f6c2e5f575b.jpeg',
       rating: 4.8,
       tags: 'Beef • Argentinian',
       ingredients: [
@@ -1167,7 +1167,7 @@ export const menuData = {
       name: 'Beef and Broccoli Stir-Fry',
       description: 'Thinly sliced beef with fresh broccoli in a savory ginger-garlic soy sauce.',
       price: '₹329',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWqFQMEqszTCZ87gxtXYw0rRKM1ivmm45TLg&s',
       rating: 4.5,
       tags: 'Beef • Chinese',
       ingredients: [
@@ -1183,7 +1183,7 @@ export const menuData = {
       name: 'Beef and Oyster pie',
       description: 'A Victorian-era classic pairing rich steak with briny oysters in a savory pie.',
       price: '₹379',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVYUxlTN0ewVdupyo9-FMIrT285oivQSK1QQ&s',
       rating: 4.6,
       tags: 'Beef • Traditional',
       ingredients: [
@@ -1199,7 +1199,7 @@ export const menuData = {
       name: 'Beef Banh Mi Bowls',
       description: 'Vietnamese-inspired bowls with sriracha mayo, carrots, and pickled cucumber.',
       price: '₹359',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT42eIDfxMrr6nuUxfzGiMxYXeo0U7a3kmLRQ&s',
       rating: 4.7,
       tags: 'Beef • Vietnamese',
       ingredients: [
@@ -1217,7 +1217,7 @@ export const menuData = {
       name: '15-minute chicken & halloumi burgers',
       description: 'Juicy chicken breasts bashed thin and fried in chilli sauce, served with golden brown halloumi, fresh cabbage, and creamy mayo in toasted buns.',
       price: '₹329',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZnPXP2iLv3JBUMHMTRc1utfNVlQum-bcVQ&s',
       rating: 5.0,
       tags: 'Chicken • American',
       ingredients: [
@@ -1241,7 +1241,7 @@ export const menuData = {
       name: 'Brown Stew Chicken',
       description: 'Classic Caribbean dish known for its rich, savory gravy and tender, caramelized chicken pieces.',
       price: '₹389',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.foodandwine.com/thmb/VOp3VmgNuByqJCdqnvs_nq9CoQs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Brown-Stew-Chicken-FT-MAG-RECIPE-1224-b2263c68dc884356bc14cb67882f4e81.jpg',
       rating: 4.9,
       tags: 'Chicken • Jamaican',
       ingredients: [
@@ -1261,7 +1261,7 @@ export const menuData = {
       name: 'Chicken & chorizo rice pot',
       description: 'A vibrant one-pot meal blending smoky Spanish chorizo with tender chicken and fluffy aromatic rice.',
       price: '₹369',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ24rbvyWrBaGcJnWifDbtCzfNIle5-QjfuA&s',
       rating: 4.8,
       tags: 'Chicken • Spanish',
       ingredients: [
@@ -1279,7 +1279,7 @@ export const menuData = {
       name: 'Chicken Alfredo Primavera',
       description: 'Creamy Alfredo sauce paired with sautéed chicken and a medley of fresh spring vegetables.',
       price: '₹349',
-      image: '/assets/images/menu-6.png',
+      image: 'https://easychickenrecipes.com/wp-content/uploads/2020/08/creamy-chicken-primavera-6-of-7.jpg',
       rating: 4.7,
       tags: 'Chicken • Italian',
       ingredients: [
@@ -1297,7 +1297,7 @@ export const menuData = {
       name: 'Chicken Congee',
       description: 'Silky rice porridge simmered with ginger and chicken for a comforting, warming meal.',
       price: '₹249',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBBZs9Od99NHvYic-hWsAmcExuogOLOWn02g&s',
       rating: 4.9,
       tags: 'Chicken • Chinese',
       ingredients: [
@@ -1315,7 +1315,7 @@ export const menuData = {
       name: 'Ayam Percik',
       description: 'Malaysian grilled chicken basted in a rich, spicy coconut milk sauce infused with lemongrass.',
       price: '₹419',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNZZVgXZEm0vCljWKD93NQM_Fi9VwpCLBtw&s',
       rating: 4.8,
       tags: 'Chicken • Malaysian',
       ingredients: [
@@ -1333,7 +1333,7 @@ export const menuData = {
       name: 'Chick-Fil-A Sandwich',
       description: 'A crispy chicken breast brined in pickle juice, served on a toasted bun with signature pickles.',
       price: '₹299',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN9Xsm7wNyrNngcAmlA-c-0ivCyfXRWqQ9qQ&s',
       rating: 4.7,
       tags: 'Chicken • American',
       ingredients: [
@@ -1351,7 +1351,7 @@ export const menuData = {
       name: 'Chicken & mushroom Hotpot',
       description: 'Tender chicken and earthy mushrooms in a creamy sauce, topped with golden crispy potato slices.',
       price: '₹379',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.spiceandlife.com/wp-content/uploads/2023/02/Chicken-and-mushroom-Hot-Pot-with-potato-topping-e1676576650330.jpg',
       rating: 4.9,
       tags: 'Chicken • British',
       ingredients: [
@@ -1369,7 +1369,7 @@ export const menuData = {
       name: 'Chicken Basquaise',
       description: 'A rustic French stew of chicken, bell peppers, and tomatoes seasoned with Espelette pepper.',
       price: '₹399',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJr4C5iIVKLGxi5eDZ5sFQwpPBUSH5WzrjA&s',
       rating: 4.8,
       tags: 'Chicken • French',
       ingredients: [
@@ -1386,7 +1386,7 @@ export const menuData = {
       name: 'Chicken Couscous',
       description: 'Fragrant Moroccan-inspired dish with spiced chicken, chickpeas, and fluffy couscous.',
       price: '₹359',
-      image: '/assets/images/menu-6.png',
+      image: 'https://feelgoodfoodie.net/wp-content/uploads/2023/04/Skillet-Chicken-with-Couscous-TIMG.jpg',
       rating: 4.9,
       tags: 'Chicken • Moroccan',
       ingredients: [
@@ -1403,10 +1403,10 @@ export const menuData = {
   dessert: [
     {
       id: 'aebleskiver',
-      name: 'Æbleskiver',
+      name: 'Aebleskiver',
       description: 'Traditional Danish pancake spheres, fluffy on the inside and crisp on the outside, served with jam and powdered sugar.',
       price: '₹249',
-      image: '/assets/images/menu-1.png',
+      image: 'https://www.everyday-delicious.com/wp-content/uploads/2023/09/aebleskiver-everyday-delicious-1.jpg',
       rating: 5.0,
       tags: 'Dessert • Norwegian',
       ingredients: [
@@ -1428,7 +1428,7 @@ export const menuData = {
       name: 'Anzac biscuits',
       description: 'Iconic Australian oat and coconut biscuits, perfectly chewy in the center and golden-crisp on the edges.',
       price: '₹189',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJr_QZ6sF8EmRW6ZIZwBWKQQ9xoZPTwvZVEw&s',
       rating: 4.8,
       tags: 'Dessert • Australian',
       ingredients: [
@@ -1447,7 +1447,7 @@ export const menuData = {
       name: 'Apple & Blackberry Crumble',
       description: 'A comforting British classic with sweet-tart fruit and a buttery, crisp oat topping.',
       price: '₹279',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-oiL8U56q9b6mAw2wL4fYIDek3cnS2DR-Q&s',
       rating: 4.9,
       tags: 'Dessert • British',
       ingredients: [
@@ -1465,7 +1465,7 @@ export const menuData = {
       name: 'Apple Frangipan Tart',
       description: 'An elegant French tart featuring a delicate almond cream filling and thin slices of apple.',
       price: '₹329',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZb7GXco1ICJQp7auxxgzD9a-iWqVL-eWVqQ&s',
       rating: 4.8,
       tags: 'Dessert • French',
       ingredients: [
@@ -1483,7 +1483,7 @@ export const menuData = {
       name: 'Authentic Norwegian Kransekake',
       description: 'A striking tower of chewy almond cookie rings, traditionally served at Norwegian celebrations.',
       price: '₹449',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.thespruceeats.com/thmb/P7AIJgChW1FfcQK4B1zAvvyBXg8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-kransekake-norwegian-ring-cake-2952682-0155a0512579433494aa2d64cd798635.jpg',
       rating: 5.0,
       tags: 'Dessert • Norwegian',
       ingredients: [
@@ -1499,7 +1499,7 @@ export const menuData = {
       name: 'Alfajores',
       description: 'Soft, melt-in-the-mouth Argentine cookies sandwiched with rich dulce de leche.',
       price: '₹229',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFhdFCoYhj4MaiKSlDSMn_X9KYZNBRg4_Dlw&s',
       rating: 4.9,
       tags: 'Dessert • Argentine',
       ingredients: [
@@ -1517,7 +1517,7 @@ export const menuData = {
       name: 'Apam balik',
       description: 'A decadent Malaysian turnover pancake with a crunchy peanut and sweet corn filling.',
       price: '₹159',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ7Y4VHyZ8S1Ivp3y9BrtDM4Xl7HtW3eCWJQ&s',
       rating: 4.7,
       tags: 'Dessert • Malaysian',
       ingredients: [
@@ -1535,7 +1535,7 @@ export const menuData = {
       name: 'Apple cake',
       description: 'A moist, spiced home-style cake loaded with fresh apple chunks and a cinnamon finish.',
       price: '₹269',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQR9Logl81mPprDNaslLPQ1m-d6EtubBlAg&s',
       rating: 4.8,
       tags: 'Dessert • German',
       ingredients: [
@@ -1553,7 +1553,7 @@ export const menuData = {
       name: 'Apricot & Turkish delight mess',
       description: 'An exotic take on Eton Mess with rose-tinted Turkish delight, fresh apricots and whipped cream.',
       price: '₹289',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kSOvmXMYbwL0MUA5orpXlh13WZVzhUQR9Q&s',
       rating: 4.9,
       tags: 'Dessert • Middle Eastern',
       ingredients: [
@@ -1570,7 +1570,7 @@ export const menuData = {
       name: 'Bakewell tart',
       description: 'A classic English pastry with a layer of jam and a rich almond frangipane topping.',
       price: '₹299',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHFkgEVjKgB8fqtjOFKCGEXW_HbKWbBZSIUQ&s',
       rating: 4.8,
       tags: 'Dessert • English',
       ingredients: [
@@ -1590,7 +1590,7 @@ export const menuData = {
       name: 'Jamaican Curry Goat',
       description: 'A rich, bold, and aromatic Caribbean classic made with tender goat meat simmered in authentic Jamaican curry spices.',
       price: '₹489',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDUmCpv4yu1d4tCympeJxdDImEtzJqUZvAw&s',
       rating: 5.0,
       tags: 'Goat • Jamaican',
       ingredients: [
@@ -1616,7 +1616,7 @@ export const menuData = {
       name: 'Mbuzi Choma (Roasted Goat)',
       description: 'Slow-roasted goat ribs over an open charcoal flame, perfectly charred and seasoned with traditional East African spices.',
       price: '₹429',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnM22SNGQKGVHrZ64ht2BzpPOMZwBCvYSCA&s',
       rating: 4.9,
       tags: 'Goat • East African',
       ingredients: [
@@ -1635,7 +1635,7 @@ export const menuData = {
       name: 'Moroccan Goat Tagine',
       description: 'An aromatic, slow-cooked masterpiece featuring succulent goat meat, sweet dried apricots, and crunchy toasted almonds in a velvet Ras el Hanout sauce.',
       price: '₹529',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRrKXv_TD14jRNu_1Fty8cFlUlhiapTz-Pw&s',
       rating: 4.9,
       tags: 'Goat • Moroccan',
       ingredients: [
@@ -1653,7 +1653,7 @@ export const menuData = {
       name: 'Indian Mutton Masala (Goat Curry)',
       description: 'A robust and spicy North Indian classic, slow-simmered with browned onions, luscious tomatoes, and a complex blend of hand-ground spices.',
       price: '₹449',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOSStqWuRiJgXXO6txChRtaip17tr0CK6WQ&s',
       rating: 4.8,
       tags: 'Goat • Indian',
       ingredients: [
@@ -1671,7 +1671,7 @@ export const menuData = {
       name: 'Hyderabadi Goat Dum Biryani',
       description: 'The "King of Biryanis": tender marinated goat and aged basmati rice cooked in the traditional "Katchi" style, sealed with dough for a fragrant, flavorful finish.',
       price: '₹589',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTlJnprTaakbTI0kzZAqgw_Ugn8-Wn4d6u4g&s',
       rating: 5.0,
       tags: 'Goat • Royal Indian',
       ingredients: [
@@ -1689,7 +1689,7 @@ export const menuData = {
       name: 'Goat Birria Tacos',
       description: 'Mexican street food at its finest: slow-braised shredded goat meat in a rich guajillo chili broth, served in crispy tortillas with melted mozzarella and a side of consommé.',
       price: '₹349',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rgIOvEHHzlYRvXQk_g_WpQx-mcQy3eWolw&s',
       rating: 4.9,
       tags: 'Goat • Mexican',
       ingredients: [
@@ -1706,7 +1706,7 @@ export const menuData = {
       name: 'Roasted Goat Shanks',
       description: 'Elegant slow-roasted goat shanks cooked in a rich reduction of dry red wine, fresh rosemary, and root vegetables until the meat literally falls off the bone.',
       price: '₹649',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkK3Zkt9UCOfpmhfhNjc_uYum596Uh2NwJ2Q&s',
       rating: 5.0,
       tags: 'Goat • European',
       ingredients: [
@@ -1724,7 +1724,7 @@ export const menuData = {
       name: 'Filipino Goat Kaldereta',
       description: 'A celebratory Filipino stew of goat meat in a savory tomato and liver spread sauce, enriched with cheese, olives, and bell peppers.',
       price: '₹479',
-      image: '/assets/images/menu-6.png',
+      image: 'https://delishably.com/.image/MTc0NDI5MDk2NTEwNDk4NDM4/kalderetang-kambing-filipino-goat-stew.jpg',
       rating: 4.7,
       tags: 'Goat • Filipino',
       ingredients: [
@@ -1742,7 +1742,7 @@ export const menuData = {
       name: 'Katsiki Giahni (Greek Goat Stew)',
       description: 'Traditional Greek village-style goat stew slow-cooked in a light tomato and lemon sauce with aromatic wild oregano and baby potatoes.',
       price: '₹499',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBPd19Y5ZcGKSYRab_DD_bS_L7ThJeP4XBw&s',
       rating: 4.8,
       tags: 'Goat • Greek',
       ingredients: [
@@ -1760,7 +1760,7 @@ export const menuData = {
       name: 'Grilled Goat Chops',
       description: 'Succulent goat chops marinated in a Mediterranean blend of garlic, rosemary, and lemon, grilled to smoky perfection over an open flame.',
       price: '₹559',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LFyAYD17Vzku2AGVgAcwxSLVnc0O0c1V2Q&s',
       rating: 4.9,
       tags: 'Goat • Mediterranean',
       ingredients: [
@@ -1779,7 +1779,7 @@ export const menuData = {
       name: 'Adana kebab',
       description: 'A spicy Turkish classic made with hand-minced lamb and seasoned with Romano peppers and aromatic spices.',
       price: '₹389',
-      image: '/assets/images/menu-3.png',
+      image: 'https://i0.wp.com/nutrient-matters.com/wp-content/uploads/2025/02/IMG_4211.jpg?fit=1179%2C2070&ssl=1',
       rating: 5.0,
       tags: 'Lamb • Turkish',
       ingredients: [
@@ -1796,7 +1796,7 @@ export const menuData = {
       name: 'Chorba Hamra bel Frik',
       description: 'A nourishing Algerian soup with tender lamb, smoky green wheat (frik), and a rich tomato-based broth.',
       price: '₹349',
-      image: '/assets/images/menu-4.png',
+      image: 'https://d1yfn1dfres2va.cloudfront.net/012/d0/cf/d0cf192feb1afe065c1f27bc661bccb7_250x250.jpg',
       rating: 4.8,
       tags: 'Lamb • Algerian',
       ingredients: [
@@ -1816,7 +1816,7 @@ export const menuData = {
       name: 'Hot cumin lamb wrap',
       description: 'Zesty cumin-spiced lamb griddled to perfection, served in a warm flatbread with crunchy slaw and spicy mayo.',
       price: '₹299',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzPgE3F09j2fKXDEHF7LioGwaRZhOmH40Nsw&s',
       rating: 4.7,
       tags: 'Lamb • Fusion',
       ingredients: [
@@ -1834,7 +1834,7 @@ export const menuData = {
       name: 'Kapsalon',
       description: 'The ultimate Dutch street food: a layered spectacular of crispy fries, succulent lamb shawarma, and melted cheese.',
       price: '₹379',
-      image: '/assets/images/menu-6.png',
+      image: 'https://i.ytimg.com/vi/LckdUYMmW8A/maxresdefault.jpg',
       rating: 4.9,
       tags: 'Lamb • Dutch',
       ingredients: [
@@ -1851,7 +1851,7 @@ export const menuData = {
       name: 'Kofta burgers',
       description: 'Juicy Middle Eastern style lamb patties infused with herbs and spices, served on toasted buns with cooling tzatziki.',
       price: '₹329',
-      image: '/assets/images/menu-1.png',
+      image: 'https://rachaelsgoodeats.com/wp-content/uploads/2024/07/kofta-burgers-18.jpg',
       rating: 4.8,
       tags: 'Lamb • Middle Eastern',
       ingredients: [
@@ -1869,7 +1869,7 @@ export const menuData = {
       name: 'Chilli ginger lamb chops',
       description: 'Zesty and spicy lamb chops marinated in fresh ginger and red chilli, grilled for a smoky finish.',
       price: '₹449',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTessgYEwhi12wT7VuFjXKanvXZyBGnmOPC5A&s',
       rating: 4.9,
       tags: 'Lamb • Oriental',
       ingredients: [
@@ -1886,7 +1886,7 @@ export const menuData = {
       name: 'Fårikål',
       description: 'The national dish of Norway, a rustic and comforting slow-cooked stew of lamb and cabbage with whole peppercorns.',
       price: '₹419',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUx_wDefsnC6luDUtRlEc2QK8l0CtOvlMtQ&s',
       rating: 5.0,
       tags: 'Lamb • Norwegian',
       ingredients: [
@@ -1902,7 +1902,7 @@ export const menuData = {
       name: 'Imam bayildi with BBQ lamb',
       description: 'Smoky BBQ lamb chops paired with "fainting-good" Turkish stuffed aubergines and refreshing tzatziki.',
       price: '₹489',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.mygreekdish.com/wp-content/uploads/2023/03/Imam-Bayildi-recipe.jpeg',
       rating: 4.9,
       tags: 'Lamb • Turkish',
       ingredients: [
@@ -1919,7 +1919,7 @@ export const menuData = {
       name: 'Keleya Zaara',
       description: 'An elegant Tunisian stew of tender lamb cubes slow-cooked in a fragrant saffron and butter sauce.',
       price: '₹469',
-      image: '/assets/images/menu-5.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2025/05/Lamb-suya-c862ad0.jpg?quality=90&resize=556,505',
       rating: 4.8,
       tags: 'Lamb • Tunisian',
       ingredients: [
@@ -1936,7 +1936,7 @@ export const menuData = {
       name: 'Lamb & apricot meatballs',
       description: 'Sweet and savory Moroccan-inspired lamb meatballs with chopped apricots, simmered in a spiced tomato sauce.',
       price: '₹359',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP04I_aKpPsQXXvQgvWs3FpTarMxafQkiKTQ&s',
       rating: 4.7,
       tags: 'Lamb • Moroccan',
       ingredients: [
@@ -1955,7 +1955,7 @@ export const menuData = {
       name: 'Bean & Sausage Hotpot',
       description: 'A comforting British classic: juicy sausages and butter beans simmered in a rich tomato sauce with a hint of treacle.',
       price: '₹349',
-      image: '/assets/images/menu-1.png',
+      image: 'https://res.cloudinary.com/dodmxncwc/image/upload/v1777022310/Sausage-and-Bean-Casserole-tall-FS_bdmn0n.webp',
       rating: 5.0,
       tags: 'Miscellaneous • British',
       ingredients: [
@@ -1972,7 +1972,7 @@ export const menuData = {
       name: 'Chakchouka',
       description: 'A vibrant Mediterranean dish of eggs poached in a robust, spiced tomato and pepper sauce, topped with fresh herbs.',
       price: '₹289',
-      image: '/assets/images/menu-2.png',
+      image: 'https://res.cloudinary.com/dodmxncwc/image/upload/v1777022336/chakchouka-shakshouka-recipe-1746066984_xnwplo.jpg',
       rating: 4.8,
       tags: 'Miscellaneous • Mediterranean',
       ingredients: [
@@ -1991,7 +1991,7 @@ export const menuData = {
       name: 'French Lentils with Garlic and Thyme',
       description: 'Earthy "lentilles du Puy" slow-simmered with a classic mirepoix, fresh thyme, and a touch of white wine.',
       price: '₹269',
-      image: '/assets/images/menu-3.png',
+      image: 'https://res.cloudinary.com/dodmxncwc/image/upload/v1777022404/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2017__10__20170922-french-lentils-vicky-wasik-14-3d8fd1804b3a4809bf8d991510481dd1_xxf6n4.jpg',
       rating: 4.7,
       tags: 'Miscellaneous • French',
       ingredients: [
@@ -2009,7 +2009,7 @@ export const menuData = {
       name: 'Locro',
       description: 'A hearty Argentinian national treasure: a thick, velvety stew of hominy, squash, and tender meats.',
       price: '₹429',
-      image: '/assets/images/menu-4.png',
+      image: 'https://res.cloudinary.com/dodmxncwc/image/upload/v1777022471/zf471k94cmm71_rzmqqq.jpg',
       rating: 4.9,
       tags: 'Miscellaneous • Argentinian',
       ingredients: [
@@ -2026,7 +2026,7 @@ export const menuData = {
       name: 'Mutabbaq',
       description: 'A savory-sweet layered spectacular: paper-thin dough folded over a rich filling of spiced lamb and scallions.',
       price: '₹319',
-      image: '/assets/images/menu-5.png',
+      image: 'https://img.ananinja.com/media/ninja-catalog-42/restaurants/lbima20iirn6618vx8fvubnntdqf/company-cr1009052339-restaurant-sultan-mutabaq-banner-image?w=3840&q=75',
       rating: 4.8,
       tags: 'Miscellaneous • Middle Eastern',
       ingredients: [
@@ -2043,7 +2043,7 @@ export const menuData = {
       name: 'Callaloo Jamaican Style',
       description: 'Nutrient-rich amaranth greens steamed with vibrant aromatics, scotch bonnet, and a hint of butter.',
       price: '₹249',
-      image: '/assets/images/menu-6.png',
+      image: 'https://jamaicanfoodsandrecipes.com/wp-content/uploads/2019/10/jamaican-callaloo-recipe.webp',
       rating: 4.7,
       tags: 'Miscellaneous • Jamaican',
       ingredients: [
@@ -2060,7 +2060,7 @@ export const menuData = {
       name: 'Duck Confit',
       description: 'A masterclass in French technique: duck legs slow-cooked in their own fat until fall-off-the-bone tender.',
       price: '₹549',
-      image: '/assets/images/menu-1.png',
+      image: 'https://www.kitchensanctuary.com/wp-content/uploads/2018/07/Confit-duck-with-roasted-rhubarb-square-FS.jpg',
       rating: 5.0,
       tags: 'Miscellaneous • French',
       ingredients: [
@@ -2077,7 +2077,7 @@ export const menuData = {
       name: 'French Omelette',
       description: 'Elegant and classic: a smooth, pale omelette with a creamy, barely-set interior and a glossy butter finish.',
       price: '₹259',
-      image: '/assets/images/menu-2.png',
+      image: 'https://images.themodernproper.com/production/posts/2022/French-Omellete-10.jpeg?w=300&q=82&auto=format&fit=crop&dm=1647879779&s=d130645e0220f25c11da4cc68c0532f5',
       rating: 4.9,
       tags: 'Miscellaneous • French',
       ingredients: [
@@ -2093,7 +2093,7 @@ export const menuData = {
       name: 'Migas',
       description: 'A rustic Spanish masterpiece: crispy, paprika-infused bread crumbs tossed with chorizo and sweet green grapes.',
       price: '₹299',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.thespruceeats.com/thmb/DrAcWq7oouEQehD3SVyP3uJ8LB0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/migas-recipe-5213972-hero-01-96427fef0456431dbfc904e1697f344d.jpg',
       rating: 4.8,
       tags: 'Miscellaneous • Spanish',
       ingredients: [
@@ -2110,7 +2110,7 @@ export const menuData = {
       name: 'Osso Buco alla Milanese',
       description: 'Cross-cut veal shanks braised with white wine and soffritto, topped with vibrant lemon-garlic gremolata.',
       price: '₹529',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.gustiamo.com/gustiblog/wp-content/uploads/2009/10/ossobuco-alla-milanese.jpg',
       rating: 4.9,
       tags: 'Miscellaneous • Italian',
       ingredients: [
@@ -2129,7 +2129,7 @@ export const menuData = {
       name: 'Chilli prawn linguine',
       description: 'A fragrant and zesty seafood pasta featuring succulent king prawns and sugar snap peas in a lime-infused dressing.',
       price: '₹429',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2024/05/asian-chili-shrimp-chilli-prawn-recipe.jpg',
       rating: 5.0,
       tags: 'Pasta • Italian',
       ingredients: [
@@ -2154,7 +2154,7 @@ export const menuData = {
       name: 'Fettucine alfredo',
       description: 'The luxurious American-style classic featuring silky pasta in a rich, velvety cream and Parmigiano sauce.',
       price: '₹379',
-      image: '/assets/images/menu-6.png',
+      image: 'https://www.modernhoney.com/wp-content/uploads/2018/08/Fettuccine-Alfredo-Recipe-1-500x500.jpg',
       rating: 4.8,
       tags: 'Pasta • American',
       ingredients: [
@@ -2171,7 +2171,7 @@ export const menuData = {
       name: 'Lasagna Sandwiches',
       description: 'A creative fusion masterpiece: buttery grilled sourdough encasing rich ragu, creamy ricotta, and molten mozzarella.',
       price: '₹349',
-      image: '/assets/images/menu-1.png',
+      image: 'https://i.redd.it/ffeav46frsp41.jpg',
       rating: 4.9,
       tags: 'Pasta • Fusion',
       ingredients: [
@@ -2188,7 +2188,7 @@ export const menuData = {
       name: 'Pilchard puttanesca',
       description: 'A bold Mediterranean pasta with wild-caught pilchards, briny olives, and capers, finished with a crispy pangrattato.',
       price: '₹329',
-      image: '/assets/images/menu-2.png',
+      image: 'https://ik.imagekit.io/littlecook/public_images/recipes/pilchard-puttanesca.jpg',
       rating: 4.7,
       tags: 'Pasta • Mediterranean',
       ingredients: [
@@ -2205,7 +2205,7 @@ export const menuData = {
       name: 'Syrian Spaghetti',
       description: 'A traditional aromatic baked pasta dish infused with warm cinnamon and allspice, topped with a golden, crispy layer.',
       price: '₹389',
-      image: '/assets/images/menu-3.png',
+      image: 'https://www.themealdb.com/images/media/meals/5fu4ew1760524857.jpg',
       rating: 4.8,
       tags: 'Pasta • Syrian',
       ingredients: [
@@ -2222,7 +2222,7 @@ export const menuData = {
       name: 'Fettuccine Alfredo',
       description: 'The authentic Roman original: an elegant emulsion of high-quality butter and aged Parmigiano-Reggiano.',
       price: '₹399',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.modernhoney.com/wp-content/uploads/2018/08/Fettuccine-Alfredo-Recipe-1-500x500.jpg',
       rating: 5.0,
       tags: 'Pasta • Authentic',
       ingredients: [
@@ -2238,7 +2238,7 @@ export const menuData = {
       name: 'Grilled Mac and Cheese Sandwich',
       description: 'The ultimate comfort snack: creamy homemade multi-cheese macaroni between slices of crispy artisan sourdough.',
       price: '₹289',
-      image: '/assets/images/menu-5.png',
+      image: 'https://veganyackattack.com/wp-content/uploads/2013/09/grilledmaccheeseblt-6.jpg',
       rating: 4.9,
       tags: 'Pasta • Comfort',
       ingredients: [
@@ -2255,7 +2255,7 @@ export const menuData = {
       name: 'Lasagne',
       description: 'Classical Lasagne alla Bolognese with rich meat ragu, silky Béchamel, and delicate fresh pasta sheets.',
       price: '₹489',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu74FNvFBT-lK7oHlFQYQk4noMnFrvnLyMOQ&s',
       rating: 5.0,
       tags: 'Pasta • Italian',
       ingredients: [
@@ -2272,7 +2272,7 @@ export const menuData = {
       name: 'Spaghetti alla Carbonara',
       description: 'Authentic Roman carbonara made with crispy guanciale, creamy egg yolks, and sharp Pecorino Romano.',
       price: '₹449',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDW3DlLhD0dIyHXup4xVjQTKxnR6qt7XNUUQ&s',
       rating: 4.9,
       tags: 'Pasta • Roman',
       ingredients: [
@@ -2289,7 +2289,7 @@ export const menuData = {
       name: 'Venetian Duck Ragu',
       description: 'Luxurious braised duck leg ragu with warm Venetian spices, white wine, and fresh rosemary over thick bigoli.',
       price: '₹549',
-      image: '/assets/images/menu-2.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/duck-ragu-631ae12.jpg',
       rating: 5.0,
       tags: 'Pasta • Venetian',
       ingredients: [
@@ -2308,7 +2308,7 @@ export const menuData = {
       name: 'Bubble & Squeak',
       description: 'A traditional British breakfast hash made with mashed potatoes and cabbage, fried until golden and crispy.',
       price: '₹329',
-      image: '/assets/images/menu-3.png',
+      image: 'https://static01.nyt.com/images/2025/03/14/multimedia/as-bubble-and-squeak-hlwk/as-bubble-and-squeak-hlwk-mediumSquareAt3X.jpg',
       rating: 5.0,
       tags: 'Pork • British',
       ingredients: [
@@ -2326,7 +2326,7 @@ export const menuData = {
       name: 'Barbecue pork buns',
       description: 'Pillowy-soft steamed Cantonese buns with a rich, savory-sweet BBQ pork (char siu) filling.',
       price: '₹349',
-      image: '/assets/images/menu-4.png',
+      image: 'https://thewoksoflife.com/wp-content/uploads/2015/05/steamed-bbq-pork-buns-11-1.jpg',
       rating: 4.8,
       tags: 'Pork • Cantonese',
       ingredients: [
@@ -2343,7 +2343,7 @@ export const menuData = {
       name: 'Bigos (Hunters Stew)',
       description: 'The national dish of Poland: a deep, savory stew of sauerkraut, smoked meats, and forest mushrooms.',
       price: '₹489',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.everyday-delicious.com/wp-content/uploads/2025/11/bigos-everyday-delicious-2.jpg',
       rating: 4.9,
       tags: 'Pork • Polish',
       ingredients: [
@@ -2361,7 +2361,7 @@ export const menuData = {
       name: 'Bryndzové Halušky',
       description: 'Slovakia\'s beloved national dish: potato dumplings with creamy sheep cheese and crispy bacon bits.',
       price: '₹379',
-      image: '/assets/images/menu-6.png',
+      image: 'https://www.foodnetwork.com/content/dam/images/food/fullset/2021/11/05/rx_bryndzove-halusky_s4x3.jpg',
       rating: 4.7,
       tags: 'Pork • Slovak',
       ingredients: [
@@ -2378,7 +2378,7 @@ export const menuData = {
       name: 'Chickpea, chorizo & spinach stew',
       description: 'A piquant Spanish-style stew with smoky chorizo, tender chickpeas, and fresh wilted baby spinach.',
       price: '₹399',
-      image: '/assets/images/menu-1.png',
+      image: 'https://img.taste.com.au/cocuTG56/taste/2016/11/chorizo-chickpea-and-spinach-stew-89278-1.jpeg',
       rating: 4.8,
       tags: 'Pork • Spanish',
       ingredients: [
@@ -2395,7 +2395,7 @@ export const menuData = {
       name: 'Arroz al horno (baked rice)',
       description: 'A rustic Valencian masterpiece: rice baked in a clay pot with ribs, blood sausage, and a whole head of garlic.',
       price: '₹449',
-      image: '/assets/images/menu-2.png',
+      image: 'https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/4176A2C6-5501-4738-ABC2-419FABF864F2/Derivates/D7B26C49-80CD-4B86-83B6-03D6E9CAF841.jpg',
       rating: 5.0,
       tags: 'Pork • Spanish',
       ingredients: [
@@ -2412,7 +2412,7 @@ export const menuData = {
       name: 'BBQ Pork Sloppy Joes',
       description: 'Slow-roasted shredded pork tossed in a smoky house-made BBQ sauce, served on toasted brioche buns.',
       price: '₹329',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO2Y4_DZMv2xNKB9poRoNpR4jiiP7Yd9fGLw&s',
       rating: 4.7,
       tags: 'Pork • American',
       ingredients: [
@@ -2429,7 +2429,7 @@ export const menuData = {
       name: 'Boxty Breakfast',
       description: 'Traditional Irish potato pancakes with a crispy exterior and fluffy center, served with smoky bacon lardons.',
       price: '₹359',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVuXjXIkGqIenDy4tRuuFB35sloaTvIwi3Kg&s',
       rating: 4.9,
       tags: 'Pork • Irish',
       ingredients: [
@@ -2446,7 +2446,7 @@ export const menuData = {
       name: 'Cassava pizza',
       description: 'A unique gluten-free pizza featuring a crispy cassava crust topped with savory shredded pork and cilantro.',
       price: '₹389',
-      image: '/assets/images/menu-5.png',
+      image: 'https://bakeitpaleo.com/wp-content/uploads/2025/01/cassava-flour-pizza.jpg',
       rating: 4.6,
       tags: 'Pork • Tropical',
       ingredients: [
@@ -2463,7 +2463,7 @@ export const menuData = {
       name: 'Choripán',
       description: 'The ultimate Argentine street snack: charcoal-grilled chorizo in a crusty roll with handmade chimichurri.',
       price: '₹319',
-      image: '/assets/images/menu-6.png',
+      image: 'https://www.carolinescooking.com/wp-content/uploads/2024/09/choripan-Argentine-chorizo-sandwich-featured-pic-sq.jpg',
       rating: 5.0,
       tags: 'Pork • Argentinian',
       ingredients: [
@@ -2482,7 +2482,7 @@ export const menuData = {
       name: 'Arroz con gambas y calamar',
       description: 'A traditional Spanish seafood rice dish featuring succulent king prawns and tender squid simmered with saffron and aromatic spices.',
       price: '₹549',
-      image: '/assets/images/menu-1.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2024/03/Arroz-con-gambas-y-calamar-946c734.jpg',
       rating: 5.0,
       tags: 'Seafood • Spanish',
       ingredients: [
@@ -2504,7 +2504,7 @@ export const menuData = {
       name: 'Bang bang prawn salad',
       description: 'Crispy prawns tossed in a creamy, sweet and spicy dynamite sauce, served over a refreshing bed of mixed greens and cucumber.',
       price: '₹489',
-      image: '/assets/images/menu-2.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-592579_12-dd4e01e.jpg',
       rating: 4.8,
       tags: 'Seafood • Asian Fusion',
       ingredients: [
@@ -2523,7 +2523,7 @@ export const menuData = {
       name: 'Cajun spiced fish tacos',
       description: 'Zesty pan-seared white fish with bold Cajun spices, tucked into warm tortillas with crunchy slaw and a lime-cilantro crema.',
       price: '₹399',
-      image: '/assets/images/menu-3.png',
+      image: 'https://realfood.tesco.com/media/images/6-Cajun-Fish-Tacos-LGH-5d41cae8-f7c8-4abc-8e1f-2a9d4a716a8e-0-1400x919.jpg',
       rating: 4.9,
       tags: 'Seafood • American',
       ingredients: [
@@ -2541,7 +2541,7 @@ export const menuData = {
       name: 'Shrimp Egg Foo Young',
       description: 'A classic Chinese-American omelette filled with succulent shrimp and crisp bean sprouts, served with a savory brown gravy.',
       price: '₹429',
-      image: '/assets/images/menu-4.png',
+      image: 'https://www.chinasichuanfood.com/wp-content/uploads/2017/05/shrimp-egg-foo-young-77.webp',
       rating: 4.7,
       tags: 'Seafood • Chinese',
       ingredients: [
@@ -2559,7 +2559,7 @@ export const menuData = {
       name: 'Fish fofos',
       description: 'Portuguese-influenced Goan fish croquettes, delicately spiced and breaded for a perfect crispy exterior and soft, flavorful center.',
       price: '₹349',
-      image: '/assets/images/menu-5.png',
+      image: 'https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg',
       rating: 4.6,
       tags: 'Seafood • Indian-Portuguese',
       ingredients: [
@@ -2577,7 +2577,7 @@ export const menuData = {
       name: 'Baked salmon with fennel & tomatoes',
       description: 'Elegant Atlantic salmon roasted on a bed of aromatic fennel and sweet cherry tomatoes, finished with lemon and fresh dill.',
       price: '₹629',
-      image: '/assets/images/menu-6.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2024/12/BBCGFO0924HDP-075MisoSalmon-af6d083.jpg?quality=90&resize=556,505',
       rating: 5.0,
       tags: 'Seafood • Healthy',
       ingredients: [
@@ -2595,7 +2595,7 @@ export const menuData = {
       name: 'Barramundi with Moroccan spices',
       description: 'Pan-seared Australian Barramundi infused with aromatic North African spices, served with a zesty herb salad.',
       price: '₹589',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWxwVRXNTJBmpIrJn7-UgVU_BW1bMbTjFUMQ&s',
       rating: 4.8,
       tags: 'Seafood • Moroccan',
       ingredients: [
@@ -2612,7 +2612,7 @@ export const menuData = {
       name: 'Clam, chorizo & white bean stew',
       description: 'A hearty Spanish-style stew blending briny fresh clams with smoky chorizo and creamy cannellini beans in a rich garlic broth.',
       price: '₹519',
-      image: '/assets/images/menu-2.png',
+      image: 'https://ca-times.brightspotcdn.com/dims4/default/98e2af3/2147483647/strip/false/crop/2048x1365+0+0/resize/1486x990!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F96%2Fd1%2Fc92aefe5371a9c92746128fead7d%2Flt56qtpd-recipe-db',
       rating: 4.9,
       tags: 'Seafood • Spanish',
       ingredients: [
@@ -2630,7 +2630,7 @@ export const menuData = {
       name: 'Escovitch Fish',
       description: 'Jamaican-style fried red snapper topped with a colorful, zesty marinade of pickled onions, carrots, and spicy scotch bonnet peppers.',
       price: '₹569',
-      image: '/assets/images/menu-3.png',
+      image: 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/tk%2Fphoto%2F2025%2F08-2025%2F2025-08-escovitch-fish%2Fescovitch-fish-203',
       rating: 4.8,
       tags: 'Seafood • Jamaican',
       ingredients: [
@@ -2648,7 +2648,7 @@ export const menuData = {
       name: 'Fish pie',
       description: 'The ultimate British comfort dish: chunks of fresh fish in a creamy leek sauce, topped with buttery mashed potatoes and melted cheddar.',
       price: '₹529',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHV311vQ8u8e0sCHVTbdjshx3QQrPCeMbLQ&s',
       rating: 4.9,
       tags: 'Seafood • British',
       ingredients: [
@@ -2668,7 +2668,7 @@ export const menuData = {
       name: 'Air Fryer Egg Rolls',
       description: 'Crispy, golden egg rolls filled with savory ground pork and fresh vegetables, perfectly cooked in an air fryer for a healthier crunch.',
       price: '₹249',
-      image: '/assets/images/menu-5.png',
+      image: 'https://wholesomemadeeasy.com/wp-content/uploads/2022/01/Air-Fryer-Egg-Rolls-edited-41.jpg',
       rating: 5.0,
       tags: 'Side • Chinese',
       ingredients: [
@@ -2686,7 +2686,7 @@ export const menuData = {
       name: 'Algerian Carrots',
       description: 'Tender carrots marinated in a bold "dersa" garlic sauce with paprika, caraway seeds, and a zesty vinegar finish.',
       price: '₹189',
-      image: '/assets/images/menu-6.png',
+      image: 'https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/thumb/moroccan_fish.jpg',
       rating: 4.8,
       tags: 'Side • Algerian',
       ingredients: [
@@ -2703,7 +2703,7 @@ export const menuData = {
       name: 'Blini Pancakes',
       description: 'Small, delicate yeast-raised pancakes, perfect as a gourmet appetizer base with sour cream or savory toppings.',
       price: '₹229',
-      image: '/assets/images/menu-1.png',
+      image: 'https://www.thespruceeats.com/thmb/LpeOFEQ3Gc4_jmjtpezK7ZFLcek=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/russian-blini-recipe-buckwheat-pancakes-1136797-caracormack.2022-75903da69db244e4ab8a22f54ae119cf.jpg',
       rating: 4.7,
       tags: 'Side • International',
       ingredients: [
@@ -2720,7 +2720,7 @@ export const menuData = {
       name: 'Brie wrapped in prosciutto & brioche',
       description: 'A decadent masterpiece featuring a whole Brie wheel wrapped in salty prosciutto and encased in golden, buttery brioche bread.',
       price: '₹589',
-      image: '/assets/images/menu-2.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2021/08/Fig-burrata-prosciutto-tartine-99ba997.jpg?quality=90&resize=556,505',
       rating: 5.0,
       tags: 'Side • French',
       ingredients: [
@@ -2736,7 +2736,7 @@ export const menuData = {
       name: 'Cacik',
       description: 'A cooling Turkish classic made with thick yogurt, grated cucumber, garlic, and dried mint, finished with a drizzle of olive oil.',
       price: '₹149',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NAJ9FFqvnVIimYr0Mz_GY7ZNgDt5B14BJQ&s',
       rating: 4.9,
       tags: 'Side • Turkish',
       ingredients: [
@@ -2753,7 +2753,7 @@ export const menuData = {
       name: 'Algerian Bouzgene Berber Bread with Roasted Pepper Sauce',
       description: 'Rustic, crispy Berber flatbread served with a smoky, hand-crushed roasted pepper and tomato dipping sauce.',
       price: '₹289',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQ1Rkka0YiLZyCNF9Adm_vqTD0teEpKPAwg&s',
       rating: 4.8,
       tags: 'Side • Algerian',
       ingredients: [
@@ -2770,7 +2770,7 @@ export const menuData = {
       name: 'Baba Ghanoush',
       description: 'A smooth, smoky eggplant dip blended with tahini, lemon juice, and garlic, perfect for dipping warm pita.',
       price: '₹199',
-      image: '/assets/images/menu-5.png',
+      image: 'https://foolproofliving.com/wp-content/uploads/2023/08/baba-ganoush-recipe-720x720.jpg',
       rating: 4.9,
       tags: 'Side • Middle Eastern',
       ingredients: [
@@ -2787,7 +2787,7 @@ export const menuData = {
       name: 'Boulangère Potatoes',
       description: 'Thinly sliced potatoes and onions slow-baked in a savory herb-infused stock until tender and golden.',
       price: '₹219',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4yywYRgljKurks5hLVvLrL2SE_HUt6GGn6g&s',
       rating: 4.7,
       tags: 'Side • French',
       ingredients: [
@@ -2804,7 +2804,7 @@ export const menuData = {
       name: 'Burek',
       description: 'Flaky phyllo pastry spiral filled with a savory blend of spiced ground beef and onions, baked until deep golden and crisp.',
       price: '₹269',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWK3qeNqSFPSVKSTS3QoJtuQSDIAKTW6VkQ&s',
       rating: 4.9,
       tags: 'Side • Balkan',
       ingredients: [
@@ -2820,7 +2820,7 @@ export const menuData = {
       name: 'Callaloo and SaltFish',
       description: 'A traditional Caribbean breakfast staple featuring sautéed callaloo greens and flaked salted cod with tomatoes and scotch bonnet.',
       price: '₹349',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV4GNrzzBJXdIyXIoyRurdHzTkqPVgiLaX-A&s',
       rating: 4.8,
       tags: 'Side • Jamaican',
       ingredients: [
@@ -2839,7 +2839,7 @@ export const menuData = {
       name: 'Fasoliyyeh Bi Z-Zayt',
       description: 'Syrian-style green beans in olive oil. A simple yet soulful dish featuring tender green beans steamed in extra virgin olive oil with garlic and fresh cilantro.',
       price: '₹269',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCeICZ2-F09M55L3L-JPElfituELAArFKRZQ&s',
       rating: 5.0,
       tags: 'Vegan • Syrian',
       ingredients: [
@@ -2856,7 +2856,7 @@ export const menuData = {
       name: 'Red onion pickle',
       description: 'Zesty and vibrant pickled red onions, a perfect crunchy accompaniment to balance any rich plant-based meal.',
       price: '₹129',
-      image: '/assets/images/menu-4.png',
+      image: 'https://plantyou.com/wp-content/uploads/2022/03/DSC07010-1-scaled.jpg',
       rating: 4.6,
       tags: 'Vegan • Accompaniment',
       ingredients: [
@@ -2873,7 +2873,7 @@ export const menuData = {
       name: 'Vegan banh mi',
       description: 'Crispy baguette filled with marinated tofu, pickled carrots, cucumber, and fresh herbs — a plant-based twist on the Vietnamese classic.',
       price: '₹329',
-      image: '/assets/images/menu-5.png',
+      image: 'https://cinnamonsnail.com/wp-content/uploads/2024/01/Vegan-Banh-Mi-21.jpg',
       rating: 4.9,
       tags: 'Vegan • Vietnamese',
       ingredients: [
@@ -2890,7 +2890,7 @@ export const menuData = {
       name: 'Vegan Lasagna',
       description: 'A hearty and comforting lasagna with layers of rich tomato lentil ragu, creamy cashew béchamel, and delicate pasta sheets.',
       price: '₹429',
-      image: '/assets/images/menu-6.png',
+      image: 'https://www.budgetbytes.com/wp-content/uploads/2025/11/Vegan-Lasagna-Front-Plated-With-Fork.jpg',
       rating: 4.7,
       tags: 'Vegan • Italian',
       ingredients: [
@@ -2907,7 +2907,7 @@ export const menuData = {
       name: 'Padron peppers',
       description: 'Authentic Spanish Padrón peppers flash-fried in extra virgin olive oil and topped with coarse sea salt — simple and addictive.',
       price: '₹249',
-      image: '/assets/images/menu-1.png',
+      image: 'https://kitchenconfidante.com/wp-content/uploads/2021/08/Blistered-Padron-Peppers-kitchenconfidante.com-9121-FEATURED-IMAGE-500x375.jpg',
       rating: 4.8,
       tags: 'Vegan • Spanish',
       ingredients: [
@@ -2922,7 +2922,7 @@ export const menuData = {
       name: 'Roast fennel and aubergine paella',
       description: 'A vibrant plant-based paella featuring smoke-roasted fennel and aubergine, simmered with saffron-infused Bomba rice.',
       price: '₹489',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0rmj82bA18qobWUNxRJpk6AgeHAPHe1biw&s',
       rating: 5.0,
       tags: 'Vegan • Spanish',
       ingredients: [
@@ -2939,7 +2939,7 @@ export const menuData = {
       name: 'Vegan Chocolate Cake',
       description: 'A moist and decadent chocolate cake made with dark cocoa and almond milk, finished with a silky ganache and fresh strawberries.',
       price: '₹299',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvjxdKyE_Y6UPZhCdEhx1Ckb4S7Ijs8iTWA&s',
       rating: 4.9,
       tags: 'Vegan • Dessert',
       ingredients: [
@@ -2956,7 +2956,7 @@ export const menuData = {
       name: 'Lentil Dal',
       description: 'Nutritious yellow lentils tempered with cumin, turmeric, and garlic — a staple Indian comfort food that is naturally vegan.',
       price: '₹199',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ--O7tHeYVKLmxiCgL3rquqtd9MHxwWKI_w&s',
       rating: 4.8,
       tags: 'Vegan • Indian',
       ingredients: [
@@ -2973,7 +2973,7 @@ export const menuData = {
       name: 'Quinoa Budda Bowl',
       description: 'A rainbow bowl of fluffy quinoa, roasted chickpeas, sweet potato, and kale, served with a creamy lemon-tahini dressing.',
       price: '₹349',
-      image: '/assets/images/menu-5.png',
+      image: 'https://recipecontent.fooby.ch/13400_3-2_480-320.jpg',
       rating: 4.9,
       tags: 'Vegan • Healthy',
       ingredients: [
@@ -2990,7 +2990,7 @@ export const menuData = {
       name: 'Falafel Wrap',
       description: 'Authentic crispy falafels wrapped in warm flatbread with creamy hummus, tangy pickles, and a fresh Mediterranean salad.',
       price: '₹269',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjm8brXZ64YMwB35mJIzT9rHw5QhbMSkwuDg&s',
       rating: 5.0,
       tags: 'Vegan • Middle Eastern',
       ingredients: [
@@ -3009,7 +3009,7 @@ export const menuData = {
       name: 'Air fryer patatas bravas',
       description: 'Crispy air-fried potato chunks topped with a spicy, smoky tomato sauce and a drizzle of creamy garlic aioli. An iconic Spanish tapa made healthier.',
       price: '₹249',
-      image: '/assets/images/menu-1.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-zq7GuWzLueMB2rKEBHCAfigscIzWYdsaw&s',
       rating: 5.0,
       tags: 'Vegetarian • Spanish',
       ingredients: [
@@ -3029,7 +3029,7 @@ export const menuData = {
       name: 'Aubergine & hummus grills',
       description: 'Thickly sliced lengthways grilled aubergine topped with creamy hummus, toasted walnuts, and a fresh parsley-tomato salad.',
       price: '₹279',
-      image: '/assets/images/menu-2.png',
+      image: 'https://images.immediate.co.uk/production/volatile/sites/30/2023/09/Hotpot-3089bfd.jpg?quality=90&resize=556,505',
       rating: 4.8,
       tags: 'Vegetarian • Mediterranean',
       ingredients: [
@@ -3046,7 +3046,7 @@ export const menuData = {
       name: 'Avocado dip with new potatoes',
       description: 'Creamy smashed avocado dip served with warm, herb-roasted new potatoes — a fresh and satisfying seasonal starter.',
       price: '₹229',
-      image: '/assets/images/menu-3.png',
+      image: 'https://i.ytimg.com/vi/u41-i_SXmes/hqdefault.jpg',
       rating: 4.7,
       tags: 'Vegetarian • Healthy',
       ingredients: [
@@ -3063,7 +3063,7 @@ export const menuData = {
       name: 'Beetroot & red cabbage sauerkraut',
       description: 'A tangy and colorful fermented salad blending earthy beetroot with crunchy red cabbage and aromatic caraway seeds.',
       price: '₹189',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7oLJgDMYeZhPfsRaq6cIRL20thu8Fz6Mdhw&s',
       rating: 4.6,
       tags: 'Vegetarian • Fermented',
       ingredients: [
@@ -3079,7 +3079,7 @@ export const menuData = {
       name: 'Beetroot Soup (Borscht)',
       description: 'Traditional Eastern European Borscht, deep ruby-red and full of earthy sweetness, served with a dollop of sour cream and fresh dill.',
       price: '₹269',
-      image: '/assets/images/menu-5.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwqDYtIV9hrajTGbMr-ta_IpxZMncTfIxQw&s',
       rating: 4.9,
       tags: 'Vegetarian • Eastern European',
       ingredients: [
@@ -3096,7 +3096,7 @@ export const menuData = {
       name: 'Algerian Flafla',
       description: 'Authentic roasted bell pepper and tomato salad from Algeria, smoky and soft, served cold or warm with crusty bread.',
       price: '₹239',
-      image: '/assets/images/menu-6.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTClB7sNFh5T07U4QPIV4itH5NJYIxi5CfUqw&s',
       rating: 4.8,
       tags: 'Vegetarian • Algerian',
       ingredients: [
@@ -3113,7 +3113,7 @@ export const menuData = {
       name: 'Aubergine couscous salad',
       description: 'Zesty North African style salad with roasted aubergine, fluffy couscous, pomegranate seeds, and a lemon-tahini dressing.',
       price: '₹289',
-      image: '/assets/images/menu-1.png',
+      image: 'https://images.getrecipekit.com/20250924094020-tahiti-20lime-20aubergine-20recipe-20-20svc-20jan-2020254334-20_webres.jpg?aspect_ratio=1:1&quality=90&',
       rating: 4.7,
       tags: 'Vegetarian • North African',
       ingredients: [
@@ -3130,7 +3130,7 @@ export const menuData = {
       name: 'Baingan Bharta',
       description: 'Fire-roasted eggplant mashed and sautéed with onions, tomatoes, ginger, and aromatic Indian spices for a deeply smoky flavor.',
       price: '₹249',
-      image: '/assets/images/menu-2.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqXZJse64CWdmAlxNtQn00e7yOst8aRooiQ&s',
       rating: 4.9,
       tags: 'Vegetarian • Indian',
       ingredients: [
@@ -3147,7 +3147,7 @@ export const menuData = {
       name: 'Beetroot latkes',
       description: 'Vibrant and crispy beetroot pancakes, a colorful twist on the classic Jewish latke, served with horseradish-infused sour cream.',
       price: '₹219',
-      image: '/assets/images/menu-3.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFs195Zj7wDBIA1aaKmXUqS3WFTaG9rDdyzw&s',
       rating: 4.8,
       tags: 'Vegetarian • Jewish',
       ingredients: [
@@ -3164,7 +3164,7 @@ export const menuData = {
       name: 'Braised stuffed cabbage',
       description: 'Tender cabbage leaves stuffed with a savory mixture of rice, mushrooms, and herbs, slow-braised in a rich tomato sauce.',
       price: '₹329',
-      image: '/assets/images/menu-4.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTls0tWxnfBbEBabbyP6xwvlsSPQSsvFd75tQ&s',
       rating: 4.7,
       tags: 'Vegetarian • Eastern European',
       ingredients: [

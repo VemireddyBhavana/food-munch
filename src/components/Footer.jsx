@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, MapPin } from 'lucide-react';
+import { footer_bg, food_munch_logo } from '../data/imageAssets';
 
 // Custom SVG Icons for brands (missing in lucide-react 1.8.0)
 const Facebook = ({ size = 20 }) => (
@@ -54,7 +55,7 @@ const Footer = () => {
   return (
     <footer
       className="footer section has-bg-image text-center"
-      style={{ backgroundImage: "url('/assets/images/footer-bg.jpg')" }}
+      style={{ backgroundImage: `url(${footer_bg})` }}
       id="footer"
     >
       <div className="container">
@@ -68,7 +69,7 @@ const Footer = () => {
               style={{ marginInline: 'auto', justifyContent: 'center' }}
               onClick={(e) => handleNavClick(e, '#home')}
             >
-              <img src="/assets/images/food-munch-logo.png" width="140" height="45" alt="Food Munch" className="logo-img" />
+              <img src={food_munch_logo} width="140" height="45" alt="Food Munch" className="logo-img" />
             </a>
 
             <address className="body-4">

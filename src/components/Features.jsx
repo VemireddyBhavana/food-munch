@@ -1,24 +1,25 @@
 import React from 'react';
+import { features_icon_1, features_icon_2, features_icon_3, features_icon_4, shape_7, shape_8 } from '../data/imageAssets';
 
 const Features = () => {
   const features = [
     {
-      img: '/assets/images/features-icon-1.png',
+      img: features_icon_1,
       title: 'Hygienic Kitchen',
       text: 'Our kitchen follows strict FSSAI food safety standards — every dish is prepared in a clean, certified environment.'
     },
     {
-      img: '/assets/images/features-icon-2.png',
+      img: features_icon_2,
       title: 'Fresh Ingredients',
       text: 'We source locally grown, farm-fresh produce daily to ensure bold flavours and maximum nutrition in every meal.'
     },
     {
-      img: '/assets/images/features-icon-3.png',
+      img: features_icon_3,
       title: 'Expert Chefs',
       text: 'Our chefs bring 20+ years of experience in Hyderabadi, Mughlai, and modern fusion cuisines to your plate.'
     },
     {
-      img: '/assets/images/features-icon-4.png',
+      img: features_icon_4,
       title: 'Events & Catering',
       text: 'From intimate family dinners to grand corporate banquets — our event team crafts experiences you\'ll remember.'
     }
@@ -44,8 +45,8 @@ const Features = () => {
           ))}
         </ul>
 
-        <img src="/assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape" className="shape shape-1" />
-        <img src="/assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape" className="shape shape-2" />
+        <img src={shape_7} width="208" height="178" loading="lazy" alt="shape" className="shape shape-1" />
+        <img src={shape_8} width="120" height="115" loading="lazy" alt="shape" className="shape shape-2" />
       </div>
     </section>
   );

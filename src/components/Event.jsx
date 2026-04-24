@@ -1,18 +1,19 @@
 import React from 'react';
+import { event_1, event_2, event_3, shape_5, shape_6 } from '../data/imageAssets';
 
 const events = [
   {
-    img: '/assets/images/event-1.jpg',
+    img: event_1,
     subtitle: 'Food & Lifestyle',
     title: 'Hyderabad Food Festival 2026'
   },
   {
-    img: '/assets/images/event-2.jpg',
+    img: event_2,
     subtitle: 'Live Cooking',
     title: "Chef's Table — Live Biryani Night"
   },
   {
-    img: '/assets/images/event-3.jpg',
+    img: event_3,
     subtitle: 'Family Special',
     title: 'Sunday Brunch Fiesta with Live Music'
   }
@@ -57,8 +58,8 @@ const Event = () => {
           </a>
         </div>
 
-        <img src="/assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" className="shape shape-1" />
-        <img src="/assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" className="shape shape-2" />
+        <img src={shape_5} width="921" height="1036" loading="lazy" alt="shape" className="shape shape-1" />
+        <img src={shape_6} width="343" height="345" loading="lazy" alt="shape" className="shape shape-2" />
       </div>
     </section>
   );

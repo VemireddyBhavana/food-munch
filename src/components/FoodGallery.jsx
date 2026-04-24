@@ -1,14 +1,15 @@
 import React from 'react';
 import { Camera } from 'lucide-react';
+import { service_2, service_3, event_1, event_2, event_3, about_banner } from '../data/imageAssets';
 
 const FoodGallery = () => {
   const galleryImages = [
-    { src: '/assets/images/menu-1.png', alt: 'Healthy Salad' },
-    { src: '/assets/images/menu-2.png', alt: 'Italian Pizza' },
-    { src: '/assets/images/menu-3.png', alt: 'Gourmet Toast' },
-    { src: '/assets/images/menu-4.png', alt: 'Fresh Pasta' },
-    { src: '/assets/images/menu-5.png', alt: 'Buddha Bowl' },
-    { src: '/assets/images/menu-6.png', alt: 'Fresh Veggies' }
+    { src: service_2, alt: 'Healthy Salad' },
+    { src: service_3, alt: 'Italian Pizza' },
+    { src: event_1, alt: 'Gourmet Toast' },
+    { src: event_2, alt: 'Fresh Pasta' },
+    { src: event_3, alt: 'Buddha Bowl' },
+    { src: about_banner, alt: 'Fresh Veggies' }
   ];
 
   return (

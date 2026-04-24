@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { special_dish_banner, badge_1, shape_4, shape_9 } from '../data/imageAssets';
 
 const SpecialDish = () => {
   return (
@@ -10,7 +11,7 @@ const SpecialDish = () => {
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          src="/assets/images/special-dish-banner.jpg"
+          src={special_dish_banner}
           width="940"
           height="900"
           loading="lazy"
@@ -21,7 +22,7 @@ const SpecialDish = () => {
 
       <div className="special-dish-content bg-black-10">
         <div className="container">
-          <img src="/assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="Chef's special badge" className="abs-img" />
+          <img src={badge_1} width="28" height="41" loading="lazy" alt="Chef's special badge" className="abs-img" />
           <p className="section-subtitle label-2" id="dish-label">Chef's Special</p>
           <h2 className="headline-1 section-title">Hyderabadi Dum Biryani</h2>
           <p className="section-text">
@@ -49,8 +50,8 @@ const SpecialDish = () => {
         </div>
       </div>
 
-      <img src="/assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" className="shape shape-1" />
-      <img src="/assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" className="shape shape-2" />
+      <img src={shape_4} width="179" height="359" loading="lazy" alt="" className="shape shape-1" />
+      <img src={shape_9} width="351" height="462" loading="lazy" alt="" className="shape shape-2" />
     </section>
   );
 };

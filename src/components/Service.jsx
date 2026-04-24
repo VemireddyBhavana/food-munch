@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { shape_2 } from '../data/imageAssets';
 
 const Service = () => {
   const services = [
@@ -65,9 +66,7 @@ const Service = () => {
             </li>
           ))}
         </ul>
-        {/* 
-        <img src="/assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape" className="shape shape-1 move-anim" /> */}
-        <img src="/assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape" className="shape shape-2 move-anim" />
+        <img src={shape_2} width="343" height="345" loading="lazy" alt="shape" className="shape shape-2 move-anim" />
       </div>
     </section>
   );

@@ -1,21 +1,22 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { hero_slider_1, hero_slider_2, hero_slider_3, hero_icon } from '../data/imageAssets';
 
 const slides = [
   {
-    img: '/assets/images/hero-slider-1.jpg',
+    img: hero_slider_1,
     subtitle: 'Traditional & Hygienic',
     title: <>For the Love of <br /> Delicious Food</>,
     text: 'Gather around the table, share stories, and savour every bite of our handcrafted Hyderabadi cuisine.'
   },
   {
-    img: '/assets/images/hero-slider-2.jpg',
+    img: hero_slider_2,
     subtitle: 'A Delightful Experience',
     title: <>Flavours Inspired by <br /> Rich Traditions</>,
     text: 'From dum biryanis to sizzling kebabs — each dish is a tribute to Hyderabad\'s legendary culinary heritage.'
   },
   {
-    img: '/assets/images/hero-slider-3.jpg',
+    img: hero_slider_3,
     subtitle: 'Amazing & Authentic',
     title: <>Where Every Flavour <br /> Tells a Story</>,
     text: 'Step into Food Munch and let your senses journey through spices, aromas, and unforgettable flavours.'
@@ -92,7 +93,7 @@ const Hero = () => {
         e.preventDefault();
         document.querySelector('#reservation')?.scrollIntoView({ behavior: 'smooth' });
       }}>
-        <img src="/assets/images/hero-icon.png" width="48" height="48" alt="booking icon" />
+        <img src={hero_icon} width="48" height="48" alt="booking icon" />
         <span className="label-2 text-center span">Book A Table</span>
       </a>
     </section>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { User, Calendar, Clock, ChevronDown } from 'lucide-react';
+import { form_pattern, shape_7, shape_8 } from '../data/imageAssets';
 
 const Reservation = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -92,7 +93,7 @@ const Reservation = () => {
 
           <div
             className="form-right text-center"
-            style={{ backgroundImage: "url('/assets/images/form-pattern.png')" }}
+            style={{ backgroundImage: `url(${form_pattern})` }}
             id="contact"
           >
             <h2 className="headline-1 text-center">Contact Us</h2>
@@ -126,8 +127,8 @@ const Reservation = () => {
           </div>
         </div>
 
-        <img src="/assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape" className="shape shape-1 move-anim" />
-        <img src="/assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape" className="shape shape-2 move-anim" />
+        <img src={shape_7} width="208" height="178" loading="lazy" alt="shape" className="shape shape-1 move-anim" />
+        <img src={shape_8} width="120" height="115" loading="lazy" alt="shape" className="shape shape-2 move-anim" />
       </div>
     </section>
   );
