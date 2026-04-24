@@ -7,14 +7,15 @@ import SpecialDish from './SpecialDish';
 import Menu from './Menu';
 import Reservation from './Reservation';
 import Features from './Features';
-import Event from './Event';
+import Testimonials from './Testimonials';
 
-const RevealSection = ({ children }) => (
+const RevealSection = ({ children, zIndex }) => (
   <motion.div
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
     transition={{ duration: 0.8, ease: "easeOut" }}
+    style={{ position: 'relative', zIndex: zIndex || 1 }}
   >
     {children}
   </motion.div>
@@ -36,9 +37,9 @@ function Home() {
       <RevealSection>
         <Menu selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
       </RevealSection>
-      <RevealSection><Reservation /></RevealSection>
+      <RevealSection zIndex={10}><Reservation /></RevealSection>
       <RevealSection><Features /></RevealSection>
-      <RevealSection><Event /></RevealSection>
+      <RevealSection><Testimonials /></RevealSection>
     </>
   );
 }

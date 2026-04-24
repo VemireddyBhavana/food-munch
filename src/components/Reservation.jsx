@@ -48,7 +48,7 @@ const Reservation = () => {
               />
             </div>
 
-            <div className="input-wrapper">
+            <div className="input-wrapper grid-3-col">
               <div className="icon-wrapper">
                 <User size={14} className="icon" />
                 <select name="person" className="input-field">
@@ -61,7 +61,17 @@ const Reservation = () => {
 
               <div className="icon-wrapper">
                 <Calendar size={14} className="icon" />
-                <input type="date" name="reservation-date" className="input-field" required />
+                <input
+                  type="text"
+                  name="reservation-date"
+                  className="input-field"
+                  placeholder="DD-MM-YYYY"
+                  onFocus={(e) => (e.target.type = 'date')}
+                  onBlur={(e) => {
+                    if (!e.target.value) e.target.type = 'text';
+                  }}
+                  required
+                />
                 <ChevronDown size={14} className="icon" />
               </div>
 

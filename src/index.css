@@ -522,6 +522,7 @@ body.nav-active { overflow: hidden; }
 .input-field {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
+  width: 100%;
   height: 56px;
   padding: 10px 20px;
   border: 1px solid var(--border-color);
@@ -541,10 +542,21 @@ body.nav-active { overflow: hidden; }
 
 .icon-wrapper .input-field {
   margin-block-end: 0;
-  padding-inline-start: 40px;
+  padding-inline-start: 45px;
   appearance: none;
   cursor: pointer;
 }
+
+.icon-wrapper .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--gold-crayola);
+}
+
+.icon-wrapper .icon:first-child { left: 15px; }
+.icon-wrapper .icon:last-child { right: 15px; }
 
 
 
@@ -1401,7 +1413,11 @@ body.nav-active { overflow: hidden; }
   #RESERVATION
 \*-----------------------------------*/
 
-.reservation-form { margin-block-start: -270px; }
+.reservation-form {
+  margin-block-start: -270px;
+  position: relative;
+  z-index: 10;
+}
 
 .form-text { margin-block-end: 40px; }
 
@@ -1428,7 +1444,17 @@ body.nav-active { overflow: hidden; }
 
 .input-field[type="date"] {
   text-transform: uppercase;
-  padding-inline-end: 10px;
+  padding-inline-end: 40px;
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
@@ -1884,10 +1910,10 @@ textarea.input-field {
 
 
 /**
- * responsive for larger than 768px screen
+ * responsive for larger than 750px screen
  */
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
 
   /**
    * REUSED STYLE
@@ -1895,7 +1921,9 @@ textarea.input-field {
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
-  :is(.service, .event, .menu) .container { max-width: 720px; }
+  :is(.service, .event, .menu, .testimonials) .container { max-width: 720px; }
+  
+  .testimonials .grid-list { grid-template-columns: repeat(3, 1fr); }
 
   :is(.service, .event) .grid-list li:last-child {
     grid-column: 1 / 3;
@@ -1956,9 +1984,17 @@ textarea.input-field {
     column-gap: 20px;
   }
 
-  .reservation .input-wrapper:nth-child(4) {
+  .reservation .input-wrapper.grid-3-col {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    gap: 30px;
+  }
+
+  .form-left, .form-right { padding: 40px; }
 
 
 
@@ -2084,8 +2120,8 @@ textarea.input-field {
    */
 
   .reservation-form {
-    display: grid;
     grid-template-columns: 1fr 0.5fr;
+    gap: 50px;
   }
 
 
@@ -4202,4 +4238,78 @@ body {
 .detail-nav-footer {
   margin-block-top: 40px;
   text-align: center;
+}
+
+
+/*-----------------------------------*\
+  #TESTIMONIALS
+\*-----------------------------------*/
+
+.testimonials {
+  padding-block: var(--section-space);
+  background-color: var(--eerie-black-1);
+}
+
+.testimonials .section-title { margin-block-end: 50px; }
+
+.testimonials .grid-list {
+  display: grid;
+  gap: 30px;
+}
+
+
+.testimonial-card {
+  background-color: hsla(0, 0%, 100%, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  border-radius: var(--radius-24);
+  transition: var(--transition-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: var(--gold-crayola);
+}
+
+.testimonial-card .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-circle);
+  margin-block-end: 20px;
+  border: 2px solid var(--gold-crayola);
+  object-fit: cover;
+}
+
+.testimonial-card .rating {
+  color: var(--gold-crayola);
+  display: flex;
+  gap: 5px;
+  margin-block-end: 15px;
+}
+
+.testimonial-card .quote {
+  color: var(--white);
+  font-family: var(--fontFamily-forum);
+  font-size: var(--fontSize-title-3);
+  line-height: 1.4;
+  margin-block-end: 20px;
+}
+
+.testimonial-card .author-name {
+  color: var(--gold-crayola);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.testimonial-card .author-title {
+  color: var(--quick-silver);
+  font-size: var(--fontSize-label-2);
 }
