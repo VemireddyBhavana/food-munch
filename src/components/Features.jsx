@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { features_icon_1, features_icon_2, features_icon_3, features_icon_4, shape_7, shape_8 } from '../data/imageAssets';
 
 const Features = () => {
@@ -25,15 +26,47 @@ const Features = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <section className="section features text-center" aria-label="features">
       <div className="container">
         <p className="section-subtitle label-2">Why Choose Us</p>
         <h2 className="headline-1 section-title">Our Strengths</h2>
 
-        <ul className="grid-list">
+        <motion.ul 
+          className="grid-list"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           {features.map((feature, index) => (
-            <li className="feature-item scroll-reveal-item" key={index}>
+            <motion.li 
+              className="feature-item" 
+              key={index}
+              variants={itemVariants}
+            >
               <div className="feature-card">
                 <div className="card-icon">
                   <img src={feature.img} width="100" height="80" loading="lazy" alt={feature.title} />
@@ -41,9 +74,9 @@ const Features = () => {
                 <h3 className="title-2 card-title">{feature.title}</h3>
                 <p className="label-1 card-text">{feature.text}</p>
               </div>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
 
         <img src={shape_7} width="208" height="178" loading="lazy" alt="shape" className="shape shape-1" />
         <img src={shape_8} width="120" height="115" loading="lazy" alt="shape" className="shape shape-2" />
