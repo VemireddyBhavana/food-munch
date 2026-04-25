@@ -164,6 +164,40 @@
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 }
 
+/* Ensure Hero section text remains light because of its hardcoded dark image background */
+[data-theme='light'] .hero {
+  --white: hsla(0, 0%, 100%, 1);
+  --quick-silver: hsla(0, 0%, 65%, 1);
+  --eerie-black-3: hsla(180, 2%, 8%, 1);
+  --davys-grey: hsla(30, 3%, 34%, 1);
+  color: var(--white);
+}
+
+/* Fix Mobile Header elements sitting over Hero image */
+[data-theme='light'] .header:not(.active) .theme-btn,
+[data-theme='light'] .header:not(.active) .cart-btn {
+  color: #ffffff;
+}
+[data-theme='light'] .header:not(.active) .nav-open-btn .line {
+  background-color: #ffffff;
+}
+
+/* Fix Desktop Header Links sitting over Hero image */
+@media (min-width: 1200px) {
+  [data-theme='light'] .header:not(.active) {
+    --white: hsla(0, 0%, 100%, 1);
+    color: var(--white);
+  }
+}
+
+/* Ensure Button Hover text has high contrast in light mode */
+[data-theme='light'] .btn .text-2 {
+  color: var(--text-primary);
+}
+[data-theme='light'] .btn-secondary {
+  color: var(--text-primary);
+}
+
 /* Wash out the busy geometric pattern on the Contact Us form in light mode so text is legible */
 [data-theme='light'] .form-right {
   position: relative;
