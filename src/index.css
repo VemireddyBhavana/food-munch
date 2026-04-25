@@ -164,6 +164,20 @@
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 }
 
+/* Wash out the busy geometric pattern on the Contact Us form in light mode so text is legible */
+[data-theme='light'] .form-right {
+  position: relative;
+  isolation: isolate;
+}
+
+[data-theme='light'] .form-right::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(250, 249, 246, 0.92);
+  z-index: -1;
+}
+
 /* Global Transition for Theme Switching */
 *, *::before, *::after {
   transition: background-color 0.4s ease, border-color 0.4s ease;
