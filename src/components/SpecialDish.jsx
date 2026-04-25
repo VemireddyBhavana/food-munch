@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { badge_1, shape_4, shape_9 } from '../data/imageAssets';
+import InteractiveRating from './InteractiveRating';
 
 const SpecialDish = () => {
   return (
@@ -30,6 +31,10 @@ const SpecialDish = () => {
             secret masala passed down through three generations. Every grain tells the story of Hyderabad's
             Nizami culinary legacy. Served with raita, salan, and a wedge of lemon.
           </p>
+
+          <div className="rating-container" style={{ marginBlock: '15px', display: 'flex', justifyContent: 'center' }}>
+            <InteractiveRating size={24} initialRating={4.8} />
+          </div>
 
           <div className="wrapper">
             <del className="del body-3">₹699</del>

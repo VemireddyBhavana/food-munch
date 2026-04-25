@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import InteractiveRating from './InteractiveRating';
 
 const testimonials = [
   {
@@ -68,14 +69,7 @@ const Testimonials = () => {
                 <img src={testimonial.avatar} alt={testimonial.name} className="avatar" />
                 
                 <div className="rating">
-                  {[...Array(5)].map((_, i) => (
-                    <Star 
-                      key={i} 
-                      size={16} 
-                      fill={i < testimonial.rating ? "var(--gold-crayola)" : "transparent"} 
-                      color="var(--gold-crayola)" 
-                    />
-                  ))}
+                  <InteractiveRating size={16} initialRating={testimonial.rating} readOnly={true} />
                 </div>
 
                 <blockquote className="quote">{testimonial.quote}</blockquote>

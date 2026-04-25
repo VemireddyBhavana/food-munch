@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { Heart, Star } from 'lucide-react';
 import { menuData } from '../data/menuData';
+import InteractiveRating from './InteractiveRating';
 
 const MealDetail = () => {
   const { id } = useParams();
@@ -78,17 +79,8 @@ const MealDetail = () => {
             <p className="section-subtitle label-2">Special Recipe</p>
             <h1 className="headline-1 dish-detail-title">{meal.name}</h1>
             
-            <div className="rating-wrapper">
-              {[...Array(5)].map((_, i) => (
-                <Star 
-                  key={i} 
-                  size={20} 
-                  fill={i < Math.floor(meal.rating) ? "var(--gold-crayola)" : "none"} 
-                  color="var(--gold-crayola)" 
-                  strokeWidth={2}
-                />
-              ))}
-              <span className="rating-num">{meal.rating}</span>
+            <div className="rating-wrapper" style={{ display: 'flex', justifyContent: 'center', marginBlockEnd: '15px' }}>
+              <InteractiveRating size={24} initialRating={meal.rating} />
             </div>
 
             <p className="detail-tags">{meal.tags || `${foundCategory} • Special`}</p>
