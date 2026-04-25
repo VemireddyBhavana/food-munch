@@ -730,6 +730,11 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   z-index: 5;
   transition: transform var(--transition-1);
+  display: none; /* Hidden on mobile by default */
+}
+
+@media (min-width: 1200px) {
+  .topbar { display: block; }
 }
 
 .topbar:has(~ .header.active) { transform: translateY(-100%); }
@@ -793,7 +798,7 @@ body.nav-active { overflow: hidden; }
 
 .header {
   position: fixed;
-  top: 40px; /* Base offset for mobile topbar */
+  top: 0; /* Changed from 40px to 0 for mobile */
   left: 0;
   width: 100%;
   background-color: transparent;
@@ -801,6 +806,10 @@ body.nav-active { overflow: hidden; }
   z-index: 4;
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
+}
+
+@media (min-width: 1200px) {
+  .header:not(.active) { top: 40px; }
 }
 
 .header.active,
