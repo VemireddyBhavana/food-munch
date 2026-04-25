@@ -127,7 +127,7 @@
 }
 
 /* ========== LIGHT THEME OVERRIDES ========== */
-.light-theme {
+[data-theme='light'] {
   --white: hsla(210, 4%, 15%, 1);
   --white-alpha-20: hsla(0, 0%, 0%, 0.12);
   --white-alpha-10: hsla(0, 0%, 0%, 0.06);
@@ -148,17 +148,17 @@ body, .header, .navbar, .service-card, .footer, .menu-card, .cart-drawer, .detai
 }
 
 /* Ensure images don't get too bright in light mode */
-.light-theme .img-holder img {
+[data-theme='light'] .img-holder img {
   filter: brightness(0.95) contrast(1.05);
 }
 
 /* Form inputs in light mode */
-.light-theme .input-field {
+[data-theme='light'] .input-field {
   background-color: var(--white-alpha-10);
   color: var(--white);
 }
 
-.light-theme .input-field::placeholder {
+[data-theme='light'] .input-field::placeholder {
   color: var(--davys-grey);
 }
 
@@ -3830,12 +3830,12 @@ body {
   margin-block-end: 4px;
 }
 
-.light-theme .category-card {
+[data-theme='light'] .category-card {
   background-color: var(--white);
   border-color: var(--gold-crayola);
 }
 
-.light-theme .category-card .card-title {
+[data-theme='light'] .category-card .card-title {
   color: var(--eerie-black-1);
 }
 
@@ -3875,7 +3875,7 @@ body {
   margin-block-end: 4px;
 }
 
-.light-theme .category-card .card-title {
+[data-theme='light'] .category-card .card-title {
   color: var(--white);
 }
 
