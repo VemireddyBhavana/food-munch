@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { special_dish_banner, badge_1, shape_4, shape_9 } from '../data/imageAssets';
+import { badge_1, shape_4, shape_9 } from '../data/imageAssets';
 
 const SpecialDish = () => {
   return (
@@ -11,7 +11,7 @@ const SpecialDish = () => {
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          src={special_dish_banner}
+          src="https://res.cloudinary.com/de8opipom/image/upload/v1777105998/ChatGPT_Image_Apr_25_2026_02_01_19_PM_b42qwm.png"
           width="940"
           height="900"
           loading="lazy"
