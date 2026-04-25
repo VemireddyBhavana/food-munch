@@ -8,6 +8,7 @@ const Reservation = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+    e.target.reset();
     setTimeout(() => setSubmitted(false), 4000);
   };
 

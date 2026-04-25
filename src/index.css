@@ -1414,7 +1414,6 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .reservation-form {
-  margin-block-start: -270px;
   position: relative;
   z-index: 10;
 }
