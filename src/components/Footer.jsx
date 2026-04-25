@@ -151,7 +151,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="footer-link-icon"
                   aria-label={label}
-                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '12px', width: '130px', margin: '0 auto' }}
                 >
                   {icon} <span className="label-2">{label}</span>
                 </a>
