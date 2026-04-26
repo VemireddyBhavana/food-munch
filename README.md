@@ -13,6 +13,7 @@ A high-end, fully responsive restaurant web application built with **React**, **
 - **⚡ High Performance**: Built with Vite for lightning-fast load times and optimized asset delivery.
 - **❤️ Favorites & Personalization**: Ability to save and manage favorite meals with persistent state.
 - **🛎️ Online Reservation**: A beautifully aligned booking system with a focus on ease of use.
+- **🌓 Dual-Mode Accessibility**: High-contrast Light Mode and elegant Dark Mode, optimized for readability and brand consistency.
 
 ---
 
@@ -64,6 +65,7 @@ This project was built through a systematic evolution from a basic landing page 
 4.  **Phase 4: Standardization**: Enforced strict grid layouts and height consistency (480px min) across all product cards for a balanced visual rhythm.
 5.  **Phase 5: Production Readiness**: Resolved critical build errors by implementing custom SVG social icons and optimizing the Vite production bundle.
 6.  **Phase 6: Interactive Experience & Mobile Polish**: Integrated interactive star ratings for special dishes and testimonials, and optimized the mobile reservation layout by removing redundant contact triggers.
+7.  **Phase 7: Advanced Theme & Navigation**: Optimized Light Mode for high-contrast accessibility and implemented cross-page navigation logic for seamless scrolling from sub-pages back to home sections.
 
 ---
 
@@ -73,6 +75,8 @@ This project was built through a systematic evolution from a basic landing page 
 - **Mobile UX Optimization**: Refined the reservation form on mobile to prioritize input fields over redundant contact info.
 - **Social Asset Restoration**: Replaced deprecated brand icons with custom high-performance SVGs to ensure deployment stability.
 - **UI Unification**: Synchronized all section layouts (Service, Menu, Features, Events) for visual rhythm.
+- **Theme Accessibility**: Darkened gold accents in Light Mode to meet accessibility standards without losing premium feel.
+- **Smart Navigation**: Enhanced footer and navbar with cross-page redirection logic for a unified single-page/multi-page hybrid experience.
 - **Asset Optimization**: Integrated 150+ high-resolution food assets and brand shapes.
 - **Animation Polish**: Implemented global scroll-reveal and hover-lift interactions.
 

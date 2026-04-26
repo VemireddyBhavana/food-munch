@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Mail, MapPin } from 'lucide-react';
 import { footer_bg, food_munch_logo } from '../data/imageAssets';
 
@@ -33,7 +34,26 @@ const Youtube = ({ size = 20 }) => (
 
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const handleNavClick = (e, targetId) => {
+    // If we're on a sub-page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Give a tiny delay for the home page to mount
+      setTimeout(() => {
+        const target = document.querySelector(targetId);
+        if (target) {
+          const headerHeight = document.querySelector('.header')?.offsetHeight || 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 100);
+      return;
+    }
+
+    // Standard smooth scroll for homepage
     e.preventDefault();
     const target = document.querySelector(targetId);
     if (target) {
@@ -120,7 +140,7 @@ const Footer = () => {
               { href: '#home', label: 'Home' },
               { href: '#menu', label: 'Our Menu' },
               { href: '#about', label: 'About Us' },
-              { href: '#categories', label: 'Categories' },
+              { href: '#menu', label: 'Categories' },
               { href: '#reservation', label: 'Book A Table' },
             ].map(({ href, label }) => (
               <li key={label}>

@@ -142,6 +142,9 @@
   --quick-silver: hsla(0, 0%, 45%, 1);
   --davys-grey: hsla(30, 5%, 50%, 1);
   
+  /* Brand color override for Light Mode to ensure accessibility */
+  --gold-crayola: hsl(38, 61%, 40%); 
+  
   /* Buttons and other specific adjustments */
   --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
   --gradient-1: linear-gradient(to top, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.7), transparent);
@@ -229,11 +232,13 @@ body, .header, .navbar, .service-card, .footer, .menu-card, .cart-drawer, .detai
 /* Form inputs in light mode */
 [data-theme='light'] .input-field {
   background-color: var(--white-alpha-10);
-  color: var(--white);
+  color: var(--text-primary);
+  border-color: var(--gold-crayola);
 }
 
 [data-theme='light'] .input-field::placeholder {
-  color: var(--davys-grey);
+  color: var(--text-secondary);
+  opacity: 0.9;
 }
 
 /* White background components in light mode */
